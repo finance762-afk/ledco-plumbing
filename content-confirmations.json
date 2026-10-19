@@ -4,22 +4,272 @@
       "path": "/",
       "useful_because": "The homepage is the only page that puts all five Ledco Plumbing services side by side with a symptom guide that matches what a Seminole homeowner is actually seeing (one slow drain, several drains backing up, a jumping water bill, a split pipe after a hard freeze, a rumbling water heater) to the service that fixes it. It also names the owner, Mickey Ledbetter, shows the 316 E Oak Ave office on a map with directions, explains what to do in the first minutes of a leak (close the main shutoff), and walks through what happens after the estimate form is sent. Service pages go deep on one problem each; this page routes the visitor to the right one.",
       "needs_confirmation": [
-        { "fact": "Oklahoma plumbing contractor license number", "question": "What is your Oklahoma plumbing contractor license number (Construction Industries Board)? We would like to show it on the site.", "where": "hero chips, proof strip, FAQ (a 'Are you licensed and insured?' answer was left out until this is confirmed)" },
-        { "fact": "Liability insurance / bonding", "question": "Do you carry general liability insurance (and are you bonded)? If so, may we say 'licensed and insured' on the site?", "where": "hero chips, FAQ" },
-        { "fact": "Year founded / years in business", "question": "What year did Ledco Plumbing start, and how many years has Mickey been plumbing?", "where": "proof strip, about section" },
-        { "fact": "After-hours / emergency availability", "question": "Do you take emergency calls outside 7 AM-5 PM (nights, holidays)? If yes, how should customers reach you after hours?", "where": "FAQ 'Do you offer emergency plumbing service', CTA band" },
-        { "fact": "Free estimates, and whether they are written", "question": "Is every estimate free? Is it a written price before work starts, and is there a trip or diagnostic fee for any job type?", "where": "hero form, FAQ cost answer, process step 3, page meta description" },
-        { "fact": "Typical price ranges", "question": "Can you share typical starting prices or ranges (for example, clearing a sink drain, replacing a 40/50-gallon water heater, a sewer line repair)?", "where": "FAQ cost answer, service cards" },
-        { "fact": "Response time", "question": "How quickly do you usually call back or get to a job (same day, next day)?", "where": "hero form tagline, 'What happens next' list" },
-        { "fact": "The real job process", "question": "Walk us through a typical job from the first call to the finished repair. Who comes out, what do they check first, and what does the customer get in writing?", "where": "about section process steps (currently a minimal 4-step outline)" },
-        { "fact": "Who does the work", "question": "Does Mickey do the work himself, or is there a crew? May we name anyone else on the team?", "where": "about section" },
-        { "fact": "Equipment", "question": "Do you use sewer camera inspection, hydro-jetting, or electronic leak-detection equipment?", "where": "drain cleaning, sewer line and leak detection cards" },
-        { "fact": "Water heater types", "question": "Which water heaters do you repair and install: gas, electric, tankless? Any brands you prefer?", "where": "water heater card, FAQ" },
-        { "fact": "Septic vs city sewer", "question": "Do you work on rural septic lines as well as city sewer lines?", "where": "sewer line card" },
-        { "fact": "Commercial work types", "question": "What kinds of commercial customers do you serve (restaurants, rentals, churches, schools, oilfield/industrial)?", "where": "commercial plumbing card" },
-        { "fact": "Additional towns served", "question": "Besides Seminole and Wewoka, which towns do you regularly work in (for example Konawa, Bowlegs, Maud, Cromwell, Shawnee)?", "where": "FAQ service-area answer, estimate section" },
-        { "fact": "Real job photos", "question": "Please upload 8-12 photos of your own jobs (water heaters you installed, sewer digs, your truck, you at work). The homepage currently has no photos.", "where": "hero, service cards, about section, recent-work gallery" },
-        { "fact": "Logo", "question": "Do you have a logo file (ideally SVG or a large PNG)? The site is using a text logo for now.", "where": "header, footer" }
+        {
+          "fact": "Oklahoma plumbing contractor license number",
+          "question": "What is your Oklahoma plumbing contractor license number (Construction Industries Board)? We would like to show it on the site.",
+          "where": "hero chips, proof strip, FAQ (a 'Are you licensed and insured?' answer was left out until this is confirmed)"
+        },
+        {
+          "fact": "Liability insurance / bonding",
+          "question": "Do you carry general liability insurance (and are you bonded)? If so, may we say 'licensed and insured' on the site?",
+          "where": "hero chips, FAQ"
+        },
+        {
+          "fact": "Year founded / years in business",
+          "question": "What year did Ledco Plumbing start, and how many years has Mickey been plumbing?",
+          "where": "proof strip, about section"
+        },
+        {
+          "fact": "After-hours / emergency availability",
+          "question": "Do you take emergency calls outside 7 AM-5 PM (nights, holidays)? If yes, how should customers reach you after hours?",
+          "where": "FAQ 'Do you offer emergency plumbing service', CTA band"
+        },
+        {
+          "fact": "Free estimates, and whether they are written",
+          "question": "Is every estimate free? Is it a written price before work starts, and is there a trip or diagnostic fee for any job type?",
+          "where": "hero form, FAQ cost answer, process step 3, page meta description"
+        },
+        {
+          "fact": "Typical price ranges",
+          "question": "Can you share typical starting prices or ranges (for example, clearing a sink drain, replacing a 40/50-gallon water heater, a sewer line repair)?",
+          "where": "FAQ cost answer, service cards"
+        },
+        {
+          "fact": "Response time",
+          "question": "How quickly do you usually call back or get to a job (same day, next day)?",
+          "where": "hero form tagline, 'What happens next' list"
+        },
+        {
+          "fact": "The real job process",
+          "question": "Walk us through a typical job from the first call to the finished repair. Who comes out, what do they check first, and what does the customer get in writing?",
+          "where": "about section process steps (currently a minimal 4-step outline)"
+        },
+        {
+          "fact": "Who does the work",
+          "question": "Does Mickey do the work himself, or is there a crew? May we name anyone else on the team?",
+          "where": "about section"
+        },
+        {
+          "fact": "Equipment",
+          "question": "Do you use sewer camera inspection, hydro-jetting, or electronic leak-detection equipment?",
+          "where": "drain cleaning, sewer line and leak detection cards"
+        },
+        {
+          "fact": "Water heater types",
+          "question": "Which water heaters do you repair and install: gas, electric, tankless? Any brands you prefer?",
+          "where": "water heater card, FAQ"
+        },
+        {
+          "fact": "Septic vs city sewer",
+          "question": "Do you work on rural septic lines as well as city sewer lines?",
+          "where": "sewer line card"
+        },
+        {
+          "fact": "Commercial work types",
+          "question": "What kinds of commercial customers do you serve (restaurants, rentals, churches, schools, oilfield/industrial)?",
+          "where": "commercial plumbing card"
+        },
+        {
+          "fact": "Additional towns served",
+          "question": "Besides Seminole and Wewoka, which towns do you regularly work in (for example Konawa, Bowlegs, Maud, Cromwell, Shawnee)?",
+          "where": "FAQ service-area answer, estimate section"
+        },
+        {
+          "fact": "Real job photos",
+          "question": "Please upload 8-12 photos of your own jobs (water heaters you installed, sewer digs, your truck, you at work). The homepage currently has no photos.",
+          "where": "hero, service cards, about section, recent-work gallery"
+        },
+        {
+          "fact": "Logo",
+          "question": "Do you have a logo file (ideally SVG or a large PNG)? The site is using a text logo for now.",
+          "where": "header, footer"
+        }
+      ]
+    },
+    {
+      "path": "/services/",
+      "useful_because": "The services hub is the only page that tells a caller, service by service, what to have ready before phoning Ledco Plumbing (which drains are slow, the water heater label, what the water meter does, where the sewer cleanout is, who can open a commercial building) and why each detail matters. It also explains how a job is priced (after the problem is seen, before work starts) and what changes the price, and links all five service pages in one grid.",
+      "needs_confirmation": [
+        {
+          "fact": "Trip, diagnostic or service-call fee",
+          "question": "Do you charge a trip or diagnostic fee to come look at a problem, or is the visit and estimate free for every job type?",
+          "where": "pricing section, 'Free estimate' CTA labels"
+        },
+        {
+          "fact": "Written estimates",
+          "question": "Is the estimate given in writing (paper, text or email) before work starts?",
+          "where": "pricing section"
+        },
+        {
+          "fact": "Warranty / guarantee on repairs",
+          "question": "Do you guarantee your repairs or installations? If so, for how long and on what (labor, parts)?",
+          "where": "pricing section, service pages"
+        }
+      ]
+    },
+    {
+      "path": "/services/drain-cleaning/",
+      "useful_because": "This page tells a Seminole homeowner how to tell a fixture clog from a main-line problem (four warning signs), what usually clogs each drain in the house and a habit that prevents it (a drain-by-drain table), why older Seminole houses with cast-iron drain pipe re-clog, and exactly how a Ledco drain visit runs. The homepage only routes to this service; sibling pages cover other problems.",
+      "needs_confirmation": [
+        {
+          "fact": "Drain-clearing equipment",
+          "question": "What do you use to clear drains: cable machines (snakes), hydro-jetting, a sewer camera to look inside the line?",
+          "where": "what's included section, process step 2"
+        },
+        {
+          "fact": "Drain cleaning price range",
+          "question": "What does it typically cost to clear a kitchen or bathroom drain, and a main line?",
+          "where": "FAQ 'How much does drain cleaning cost?'"
+        },
+        {
+          "fact": "After-hours drain backups",
+          "question": "If sewage is backing up after 5 PM or on a holiday, can customers reach you? How?",
+          "where": "FAQ emergency answer, closing CTA"
+        },
+        {
+          "fact": "Job photos for this service",
+          "question": "Please upload 3 or more photos of your own drain cleaning jobs (before/after pairs are especially useful). The page has no photos yet.",
+          "where": "hero, recent-work strip, before/after slider"
+        }
+      ]
+    },
+    {
+      "path": "/services/water-heater-repair-installation/",
+      "useful_because": "This page lets a homeowner decide repair or replace before calling: a table of common water heater problems (gas vs electric no-heat causes, relief-valve drips, rusty water, tank leaks) with the usual outcome, how to read the heater's age off its label, why Oklahoma hard water shortens tank life and what to do about it, and the four stages of a Ledco installation including filling the tank before power is restored.",
+      "needs_confirmation": [
+        {
+          "fact": "Water heater types serviced",
+          "question": "Which water heaters do you repair and install: gas, electric, tankless, heat pump? Any brands you prefer or stock?",
+          "where": "what's covered section, repair-or-replace table"
+        },
+        {
+          "fact": "Old tank haul-away",
+          "question": "Do you haul away and dispose of the old water heater as part of a replacement?",
+          "where": "installation steps"
+        },
+        {
+          "fact": "Permits / code items on installation",
+          "question": "Do you pull a permit for water heater replacements where the city requires one, and do you add items like expansion tanks or drain pans when code calls for them?",
+          "where": "installation steps"
+        },
+        {
+          "fact": "Replacement price range",
+          "question": "What does a typical 40- or 50-gallon gas or electric replacement cost, installed?",
+          "where": "FAQ cost answer"
+        },
+        {
+          "fact": "Flushing / maintenance service",
+          "question": "Do you offer water heater flushing or annual maintenance as a service?",
+          "where": "hard water card"
+        },
+        {
+          "fact": "Job photos for this service",
+          "question": "Please upload 3 or more photos of your own water heater jobs (before/after pairs are especially useful). The page has no photos yet.",
+          "where": "hero, recent-work strip, before/after slider"
+        }
+      ]
+    },
+    {
+      "path": "/services/leak-detection-repair/",
+      "useful_because": "This page gives a homeowner a five-step water-meter test to confirm a hidden leak and tell a yard-line leak from an inside leak before calling, a table of where hidden leaks happen and how each shows up, why yard leaks surface as puddles on central Oklahoma's slow-draining clay, and the February 2021 freeze record (all 120 Oklahoma Mesonet stations below zero) with the pipes that split first. None of this is on the homepage or other service pages.",
+      "needs_confirmation": [
+        {
+          "fact": "Leak-detection equipment",
+          "question": "How do you pinpoint hidden leaks: acoustic listening equipment, thermal camera, pressure testing, line tracing?",
+          "where": "process step 3 ('Pin down the spot')"
+        },
+        {
+          "fact": "Slab leak repair methods",
+          "question": "For slab leaks, do you break out the floor at the leak, reroute the line overhead, or both?",
+          "where": "where-leaks-hide table"
+        },
+        {
+          "fact": "Freeze-damage / winter calls",
+          "question": "After a hard freeze, do you take on burst-pipe repairs the same day, and do you offer pipe winterizing or insulation?",
+          "where": "freeze band"
+        },
+        {
+          "fact": "After-hours burst pipes",
+          "question": "Can customers reach you outside 7 AM-5 PM for a burst pipe?",
+          "where": "FAQ emergency answer"
+        },
+        {
+          "fact": "Job photos for this service",
+          "question": "Please upload 3 or more photos of your own leak repair jobs (before/after pairs are especially useful). The page has no photos yet.",
+          "where": "hero, recent-work strip, before/after slider"
+        }
+      ]
+    },
+    {
+      "path": "/services/sewer-line-repair/",
+      "useful_because": "This page separates an ordinary clog from a main sewer line problem side by side, tells a homeowner what to do during a sewage backup (stop water, skip chemicals, find the cleanout, photograph damage), explains why older Seminole sewer lines fail with a table of pipe materials (clay tile, cast iron, Orangeburg, PVC) and how each breaks, and matches each sewer problem (blockage, roots, break, belly, failing line) to the repair it usually needs.",
+      "needs_confirmation": [
+        {
+          "fact": "Sewer camera inspection",
+          "question": "Do you run a camera down sewer lines to find breaks and roots before quoting a repair?",
+          "where": "process step 2, which-repair section"
+        },
+        {
+          "fact": "Trenchless repair",
+          "question": "Do you offer trenchless sewer repair (pipe lining or pipe bursting), or are repairs open-trench?",
+          "where": "which-repair table"
+        },
+        {
+          "fact": "Septic lines",
+          "question": "Do you work on septic lines for rural homes outside the city sewer, or only lines to the city main?",
+          "where": "intro, which-repair table"
+        },
+        {
+          "fact": "Sewer repair price range",
+          "question": "What does a typical spot repair or full line replacement cost?",
+          "where": "FAQ / pricing"
+        },
+        {
+          "fact": "Permits and city tap work",
+          "question": "Do you handle permits and any work at the city tap when a line is replaced?",
+          "where": "process step 4"
+        },
+        {
+          "fact": "Job photos for this service",
+          "question": "Please upload 3 or more photos of your own sewer line jobs (before/after pairs are especially useful). The page has no photos yet.",
+          "where": "hero, recent-work strip, before/after slider"
+        }
+      ]
+    },
+    {
+      "path": "/services/commercial-plumbing/",
+      "useful_because": "This page is written for business owners and managers: the plumbing failures that close a business (restroom out of order, kitchen and floor drains, hot water at handwashing sinks, hidden leaks), a table showing how each Ledco service applies to a commercial building and the warning sign to report, the seven-day office hours shown day by day, and a checklist of what a business should have ready when it calls (access, on-site contact, who approves the estimate in a leased building).",
+      "needs_confirmation": [
+        {
+          "fact": "Commercial customer types",
+          "question": "What kinds of commercial customers do you serve (restaurants, retail, offices, rentals/landlords, churches, schools, oilfield/industrial)? May we name any?",
+          "where": "costly-failures list, service table"
+        },
+        {
+          "fact": "After-hours / off-hours commercial work",
+          "question": "Will you schedule commercial work before opening or after closing to avoid disrupting customers?",
+          "where": "weekend band note, before-you-call checklist"
+        },
+        {
+          "fact": "Grease traps and backflow",
+          "question": "Do you install or service grease traps/interceptors, or test backflow preventers?",
+          "where": "service table"
+        },
+        {
+          "fact": "Maintenance agreements",
+          "question": "Do you offer scheduled maintenance or priority service agreements for businesses?",
+          "where": "why-Ledco section"
+        },
+        {
+          "fact": "Commercial billing",
+          "question": "Can you invoice businesses (net terms) or bill a property manager/landlord directly?",
+          "where": "before-you-call checklist"
+        },
+        {
+          "fact": "Job photos for this service",
+          "question": "Please upload 3 or more photos of your own commercial jobs (before/after pairs are especially useful). The page has no photos yet.",
+          "where": "hero, recent-work strip, before/after slider"
+        }
       ]
     }
   ],

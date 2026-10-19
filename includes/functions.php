@@ -265,6 +265,46 @@ if (!function_exists('generateServiceSchema')) {
         ];
     }
 }
+if (!function_exists('generateServicePageSchema')) {
+    /**
+     * Service page @graph nodes: Service (#service-{slug}, provider -> #organization), WebPage with
+     * Speakable (.hero-answer, .answer-block), BreadcrumbList, and FAQPage only when $faqs is non-empty.
+     */
+    function generateServicePageSchema(array $service, string $title, string $description, array $faqs = []): array {
+        global $siteUrl, $serviceAreaDetails;
+        $url = rtrim((string) $siteUrl, '/') . '/services/' . $service['slug'] . '/';
+        $areas = [];
+        foreach ((array) $serviceAreaDetails as $a) {
+            $areas[] = ['@type' => 'City', 'name' => $a['city'], 'containedInPlace' => ['@type' => 'State', 'name' => 'Oklahoma']];
+        }
+        $nodes = [
+            [
+                '@type'       => 'Service',
+                '@id'         => $url . '#service-' . $service['slug'],
+                'name'        => $service['name'],
+                'serviceType' => $service['name'],
+                'description' => $description,
+                'url'         => $url,
+                'provider'    => ['@id' => schemaId('organization')],
+                'areaServed'  => $areas,
+            ],
+            [
+                '@type'       => 'WebPage',
+                '@id'         => $url . '#webpage',
+                'url'         => $url,
+                'name'        => $title,
+                'description' => $description,
+                'isPartOf'    => ['@id' => schemaId('website')],
+                'about'       => ['@id' => $url . '#service-' . $service['slug']],
+                'breadcrumb'  => ['@id' => $url . '#breadcrumb'],
+                'speakable'   => ['@type' => 'SpeakableSpecification', 'cssSelector' => ['.hero-answer', '.answer-block']],
+            ],
+            ['@id' => $url . '#breadcrumb'] + generateBreadcrumbSchema([['Home', '/'], ['Services', '/services/'], [$service['name'], '/services/' . $service['slug'] . '/']]),
+        ];
+        if ($faqs) $nodes[] = generateFAQSchema($faqs);
+        return $nodes;
+    }
+}
 if (!function_exists('generateFAQSchema')) {
     /** $faqs = [['q' => '...', 'a' => '...'], ...] — must mirror the visible FAQ exactly. AI-comprehension aid only (rich results retired). */
     function generateFAQSchema(array $faqs): array {

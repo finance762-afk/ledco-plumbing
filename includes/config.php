@@ -74,7 +74,7 @@ $services = [
 $serviceAreas = ['Wewoka, OK', 'Seminole, OK'];          // build-plan service_areas
 $serviceAreaDetails = [
     ['city' => 'Seminole', 'state' => 'OK', 'zip' => '74868', 'primary' => true,  'slug' => 'seminole-ok'],
-    ['city' => 'Wewoka',   'state' => 'OK', 'zip' => '',      'primary' => false, 'slug' => 'wewoka-ok'],
+    ['city' => 'Wewoka',   'state' => 'OK', 'zip' => '74884', 'primary' => false, 'slug' => 'wewoka-ok'],
 ];
 
 // ---- Business facts (build-plan content — the ONLY source for these claims) ----------------------

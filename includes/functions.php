@@ -7,7 +7,7 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/p1-form-helpers.php';
 
-/** Public hub path for the service-area overview (individual area pages live at /areas/{slug}/). */
+/** Public hub path for the service-area overview (individual area pages live at /service-areas/{slug}/). */
 if (!defined('P1_AREAS_HUB')) define('P1_AREAS_HUB', '/service-areas/');
 
 // ---- Escaping / small utilities ---------------------------------------------------------------
@@ -96,13 +96,13 @@ if (!function_exists('serviceLive')) {
 }
 if (!function_exists('areaLive')) {
     function areaLive(string $slug): bool {
-        return is_dir($_SERVER['DOCUMENT_ROOT'] . '/areas/' . $slug) && pageLive('/areas/' . $slug . '/');
+        return is_dir($_SERVER['DOCUMENT_ROOT'] . '/service-areas/' . $slug) && pageLive('/service-areas/' . $slug . '/');
     }
 }
 if (!function_exists('areaHref')) {
-    /** /areas/{slug}/ once built; the hub anchor while only the hub exists; null when neither exists yet. */
+    /** /service-areas/{slug}/ once built; the hub anchor while only the hub exists; null when neither exists yet. */
     function areaHref(string $slug): ?string {
-        if (areaLive($slug)) return '/areas/' . $slug . '/';
+        if (areaLive($slug)) return '/service-areas/' . $slug . '/';
         if (pageLive(P1_AREAS_HUB)) return P1_AREAS_HUB . '#' . $slug;
         return null;
     }
@@ -300,6 +300,41 @@ if (!function_exists('generateServicePageSchema')) {
                 'speakable'   => ['@type' => 'SpeakableSpecification', 'cssSelector' => ['.hero-answer', '.answer-block']],
             ],
             ['@id' => $url . '#breadcrumb'] + generateBreadcrumbSchema([['Home', '/'], ['Services', '/services/'], [$service['name'], '/services/' . $service['slug'] . '/']]),
+        ];
+        if ($faqs) $nodes[] = generateFAQSchema($faqs);
+        return $nodes;
+    }
+}
+if (!function_exists('generateAreaPageSchema')) {
+    /**
+     * Service-area page @graph nodes: WebPage (about the City), BreadcrumbList (Home > Service Areas > City), a Plumber
+     * node that reuses the #organization @id with areaServed narrowed to THIS city (JSON-LD merges same-@id nodes), and
+     * FAQPage only when $faqs is non-empty. $city = ['name' =>, 'slug' =>, 'lat' =>, 'lng' =>, 'sameAs' => url].
+     */
+    function generateAreaPageSchema(array $city, string $title, string $description, array $faqs = []): array {
+        global $siteUrl;
+        $url = rtrim((string) $siteUrl, '/') . '/service-areas/' . $city['slug'] . '/';
+        $place = [
+            '@type'            => 'City',
+            'name'             => $city['name'],
+            'containedInPlace' => ['@type' => 'State', 'name' => 'Oklahoma'],
+        ];
+        if (!empty($city['lat']) && !empty($city['lng'])) $place['geo'] = ['@type' => 'GeoCoordinates', 'latitude' => $city['lat'], 'longitude' => $city['lng']];
+        if (!empty($city['sameAs'])) $place['sameAs'] = $city['sameAs'];
+        $nodes = [
+            [
+                '@type'       => 'WebPage',
+                '@id'         => $url . '#webpage',
+                'url'         => $url,
+                'name'        => $title,
+                'description' => $description,
+                'isPartOf'    => ['@id' => schemaId('website')],
+                'about'       => $place,
+                'breadcrumb'  => ['@id' => $url . '#breadcrumb'],
+                'speakable'   => ['@type' => 'SpeakableSpecification', 'cssSelector' => ['.hero-answer', '.answer-block']],
+            ],
+            ['@id' => $url . '#breadcrumb'] + generateBreadcrumbSchema([['Home', '/'], ['Service Areas', P1_AREAS_HUB], [$city['name'] . ', OK', '/service-areas/' . $city['slug'] . '/']]),
+            ['@type' => 'Plumber', '@id' => schemaId('organization'), 'areaServed' => $place],
         ];
         if ($faqs) $nodes[] = generateFAQSchema($faqs);
         return $nodes;

@@ -581,6 +581,40 @@ foreach ($services as $homeIdx => $homeSvc):
   </div>
 </section>
 
+<!-- ============================================================ FROM THE BLOG (latest registry post) -->
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
+$homePost = $blogPosts[0] ?? null;
+if ($homePost): ?>
+<section class="section home-blog" id="blog" aria-labelledby="blog-title">
+  <style>
+  .home-blog { background: var(--color-paper-2); }
+  .home-blog__layout { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr); gap: clamp(var(--space-xl), 5vw, var(--space-4xl)); align-items: center; }
+  .home-blog__intro { display: grid; gap: var(--space-md); justify-items: start; }
+  .home-blog__intro h2 { text-wrap: balance; }
+  .home-blog .blog-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); box-shadow: var(--shadow); transition: transform var(--transition), box-shadow var(--transition); }
+  .home-blog .blog-card:hover { transform: translateY(calc(-1 * var(--space-1))); box-shadow: var(--shadow-lg); }
+  .home-blog .blog-card__image { aspect-ratio: auto; min-height: 100%; }
+  .home-blog .blog-card__body { background: var(--color-card-tint-3); align-content: center; padding: var(--space-lg); }
+  .home-blog .blog-card__cta { color: var(--color-accent-dark); }
+  @media (max-width: 900px) { .home-blog__layout { grid-template-columns: 1fr; } }
+  @media (max-width: 560px) { .home-blog .blog-card { grid-template-columns: 1fr; } .home-blog .blog-card__image { aspect-ratio: 16 / 10; } }
+  </style>
+  <div class="container-wide">
+    <div class="home-blog__layout">
+      <div class="home-blog__intro reveal-left">
+        <span class="eyebrow-label">From the Blog</span>
+        <h2 id="blog-title">What should Seminole homeowners know <span class="text-accent">before they call a plumber</span>?</h2>
+        <p>Ledco Plumbing LLC publishes short guides for Seminole and Wewoka homeowners, built on local weather and the age of local buildings. The latest one is on the right.</p>
+        <a class="btn btn-primary" href="/blog/">View All Articles</a>
+      </div>
+      <div class="reveal-right">
+<?php p1_blog_card($homePost); ?>
+      </div>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
+
 <!-- ============================================================ CTA BAND -->
 <section class="cta-banner texture-grain edge-wave-top home-cta" aria-labelledby="cta-title">
   <span class="grain-layer" aria-hidden="true"></span>

@@ -385,6 +385,112 @@
           "where": "all legal pages"
         }
       ]
+    },
+    {
+      "path": "/service-areas/",
+      "useful_because": "The only page that names the two communities Ledco Plumbing serves, shows the Seminole office on a map with directions, and tells a caller how to confirm that a street address is covered (Seminole uses ZIP codes 74818 and 74868 and spans several school districts, so the street address is the test).",
+      "needs_confirmation": [
+        {
+          "fact": "Service radius",
+          "question": "The build plan lists a 25-mile target radius but only Seminole and Wewoka as service areas. Do you also work in Konawa, Earlsboro, Bowlegs, Maud, Cromwell, Sasakwa, Holdenville, Shawnee or elsewhere? Each town you confirm can get its own page.",
+          "where": "hub intro, area cards, address check"
+        },
+        {
+          "fact": "Estimates",
+          "question": "Is the estimate free for every job and given before work starts? The area CTAs say 'Get a Free Estimate in Seminole / Wewoka'.",
+          "where": "hero form titles, closing CTAs"
+        }
+      ]
+    },
+    {
+      "path": "/service-areas/seminole-ok/",
+      "useful_because": "Ties Seminole's 1926 oil-boom growth (854 people to an estimated 25,000-30,000, National Register buildings from 1926-28) to the age of the pipe in older Seminole buildings, and pairs local winter, rainfall and ZIP-code facts with what each means on a plumbing call. All town facts are sourced in the page's comment header.",
+      "needs_confirmation": [
+        {
+          "fact": "Licensed contractor identity",
+          "question": "Oklahoma plumbing license number. The identity sentence says 'plumber based in Seminole' only; it cannot say 'licensed' until the number is confirmed.",
+          "where": "hero answer, why-Ledco block"
+        },
+        {
+          "fact": "Local project examples",
+          "question": "Any Seminole jobs Mickey is happy to describe (type of job, kind of building, what was found, no customer names). The page makes no claim about past work in town until you share some.",
+          "where": "boom-era section, services list"
+        },
+        {
+          "fact": "Ground-up pipe knowledge",
+          "question": "What does Mickey actually find in older Seminole houses (galvanized supply, cast-iron drain, clay sewer, polybutylene)? The page says 'commonly galvanized and cast iron' as general industry history.",
+          "where": "boom-era section"
+        },
+        {
+          "fact": "Photos",
+          "question": "Real job photos taken in Seminole (EXIF GPS on the originals) to place on this page.",
+          "where": "whole page"
+        }
+      ]
+    },
+    {
+      "path": "/service-areas/wewoka-ok/",
+      "useful_because": "Treats Wewoka as the Seminole County seat and Seminole Nation capital: five real landmarks (courthouse, Seminole Nation Museum, Andrew Jackson Brown house, J. Coody Johnson office building, post-office mural) each paired with the plumbing problem a building of that age and use tends to have, plus the straight-line trip from the Seminole office.",
+      "needs_confirmation": [
+        {
+          "fact": "Driving time",
+          "question": "How long is the usual drive from the Seminole office to Wewoka? The page gives about 10 miles straight-line, not a drive time.",
+          "where": "hero chip, trip section"
+        },
+        {
+          "fact": "Wewoka customers",
+          "question": "Types of Wewoka jobs and buildings you have worked on (homes, county or tribal buildings, shops). The landmark roster states that listing a building does not mean it is a customer.",
+          "where": "landmark roster, commercial plumbing card"
+        },
+        {
+          "fact": "Photos",
+          "question": "Real job photos taken in Wewoka (EXIF GPS on the originals).",
+          "where": "whole page"
+        }
+      ]
+    },
+    {
+      "path": "/blog/",
+      "useful_because": "Registry-driven index of the launch guides. Both launch posts use the branded Ledco card as the featured image until real photos exist.",
+      "needs_confirmation": [
+        {
+          "fact": "Photos",
+          "question": "Real job photos to replace the branded card as each post's featured image (set 'image' and 'alt' in includes/blog-data.php).",
+          "where": "blog index, both posts, homepage blog card"
+        }
+      ]
+    },
+    {
+      "path": "/blog/frozen-pipes-seminole-oklahoma/",
+      "useful_because": "Gives Seminole homeowners the local freeze numbers (January lows about 26 F, USDA zone 7b, 4.4 in of snow a year) and the order of steps before and after a hard freeze: main shutoff first, hoses, cabinet doors, dripping faucet, gentle thaw.",
+      "needs_confirmation": [
+        {
+          "fact": "After-hours / emergency service",
+          "question": "Do you take calls outside 7 AM-5 PM during a freeze or on holidays? The FAQ states only the listed hours and tells readers to close the main shutoff first.",
+          "where": "FAQ answer, sidebar hours"
+        },
+        {
+          "fact": "Freeze experience",
+          "question": "Anything Mickey has seen in Seminole freezes (which pipes split most, common weak spots in local houses) to add as first-hand detail.",
+          "where": "cold section"
+        }
+      ]
+    },
+    {
+      "path": "/blog/plumbing-repair-cost-seminole-ok/",
+      "useful_because": "Explains what moves the price of a plumbing repair (cause, location, parts, home vs business) and what an estimate should tell the customer. It prints NO dollar figures because intake holds no pricing.",
+      "needs_confirmation": [
+        {
+          "fact": "Typical price ranges",
+          "question": "Approved starting prices or ranges (clearing a sink drain, replacing a 40/50-gallon water heater, a sewer line repair, a leak repair). With them a 'typical range' table can be added.",
+          "where": "cost factors, water heater section"
+        },
+        {
+          "fact": "Estimate terms",
+          "question": "Free or paid, written or verbal, and any trip fee. The post only says the price comes before the work starts.",
+          "where": "estimate section, FAQ"
+        }
+      ]
     }
   ],
   "consolidate": []

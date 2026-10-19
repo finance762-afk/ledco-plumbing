@@ -271,6 +271,120 @@
           "where": "hero, recent-work strip, before/after slider"
         }
       ]
+    },
+    {
+      "path": "/about/",
+      "useful_because": "The About page is the only page that explains who owns Ledco Plumbing (Mickey Ledbetter), ties the Seminole oil-boom housing stock to the pipe problems the five services fix, and lists four things a customer can check themselves (street address, Google listing, phone line). It is written entirely from facts already in the intake, so every gap below is a fact the page wanted and left out.",
+      "needs_confirmation": [
+        {
+          "fact": "Year founded / years in business / milestones",
+          "question": "What year did Ledco Plumbing start, and what are 3-4 milestones (first truck, moving to E Oak Ave, first commercial account)? The page has no history timeline until these exist.",
+          "where": "about story, timeline"
+        },
+        {
+          "fact": "Oklahoma plumbing license number, insurance, bonding",
+          "question": "What is the license number, and may we say 'licensed and insured'? The page's credentials section currently proves only address, Google listing and phone.",
+          "where": "about 'Check us out' section, Terms section 4"
+        },
+        {
+          "fact": "Who does the work",
+          "question": "Does Mickey do the work himself, or is there a crew? May we name and photograph anyone?",
+          "where": "about story, team/values"
+        },
+        {
+          "fact": "Certifications, memberships, awards",
+          "question": "Any manufacturer certifications, trade associations or awards worth showing?",
+          "where": "about credentials"
+        },
+        {
+          "fact": "Real photos",
+          "question": "Please upload 8-12 photos (you, the truck, the office, jobs). The page has no split-content photos because none exist.",
+          "where": "about story, hero"
+        }
+      ]
+    },
+    {
+      "path": "/contact/",
+      "useful_because": "The Contact page is the only page with the full three-consent form, the office details, the live Google map and a plain account of what happens after a request is sent.",
+      "needs_confirmation": [
+        {
+          "fact": "Callback time",
+          "question": "How quickly does the office call back after a form (same day, next business day)? No time is promised on the page now.",
+          "where": "contact 'what happens next', thank-you page"
+        },
+        {
+          "fact": "After-hours / emergency calls",
+          "question": "Do you take calls outside 7 AM-5 PM? If so, which number?",
+          "where": "contact urgent box"
+        },
+        {
+          "fact": "Text messages",
+          "question": "Do you accept texts at (405) 257-3096? If yes the sticky bar gets a Text Us button.",
+          "where": "footer sticky bar"
+        },
+        {
+          "fact": "Job address field",
+          "question": "Do you want the customer's street address on the form?",
+          "where": "contact form"
+        }
+      ]
+    },
+    {
+      "path": "/faq/",
+      "useful_because": "The FAQ page is the only page that answers 18 questions in four groups (general, services, pricing, process) from facts already on the site, with each service question linking to its page.",
+      "needs_confirmation": [
+        {
+          "fact": "License and insurance answer",
+          "question": "Are your plumbers licensed and insured? A question for this was left out until the license number and insurance are confirmed.",
+          "where": "faq general"
+        },
+        {
+          "fact": "Free estimate / diagnostic fee",
+          "question": "Is every estimate free, written, and is there a trip or diagnostic fee? The pricing answers say only that the price comes before the work.",
+          "where": "faq pricing"
+        },
+        {
+          "fact": "Price ranges",
+          "question": "Starting prices for a sink drain, a 40/50-gallon water heater swap, a sewer repair?",
+          "where": "faq pricing"
+        },
+        {
+          "fact": "Equipment, septic, water heater fuel types, other towns",
+          "question": "Camera/jetter/leak-detection gear, septic work, gas/electric/tankless, towns beyond Seminole and Wewoka?",
+          "where": "faq services, general"
+        }
+      ]
+    },
+    {
+      "path": "/privacy-policy/ /terms/ /cookie-policy/ /accessibility/",
+      "useful_because": "The four legal pages are written from what the site actually does (leads endpoint, first-party p1_ft cookie, Google map, local-storage cookie notice).",
+      "needs_confirmation": [
+        {
+          "fact": "State of formation",
+          "question": "Which state is Ledco Plumbing LLC formed in? Governing law uses Oklahoma / Seminole County until confirmed.",
+          "where": "terms section 11"
+        },
+        {
+          "fact": "Warranty, payment and cancellation terms",
+          "question": "What warranty on labor do you give, when is payment due, and what is the cancellation rule? Terms refer to the written estimate instead of stating numbers.",
+          "where": "terms 5-7"
+        },
+        {
+          "fact": "Paid advertising / other states",
+          "question": "Do you run Google or Meta ads, and do you work outside Oklahoma?",
+          "where": "privacy policy"
+        },
+        {
+          "fact": "Google Analytics",
+          "question": "Cookie Policy describes GA4 as 'not switched on yet' until a real measurement ID replaces G-XXXXXXXXXX in config.php; the table adds the _ga row automatically.",
+          "where": "cookie policy"
+        },
+        {
+          "fact": "Attorney review",
+          "question": "Have a licensed Oklahoma attorney review the four legal pages before launch.",
+          "where": "all legal pages"
+        }
+      ]
     }
   ],
   "consolidate": []

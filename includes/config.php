@@ -149,6 +149,12 @@ $cssVersion = '2';   // the SINGLE framework.css cache-bust; bump here on every 
 $companyEntityType = 'LLC';
 $companyState      = 'Oklahoma';
 $companyCounty     = 'Seminole';
+// Display forms the legal pages print (all derived from the values above — nothing new is claimed)
+$companyName      = $siteName;
+$companyEmail     = $email;
+$companyPhone     = $phone;
+$companyPhoneE164 = $phoneE164;
+$companyAddress   = $address['street'] . ', ' . $address['city'] . ', ' . $address['state'] . ' ' . $address['zip'];
 
 // ---- Lead attribution (first-touch cookie + p1_attribution_fields()) — must stay last, before any output ----
 require_once __DIR__ . '/attribution.php';

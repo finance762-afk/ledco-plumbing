@@ -10,18 +10,18 @@
 
 /* === Self-hosted fonts (v6.2 — no Google Fonts CDN) === */
 @font-face {
-  font-family: 'Bricolage Grotesque';
+  font-family: 'Space Grotesk';
   font-style: normal;
-  font-weight: 400 800;
+  font-weight: 300 700;
   font-display: swap;
-  src: url('/assets/fonts/bricolage-grotesque.woff2') format('woff2');
+  src: url('/assets/fonts/space-grotesk.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Figtree';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: 400 900;
+  font-weight: 100 900;
   font-display: swap;
-  src: url('/assets/fonts/figtree.woff2') format('woff2');
+  src: url('/assets/fonts/inter.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Barlow Condensed';
@@ -70,8 +70,8 @@
   --color-neutral-warm: var(--color-paper-2);
 
   /* Type — 3-font system */
-  --font-heading: "Bricolage Grotesque", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  --font-body: "Figtree", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-heading: "Space Grotesk", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   --font-accent: "Barlow Condensed", 'Arial Narrow', 'Roboto Condensed', sans-serif;
 
   /* Fluid scale. H1 tops out ~42px desktop; pages never raise it. */
@@ -599,9 +599,112 @@ html.js-anim .reveal-d1, html.js-anim .reveal-delay-1 { transition-delay: .08s }
    Use when the client has one strong landscape/portrait photo. === */
 .hero-grid--visual { grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: clamp(1.5rem, 3vw, 3rem); align-items: center; }
 .hero-visual { position: relative; min-height: 560px; }
-.hero-visual__img { position: absolute; inset: 0; right: calc(-1 * max(0px, (100vw - var(--container)) / 2)); border-radius: var(--radius-lg) 0 0 var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); }
+.hero-visual__img { position: absolute; inset: 0; right: calc(-1 * (max(0px, (100vw - 1200px) / 2) + clamp(1rem, 4vw, 2rem))); border-radius: var(--radius-lg) 0 0 var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); }
 .hero-visual__img img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; }
 .hero-visual .photo-stack__tag { position: absolute; right: 1rem; top: 1rem; transform: none; z-index: 2; }
 .hero-visual .hero-form-card { position: absolute; left: -2rem; bottom: 1.5rem; width: 320px; z-index: 3; display: grid; }
 @media (max-width: 1120px) { .hero-visual .hero-form-card { left: 1rem; } }
 @media (max-width: 900px) { .hero-grid--visual { grid-template-columns: 1fr; gap: 1.5rem; } .hero-visual { min-height: 0; aspect-ratio: 16 / 10; } .hero-visual__img { right: 0; border-radius: var(--radius-lg); } .hero-visual .hero-form-card { display: none; } }
+
+/* ============================================================================
+   PHASE 2 (v7, 2026-10-19) — mandatory base rules + header/footer additions.
+   Archetype: minimal-tech (Space Grotesk + Inter, accent Barlow Condensed).
+   ============================================================================ */
+
+/* MANDATORY base rules — prevent section collision, clipping and text overflow */
+section {
+  position: relative;
+  overflow: hidden;
+  overflow: clip; /* same clipping, but no scroll container: keeps position:sticky (TOC sidebars) working */
+  padding: clamp(4rem, 10vh, 8rem) 0; /* MANDATORY — prevents section collision */
+}
+/* Heroes override the section padding. Zero-specificity :where() so the hero's own clearance
+   padding (.hero / .hero--interior: nav-height + gap) still wins — a plain `section.hero {padding:0}`
+   pushed every H1 under the fixed header on the first v7 build. */
+:where(section.hero) { padding: 0; }
+h1, h2, h3, h4 {
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+h1, h2, h3, h4 { font-weight: 700; } /* Space Grotesk tops out at 700 */
+p { overflow-wrap: anywhere; }
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 4vw, 2rem);
+}
+
+/* Text logo (no logo file supplied): inline-SVG monogram + name */
+.logo-mark { flex: 0 0 auto; width: 44px; height: 44px; border-radius: 10px; display: block; }
+.logo-text { display: grid; gap: 0; line-height: 1; }
+.site-header.scrolled .logo-mark { width: 40px; height: 40px; }
+.site-logo--text { gap: .75rem; }
+.site-footer .logo-name { color: #fff; font-size: 1.35rem; }
+.site-footer .brand-sub { color: rgba(255,255,255,.6); }
+.footer-logo { display: inline-flex; align-items: center; gap: .75rem; text-decoration: none; color: #fff; margin-bottom: 1rem; }
+.footer-logo img { margin-bottom: 0; }
+
+/* Header: dropdown + current-page states, phone button */
+.has-dropdown > .dropdown-toggle svg { width: 14px; height: 14px; transition: transform .2s var(--ease); }
+.has-dropdown:hover > .dropdown-toggle svg, .has-dropdown:focus-within > .dropdown-toggle svg { transform: rotate(180deg); }
+.dropdown a[aria-current="page"] { color: var(--color-ink); font-weight: 600; background: var(--color-paper-2); }
+.dropdown { list-style: none; }
+.dropdown .dropdown-all { margin-top: .25rem; padding-top: .25rem; border-top: 1px solid var(--color-line); }
+.dropdown .dropdown-all a { color: var(--color-primary); font-weight: 600; }
+.navbar-phone svg, .link-call svg, .mobile-cta-bar svg, .footer-nap svg, .nap svg, .btn svg { width: 18px; height: 18px; flex: 0 0 auto; }
+.mobile-menu-inner { max-width: 560px; margin: 0 auto; }
+.mobile-menu .sub { list-style: none; }
+.mobile-menu-links > li > a { display: flex; justify-content: space-between; align-items: center; }
+.mobile-menu-cta .btn { width: 100%; }
+.mobile-menu-cta .btn-outline-white { color: #fff; }
+.mobile-menu-meta { margin-top: 1.25rem; font-size: .85rem; color: rgba(255,255,255,.65); }
+
+/* Footer: legal row (legal-compliance.md) + hours + entity block */
+.footer-top { padding-bottom: 1rem; }
+.footer-col h4 { margin-top: 0; }
+.footer-hours { display: grid; gap: .25rem; font-size: .9rem; margin: 0 0 .8rem; }
+.footer-hours div { display: flex; justify-content: space-between; gap: 1rem; max-width: 18rem; }
+.footer-cta { margin-top: .9rem; }
+.footer-viewall { display: inline-block; margin-top: .6rem; font-weight: 600; color: var(--color-accent-bright); text-decoration: none; font-size: .93rem; }
+.footer-viewall:hover { text-decoration: underline; }
+.footer-bottom-bar { margin-top: 2.5rem; border-top: 1px solid rgba(255,255,255,.12); padding: 1.1rem 0 1.4rem; font-size: .82rem; color: rgba(255,255,255,.7); }
+.footer-bottom-bar .container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem 1.5rem; align-items: center; }
+.footer-bottom-bar a { color: rgba(255,255,255,.85); }
+.footer-legal-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: var(--space-xs) var(--space-sm); font-size: .85rem; padding: var(--space-md) 0 0; margin: 0; }
+.footer-legal-row a { color: rgba(255,255,255,.7); text-decoration: none; transition: color var(--transition); min-height: 44px; display: inline-flex; align-items: center; }
+.footer-legal-row a:hover, .footer-legal-row a:focus-visible { color: #fff; text-decoration: underline; }
+.footer-legal-row .divider { color: rgba(255,255,255,.3); font-size: .75rem; }
+@media (max-width: 767px) { .footer-legal-row .divider { display: none; } .footer-legal-row { gap: var(--space-xs) var(--space-md); } }
+.social-links { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .8rem; }
+.social-links a { min-height: 40px; padding: 0 .9rem; display: inline-flex; align-items: center; border: 1px solid rgba(255,255,255,.25); border-radius: 999px; color: #fff; text-decoration: none; font-size: .85rem; }
+.mobile-cta-bar a { color: #fff; }
+.mobile-cta-bar__estimate, .mobile-cta-bar__text { border: 0; font: inherit; font-weight: 600; cursor: pointer; }
+.mobile-cta-bar .mobile-cta-bar__estimate { color: #fff; } /* white on the brand orange = 5.2:1; ink on it was 3.1:1 */
+.mobile-cta-bar .mobile-cta-bar__text { color: var(--color-ink); }
+.btn-accent, .btn-nav-cta { color: #fff; } /* same contrast fix for the accent button */
+.back-to-top svg { transform: rotate(180deg); }
+.footer-legal-row { width: 100%; }
+.footer-copyright-row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem 1.5rem; align-items: center; margin-top: .4rem; }
+.mobile-menu-heading { display: block; padding: .8rem 0; font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: #fff; border-bottom: 1px solid rgba(255,255,255,.1); }
+.navbar-links > li > a[aria-current="true"]::after { transform: scaleX(1); }
+.site-footer .logo-mark { box-shadow: 0 0 0 1px rgba(255,255,255,.22); }
+/* image logos: keep the ratio-based height on mobile and when scrolled (the .logo--* rules above out-specify the generic ones) */
+.site-header.scrolled .site-logo img.logo--wordmark { height: 96px; } .site-header.scrolled .site-logo img.logo--square { height: 72px; }
+@media (max-width: 1000px) { .site-logo img.logo--wordmark, .site-logo img.logo--square, .site-header.scrolled .site-logo img.logo--wordmark, .site-header.scrolled .site-logo img.logo--square { height: 72px; } }
+.estimate-form { display: grid; gap: .7rem; }
+.estimate-dialog .dialog-head h2 { font-size: 1.25rem; }
+.cookie-bar a { text-decoration: underline; }
+.back-to-top svg { width: 20px; height: 20px; }
+
+/* Header bar: .navbar must fill the fixed bar so .navbar-inner (height:100%) can center its content;
+   near-opaque paper so the bar never turns muddy gray over a dark hero */
+.site-header .navbar { height: 100%; }
+.site-header { background: color-mix(in srgb, var(--color-paper) 96%, transparent); }
+.site-header.scrolled { background: color-mix(in srgb, var(--color-paper) 98%, transparent); }
+/* Typography-forward dark hero (minimal-tech archetype): legible eyebrow, answer sentence and chips */
+.hero--type .hero-eyebrow, .hero--type .eyebrow, .hero--type .eyebrow-label { color: var(--color-accent-bright); }
+.hero--type .hero-answer, .hero--type .hero-subtitle { color: rgba(255,255,255,.85); }
+.hero--type .hero-chips li, .hero--type .hero-trust-item { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.2); color: #fff; }
+.hero--type .hero-chips svg, .hero--type .hero-trust-item svg { color: var(--color-accent-bright); }
+.hero--type .text-accent { color: var(--color-accent-bright); }

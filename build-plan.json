@@ -74,13 +74,18 @@
     "recommended_hero_image": null
   },
   "design": {
-    "fonts": {},
+    "fonts": {
+      "heading": "Space Grotesk",
+      "body": "Inter",
+      "accent": "Barlow Condensed"
+    },
     "notes": "",
     "style": "modern",
     "colors": {
       "extracted_from_logo": true
     },
-    "logo_analysis": {}
+    "logo_analysis": {},
+    "archetype": "minimal-tech"
   },
   "domain": "ledco-plumbing",
   "phases": [

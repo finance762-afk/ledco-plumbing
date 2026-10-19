@@ -13,6 +13,7 @@ $siteName  = 'Ledco Plumbing LLC';                       // build-plan company_n
 $brandName = 'Ledco Plumbing';                           // short form for headings/copy
 $tagline   = '';                                         // none in build-plan
 $industry  = 'Plumber';
+$tier      = 'premium';                                  // build-plan tier
 $ownerName = 'Mickey Ledbetter';
 
 // ---- Contact (public NAP — GBP is the source of truth) ------------------------------------------
@@ -140,7 +141,7 @@ $textUsNumber   = '';   // integrations.text_us_number is null (accepts_sms fals
 $financing      = [];   // integrations.financing is null
 $serviceZips    = [];   // integrations.service_zips not provided
 
-$cssVersion = '1';   // the SINGLE framework.css cache-bust; bump here on every framework.css / critical.css change
+$cssVersion = '2';   // the SINGLE framework.css cache-bust; bump here on every framework.css / critical.css change
 
 // ---- Legal pages ------------------------------------------------------------------------------
 // Entity type comes from the registered name "Ledco Plumbing LLC". State of formation was not collected;

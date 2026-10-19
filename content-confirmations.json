@@ -1,0 +1,27 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "useful_because": "The homepage is the only page that puts all five Ledco Plumbing services side by side with a symptom guide that matches what a Seminole homeowner is actually seeing (one slow drain, several drains backing up, a jumping water bill, a split pipe after a hard freeze, a rumbling water heater) to the service that fixes it. It also names the owner, Mickey Ledbetter, shows the 316 E Oak Ave office on a map with directions, explains what to do in the first minutes of a leak (close the main shutoff), and walks through what happens after the estimate form is sent. Service pages go deep on one problem each; this page routes the visitor to the right one.",
+      "needs_confirmation": [
+        { "fact": "Oklahoma plumbing contractor license number", "question": "What is your Oklahoma plumbing contractor license number (Construction Industries Board)? We would like to show it on the site.", "where": "hero chips, proof strip, FAQ (a 'Are you licensed and insured?' answer was left out until this is confirmed)" },
+        { "fact": "Liability insurance / bonding", "question": "Do you carry general liability insurance (and are you bonded)? If so, may we say 'licensed and insured' on the site?", "where": "hero chips, FAQ" },
+        { "fact": "Year founded / years in business", "question": "What year did Ledco Plumbing start, and how many years has Mickey been plumbing?", "where": "proof strip, about section" },
+        { "fact": "After-hours / emergency availability", "question": "Do you take emergency calls outside 7 AM-5 PM (nights, holidays)? If yes, how should customers reach you after hours?", "where": "FAQ 'Do you offer emergency plumbing service', CTA band" },
+        { "fact": "Free estimates, and whether they are written", "question": "Is every estimate free? Is it a written price before work starts, and is there a trip or diagnostic fee for any job type?", "where": "hero form, FAQ cost answer, process step 3, page meta description" },
+        { "fact": "Typical price ranges", "question": "Can you share typical starting prices or ranges (for example, clearing a sink drain, replacing a 40/50-gallon water heater, a sewer line repair)?", "where": "FAQ cost answer, service cards" },
+        { "fact": "Response time", "question": "How quickly do you usually call back or get to a job (same day, next day)?", "where": "hero form tagline, 'What happens next' list" },
+        { "fact": "The real job process", "question": "Walk us through a typical job from the first call to the finished repair. Who comes out, what do they check first, and what does the customer get in writing?", "where": "about section process steps (currently a minimal 4-step outline)" },
+        { "fact": "Who does the work", "question": "Does Mickey do the work himself, or is there a crew? May we name anyone else on the team?", "where": "about section" },
+        { "fact": "Equipment", "question": "Do you use sewer camera inspection, hydro-jetting, or electronic leak-detection equipment?", "where": "drain cleaning, sewer line and leak detection cards" },
+        { "fact": "Water heater types", "question": "Which water heaters do you repair and install: gas, electric, tankless? Any brands you prefer?", "where": "water heater card, FAQ" },
+        { "fact": "Septic vs city sewer", "question": "Do you work on rural septic lines as well as city sewer lines?", "where": "sewer line card" },
+        { "fact": "Commercial work types", "question": "What kinds of commercial customers do you serve (restaurants, rentals, churches, schools, oilfield/industrial)?", "where": "commercial plumbing card" },
+        { "fact": "Additional towns served", "question": "Besides Seminole and Wewoka, which towns do you regularly work in (for example Konawa, Bowlegs, Maud, Cromwell, Shawnee)?", "where": "FAQ service-area answer, estimate section" },
+        { "fact": "Real job photos", "question": "Please upload 8-12 photos of your own jobs (water heaters you installed, sewer digs, your truck, you at work). The homepage currently has no photos.", "where": "hero, service cards, about section, recent-work gallery" },
+        { "fact": "Logo", "question": "Do you have a logo file (ideally SVG or a large PNG)? The site is using a text logo for now.", "where": "header, footer" }
+      ]
+    }
+  ],
+  "consolidate": []
+}

@@ -96,6 +96,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/logo.php';
 -->
 <?php endif; ?>
 
-<?php echo schemaScript($hdGraph), "\n"; ?>
+<?php /* JSON-LD: one <script type="application/ld+json"> @graph (see schemaScript() in functions.php) */ echo schemaScript($hdGraph), "\n"; ?>
 </head>
 <body class="page-<?php echo esc(preg_replace('/[^a-z0-9]+/', '-', strtolower($currentPage ?? 'page'))); ?><?php echo !empty($bodyClass) ? ' ' . esc($bodyClass) : ''; ?>">

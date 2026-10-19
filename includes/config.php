@@ -1,6 +1,6 @@
 <?php
 /**
- * includes/config.php — single source of site-wide variables (Ledco Plumbing LLC).
+ * includes/config.php — single source of site-wide variables (Ledco Plumbing).
  * Every value below traces to build-plan.json. Nothing here is invented; unknowns stay empty and the
  * templates omit anything empty.
  * UNKNOWN: tagline, social links, GA4 ID, founding year / years in business, license number, insurance,
@@ -9,7 +9,7 @@
 
 // ---- Identity ---------------------------------------------------------------------------------
 $slug      = 'ledco-plumbing';                           // exact build directory name
-$siteName  = 'Ledco Plumbing LLC';                       // build-plan company_name
+$siteName  = 'Ledco Plumbing';                          // build-plan company_name
 $brandName = 'Ledco Plumbing';                           // short form for headings/copy
 $tagline   = '';                                         // none in build-plan
 $industry  = 'Plumber';
@@ -21,10 +21,10 @@ $phone          = '(405) 257-3096';
 $phoneRaw       = '4052573096';
 $phoneE164      = '+14052573096';
 $phoneSecondary = '';
-$email          = 'mickey.ledbetter@yahoo.com';
+$email          = '';   // no public email: phone only (design fixes 2026-10-19)
 $contactEmail   = $email;
 // Lead routing only (server-side, never rendered)
-$leadNotificationEmail = 'mickey.ledbetter@yahoo.com';
+$leadNotificationEmail = 'customerservice@pageoneinsights.com';
 $leadNotificationPhone = '(405) 257-3096';
 
 // build-plan address_public: true — street address is published in the footer NAP and schema
@@ -34,7 +34,7 @@ $address = ['street' => '316 E Oak Ave', 'city' => 'Seminole', 'state' => 'OK', 
 // ---- Domain / URLs ----------------------------------------------------------------------------
 // build-plan has no production_domain (its "domain" field is just the slug), so the site runs on the
 // pageone.cloud host until a launch domain is set. Swap $domain here once the client's domain is known.
-$domain  = 'ledco-plumbing.pageone.cloud';
+$domain  = 'preview-ledco-plumbing.pageone.cloud';   // preview host until launch domain is set
 $siteUrl = 'https://' . $domain;
 // $canonicalUrl is NOT set here — each page sets its own from $siteUrl + path before head.php.
 
@@ -144,7 +144,7 @@ $serviceZips    = [];   // integrations.service_zips not provided
 $cssVersion = '3';   // the SINGLE framework.css cache-bust; bump here on every framework.css / critical.css change
 
 // ---- Legal pages ------------------------------------------------------------------------------
-// Entity type comes from the registered name "Ledco Plumbing LLC". State of formation was not collected;
+// Entity type comes from the registered name "Ledco Plumbing". State of formation was not collected;
 // governing law uses the state the business operates in (Seminole, Seminole County, OK) until confirmed.
 $companyEntityType = 'LLC';
 $companyState      = 'Oklahoma';

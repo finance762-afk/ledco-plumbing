@@ -15,7 +15,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  * Section script: interior type hero + category jump chips → General → ONE mid-page estimate band → Services →
  * Pricing → Process → closing CTA.
  */
-$pageTitle       = 'Plumbing FAQ for Seminole, OK | Ledco Plumbing LLC';
+$pageTitle       = 'Plumbing FAQ for Seminole, OK | Ledco Plumbing';
 $pageDescription = 'Answers to 18 plumbing questions from Seminole, OK customers on hours, costs, drain cleaning, water heaters, leaks and sewer lines. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/faq/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
@@ -32,16 +32,16 @@ $faqCats = [
         'label'  => 'General',
         'icon'   => 'info',
         'title'  => 'Who is Ledco Plumbing, and where does it work?',
-        'answer' => 'Ledco Plumbing LLC is a plumbing company owned by Mickey Ledbetter, based at 316 E Oak Ave in Seminole, Oklahoma. It works in Seminole and Wewoka, and the office takes calls seven days a week from 7 AM to 5 PM.',
+        'answer' => 'Ledco Plumbing is a plumbing company owned by Mickey Ledbetter, based at 316 E Oak Ave in Seminole, Oklahoma. It works in Seminole and Wewoka, and the office takes calls seven days a week from 7 AM to 5 PM.',
         'items'  => [
             ['q' => 'Who owns Ledco Plumbing?',
-             'a' => 'Mickey Ledbetter owns Ledco Plumbing LLC. The office is at 316 E Oak Ave in Seminole, and calling ' . $fqPhone . ' reaches it.'],
+             'a' => 'Mickey Ledbetter owns Ledco Plumbing. The office is at 316 E Oak Ave in Seminole, and calling ' . $fqPhone . ' reaches it.'],
             ['q' => 'Which areas around Seminole do you serve?',
-             'a' => 'Ledco Plumbing LLC serves Seminole and Wewoka from its office at 316 E Oak Ave in Seminole. If your home or business is elsewhere in Seminole County, call ' . $fqPhone . ' or send the form with your address, and the office will confirm whether a plumber can reach you.'],
+             'a' => 'Ledco Plumbing serves Seminole and Wewoka from its office at 316 E Oak Ave in Seminole. If your home or business is elsewhere in Seminole County, call ' . $fqPhone . ' or send the form with your address, and the office will confirm whether a plumber can reach you.'],
             ['q' => 'What are your hours?',
              'a' => 'The Ledco Plumbing office is open Monday through Sunday, 7 AM to 5 PM. Saturday and Sunday hours are the same as weekday hours.'],
-            ['q' => 'Do you offer emergency plumbing service in Seminole?',
-             'a' => 'Ledco Plumbing LLC takes calls for burst pipes, sewer backups and failed water heaters seven days a week, 7 AM to 5 PM. When water is actively leaking, call ' . $fqPhone . ' rather than using the form, and close the main shutoff valve while you wait so the damage stops spreading.'],
+            ['q' => 'Can I call about a burst pipe or sewer backup?',
+             'a' => 'Yes, during office hours: 7 AM to 5 PM, 7 days a week. When water is actively leaking, call ' . $fqPhone . ' rather than using the form, and close the main shutoff valve while you wait so the damage stops spreading.'],
             ['q' => 'Do you work on homes and businesses?',
              'a' => 'Yes. Ledco Plumbing repairs plumbing in Seminole and Wewoka houses, and it also does commercial plumbing for shops, offices and rental properties, including weekend calls.',
              'link' => ['/services/commercial-plumbing/', 'Commercial plumbing in Seminole']],
@@ -51,7 +51,7 @@ $faqCats = [
         'label'  => 'Services',
         'icon'   => 'wrench',
         'title'  => 'What plumbing problems can Ledco Plumbing fix?',
-        'answer' => 'Ledco Plumbing LLC fixes five kinds of plumbing problems: clogged drains, water heaters that fail or leak, hidden leaks, damaged or backed-up sewer lines, and commercial plumbing. Each has its own page, and the answers below cover the questions customers ask first about each one.',
+        'answer' => 'Ledco Plumbing fixes five kinds of plumbing problems: clogged drains, water heaters that fail or leak, hidden leaks, damaged or backed-up sewer lines, and commercial plumbing. Each has its own page, and the answers below cover the questions customers ask first about each one.',
         'items'  => [
             ['q' => 'What does drain cleaning cover?',
              'a' => 'Drain cleaning from Ledco Plumbing covers every drain in the building and the main line they all empty into: kitchen and bathroom sinks, tubs, showers, toilets, laundry standpipes and floor drains. The plumber finds which drain or line is blocked, clears it and runs water to show it flows.',
@@ -73,7 +73,7 @@ $faqCats = [
         'label'  => 'Pricing',
         'icon'   => 'clipboard-list',
         'title'  => 'How does Ledco Plumbing price a job?',
-        'answer' => 'Ledco Plumbing LLC prices a job after a plumber has seen the problem and before any work starts. The cost depends on what is wrong, the parts, and how hard the pipe or equipment is to reach, so a price over the phone is only a guide.',
+        'answer' => 'Ledco Plumbing prices a job after a plumber has seen the problem and before any work starts. The cost depends on what is wrong, the parts, and how hard the pipe or equipment is to reach, so a price over the phone is only a guide.',
         'items'  => [
             ['q' => 'How much does a plumbing repair or water heater replacement cost?',
              'a' => 'The price of a plumbing repair depends on the problem, the parts and how hard the pipe or tank is to reach, so Ledco Plumbing gives you an estimate before work starts. A water heater replacement also depends on the tank size and whether the heater runs on gas or electricity.'],
@@ -89,7 +89,7 @@ $faqCats = [
         'label'  => 'Process',
         'icon'   => 'route',
         'title'  => 'What happens when I call Ledco Plumbing?',
-        'answer' => 'When you call Ledco Plumbing LLC, the office asks what the problem is, then a plumber comes to look at it. You approve the price, the repair is made, and the water is run to check it. The questions below cover each step.',
+        'answer' => 'When you call Ledco Plumbing, the office asks what the problem is, then a plumber comes to look at it. You approve the price, the repair is made, and the water is run to check it. The questions below cover each step.',
         'items'  => [
             ['q' => 'How do I get an estimate?',
              'a' => 'Call ' . $fqPhone . ' or send the estimate form on the Contact page with your name, phone number, the service you need and a few lines about the problem. The office calls you back to set up a visit.',
@@ -110,7 +110,7 @@ foreach ($faqCats as $fqCat) foreach ($fqCat['items'] as $fqItem) $fqAll[] = ['q
 
 $pageSchema = [
     [
-        '@type'       => 'FAQPage',
+        '@type'       => 'WebPage',
         '@id'         => $fqBase . '/faq/#webpage',
         'url'         => $fqBase . '/faq/',
         'name'        => $pageTitle,
@@ -118,7 +118,6 @@ $pageSchema = [
         'isPartOf'    => ['@id' => schemaId('website')],
         'about'       => ['@id' => schemaId('organization')],
         'breadcrumb'  => ['@id' => $fqBase . '/faq/#breadcrumb'],
-        'mainEntity'  => generateFAQSchema($fqAll)['mainEntity'],
     ],
     ['@id' => $fqBase . '/faq/#breadcrumb'] + generateBreadcrumbSchema([['Home', '/'], ['FAQ', '/faq/']]),
 ];

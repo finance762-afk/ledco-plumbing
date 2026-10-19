@@ -108,7 +108,6 @@ $footAddrLine     = (!empty($addressPublic) && !empty($address['street']) ? $add
           <h4>Contact</h4>
           <div class="footer-nap">
             <div><?php icon('phone', 18); ?><a href="<?php echo esc($footPhoneHref); ?>"><?php echo esc($footPhone); ?></a></div>
-            <div><?php icon('mail', 18); ?><a href="mailto:<?php echo esc($email); ?>"><?php echo esc($email); ?></a></div>
             <div><?php icon('map-pin', 18); ?><span><?php echo esc($footAddrLine); ?></span></div>
           </div>
           <h4 style="margin-top:1.4rem">Hours</h4>
@@ -129,12 +128,17 @@ $footAddrLine     = (!empty($addressPublic) && !empty($address['street']) ? $add
 
       </div>
 
+<?php if (!empty($gbp['embed_src'])): ?>
+      <div class="footer-map map-embed" style="margin-top:var(--space-xl,2rem);max-width:720px">
+        <iframe src="<?php echo esc($gbp['embed_src']); ?>" title="Map of Ledco Plumbing at 316 E Oak Ave, Seminole, OK" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+<?php endif; ?>
+
       <!-- AEO entity block: NAP + who/what/where in plain sentences, on every page -->
       <div class="footer-entity" itemscope itemtype="https://schema.org/Plumber">
         <meta itemprop="name" content="<?php echo esc($siteName); ?>">
         <meta itemprop="url" content="<?php echo esc(rtrim($siteUrl, '/') . '/'); ?>">
         <meta itemprop="telephone" content="<?php echo esc($phoneE164); ?>">
-        <meta itemprop="email" content="<?php echo esc($email); ?>">
         <meta itemprop="description" content="<?php echo esc($businessDescription); ?>">
         <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
 <?php if (!empty($addressPublic) && !empty($address['street'])): ?>

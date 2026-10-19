@@ -13,8 +13,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  * Map: the real GBP embed from build-plan integrations.gbp_map_embed (config $gbp['embed_src']).
  * No response-time promise is printed — intake does not supply one (see /content-confirmations.json).
  */
-$pageTitle       = 'Contact Ledco Plumbing LLC | Plumber in Seminole, OK';
-$pageDescription = 'Call (405) 257-3096 or send a request online to Ledco Plumbing LLC at 316 E Oak Ave, Seminole, OK. Open 7 days, 7 AM to 5 PM, serving Seminole and Wewoka.';
+$pageTitle       = 'Contact Ledco Plumbing | Plumber in Seminole, OK';
+$pageDescription = 'Call (405) 257-3096 or send a request online to Ledco Plumbing at 316 E Oak Ave, Seminole, OK. Open 7 days, 7 AM to 5 PM, serving Seminole and Wewoka.';
 $canonicalUrl    = $siteUrl . '/contact/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'contact';
@@ -191,7 +191,7 @@ $schemaMarkup = $pageSchema;
 
             <label class="form-consent-item" for="contact-email-optin">
               <input id="contact-email-optin" type="checkbox" name="email_opt_in" value="yes" class="consent-checkbox">
-              <span class="consent-label"><strong>Email updates (optional):</strong> I agree to receive emails from <?php echo esc($siteName); ?> about my inquiry and services. I can unsubscribe at any time using the link in any email or by emailing <?php echo esc($contactEmail); ?>. Message frequency varies.</span>
+              <span class="consent-label"><strong>Email updates (optional):</strong> I agree to receive emails from <?php echo esc($siteName); ?> about my inquiry and services. I can unsubscribe at any time using the link in any email or by calling <?php echo esc($phone); ?>. Message frequency varies.</span>
             </label>
 
             <label class="form-consent-item" for="contact-sms-optin">
@@ -221,7 +221,6 @@ $schemaMarkup = $pageSchema;
           <h2 id="info-title">Ledco Plumbing contact details</h2>
           <dl>
             <div><dt><?php icon('phone', 16); ?> Phone</dt><dd><a href="<?php echo esc($ctPhoneHref); ?>"><?php echo esc($ctPhone); ?></a></dd></div>
-            <div><dt><?php icon('mail', 16); ?> Email</dt><dd><a href="mailto:<?php echo esc($email); ?>"><?php echo esc($email); ?></a></dd></div>
             <div><dt><?php icon('map-pin', 16); ?> Office</dt><dd><?php echo esc($address['street']); ?><small><?php echo esc($ctCity . ', ' . $address['state'] . ' ' . $address['zip']); ?></small></dd></div>
             <div><dt><?php icon('clock', 16); ?> Hours</dt><dd>
 <?php foreach ($ctHours as $ctHourRow): ?>
@@ -246,7 +245,7 @@ $schemaMarkup = $pageSchema;
         <a class="btn btn-primary" href="<?php echo esc($gbp['directions']); ?>" target="_blank" rel="noopener"><?php icon('map-pin', 18); ?> Get directions</a>
       </div>
       <div class="map-embed reveal-scale">
-        <iframe src="<?php echo esc($gbp['embed_src']); ?>" title="Map of Ledco Plumbing LLC at <?php echo esc($address['street'] . ', ' . $ctCity . ', ' . $address['state']); ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <iframe src="<?php echo esc($gbp['embed_src']); ?>" title="Map of Ledco Plumbing at <?php echo esc($address['street'] . ', ' . $ctCity . ', ' . $address['state']); ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
       </div>
     </div>
   </div>

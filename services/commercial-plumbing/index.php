@@ -19,8 +19,8 @@ $svcSlug = 'commercial-plumbing';
 $svc = null;
 foreach ($services as $svcItem) { if ($svcItem['slug'] === $svcSlug) { $svc = $svcItem; break; } }
 
-$pageTitle       = 'Commercial Plumbing Seminole OK | Ledco Plumbing LLC';
-$pageDescription = 'Commercial plumbing in Seminole, OK. Ledco Plumbing LLC repairs restrooms, drains, water heaters, leaks and sewer lines for businesses. Call (405) 257-3096.';
+$pageTitle       = 'Commercial Plumbing Seminole OK | Ledco Plumbing';
+$pageDescription = 'Commercial plumbing in Seminole, OK. Ledco Plumbing repairs restrooms, drains, water heaters, leaks and sewer lines for businesses. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/services/commercial-plumbing/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'services/commercial-plumbing';
@@ -34,12 +34,11 @@ $cpPhoneHref = phoneHref($phone);
 $faqs = [
     [
         'q' => 'Which areas around Seminole do you serve?',
-        'a' => 'Ledco Plumbing LLC serves businesses in Seminole and Wewoka from its office at 316 E Oak Ave in Seminole. If your building is elsewhere in Seminole County, call (405) 257-3096 or send the form with the address, and the office will confirm whether a plumber can reach you.',
+        'a' => 'Ledco Plumbing serves businesses in Seminole and Wewoka from its office at 316 E Oak Ave in Seminole. If your building is elsewhere in Seminole County, call (405) 257-3096 or send the form with the address, and the office will confirm whether a plumber can reach you.',
     ],
 ];
 
 $pageSchema   = generateServicePageSchema($svc, $pageTitle, $pageDescription);
-if ($faqs) $pageSchema[] = generateFAQSchema($faqs);   // FAQPage mirrors the visible FAQ exactly
 $schemaMarkup = $pageSchema;
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
@@ -218,7 +217,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">Seminole, OK &middot; Commercial</span>
         <h1 class="hero-title" id="hero-title"><span class="text-accent">Commercial plumbing</span> in Seminole, OK</h1>
-        <p class="hero-answer">Ledco Plumbing LLC handles plumbing repair for Seminole and Wewoka businesses: restrooms, kitchen and floor drains, water heaters, hidden leaks and sewer lines. The office takes calls seven days a week from 7 AM to 5 PM, so a weekend problem can be reported the day it happens.</p>
+        <p class="hero-answer">Ledco Plumbing handles plumbing repair for Seminole and Wewoka businesses: restrooms, kitchen and floor drains, water heaters, hidden leaks and sewer lines. The office takes calls seven days a week from 7 AM to 5 PM, so a weekend problem can be reported the day it happens.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-accent btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($cpPhoneHref); ?>"><?php icon('phone', 18); ?> or call <?php echo esc($cpPhone); ?></a>
@@ -291,7 +290,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
     <div class="section-title reveal-up">
       <span class="eyebrow-label">Service by service</span>
       <h2 id="map-title">How does each Ledco Plumbing service apply to a <span class="text-accent">commercial</span> building?</h2>
-      <p class="answer-block">Commercial plumbing from Ledco Plumbing LLC covers restroom fixtures plus the business side of its four other services in Seminole and Wewoka. The table shows what each one handles in a commercial building, from a single faucet to the sewer line that serves the whole property, so you can tell the office what kind of call it is.</p>
+      <p class="answer-block">Commercial plumbing from Ledco Plumbing covers restroom fixtures plus the business side of its four other services in Seminole and Wewoka. The table shows what each one handles in a commercial building, from a single faucet to the sewer line that serves the whole property, so you can tell the office what kind of call it is.</p>
     </div>
     <div class="cp-table-wrap reveal-up">
       <table class="cp-table">
@@ -342,7 +341,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
     <div class="section-title reveal-left">
       <span class="eyebrow-label">Hours</span>
       <h2 id="week-title">Can a business reach Ledco Plumbing on a <span class="text-accent">weekend</span>?</h2>
-      <p class="answer-block">Ledco Plumbing LLC takes calls from businesses on Saturdays and Sundays, 7 AM to 5 PM, the same hours as weekdays. For shops and offices that are busiest on weekends, or closed then and easier to work in, a problem can be called in the day it happens instead of waiting for Monday.</p>
+      <p class="answer-block">Ledco Plumbing takes calls from businesses on Saturdays and Sundays, 7 AM to 5 PM, the same hours as weekdays. For shops and offices that are busiest on weekends, or closed then and easier to work in, a problem can be called in the day it happens instead of waiting for Monday.</p>
     </div>
     <div class="reveal-right">
       <ul class="cp-days" aria-label="Ledco Plumbing office hours by day">
@@ -381,7 +380,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
       <div class="section-title reveal-left">
         <span class="eyebrow-label">The call</span>
         <h2 id="process-title">How does a commercial plumbing call with Ledco Plumbing work?</h2>
-        <p class="answer-block">A commercial call with Ledco Plumbing LLC follows the same order as a home job, with the business details added. You report the problem, a plumber checks it on site, the person who approves spending sees the estimate, and the repair is made and tested before the plumber leaves.</p>
+        <p class="answer-block">A commercial call with Ledco Plumbing follows the same order as a home job, with the business details added. You report the problem, a plumber checks it on site, the person who approves spending sees the estimate, and the repair is made and tested before the plumber leaves.</p>
         <p>The full list of Ledco services is on the <a href="/services/">Seminole plumbing services page</a>.</p>
       </div>
       <ol class="timeline reveal-right">
@@ -400,7 +399,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
     <div class="section-title reveal-up">
       <span class="eyebrow-label">Why Ledco Plumbing</span>
       <h2 id="why-title">Why do <span class="text-accent">Seminole</span> businesses call Ledco Plumbing?</h2>
-      <p class="answer-block">Seminole businesses call Ledco Plumbing LLC because one company covers drains, water heaters, leaks and the sewer line. The office is local on E Oak Ave, the phones are answered on weekends, and whoever approves the spending sees the price before the work begins.</p>
+      <p class="answer-block">Seminole businesses call Ledco Plumbing because one company covers drains, water heaters, leaks and the sewer line. The office is local on E Oak Ave, the phones are answered on weekends, and whoever approves the spending sees the price before the work begins.</p>
     </div>
     <ul class="cp-why__list reveal-up">
       <li><?php icon('layers', 22); ?><b>One plumber, five services</b><span>No separate calls for the drain, the heater and the sewer.</span></li>
@@ -424,7 +423,7 @@ if ($cpReviews !== ''): ?>
     <div class="section-title reveal-up">
       <span class="eyebrow-label">Questions</span>
       <h2 id="faq-title">Does Ledco Plumbing serve businesses outside <span class="text-accent">Seminole</span>?</h2>
-      <p class="answer-block">Ledco Plumbing LLC serves businesses in Seminole and Wewoka. For a building elsewhere in Seminole County, the office will tell you over the phone whether a plumber can reach it. The answer below gives the details and the number to call, so you know before you send a request.</p>
+      <p class="answer-block">Ledco Plumbing serves businesses in Seminole and Wewoka. For a building elsewhere in Seminole County, the office will tell you over the phone whether a plumber can reach it. The answer below gives the details and the number to call, so you know before you send a request.</p>
     </div>
     <div class="faq-grid reveal-up">
 <?php foreach ($faqs as $cpFaq): ?>
@@ -444,7 +443,7 @@ if ($cpReviews !== ''): ?>
     <div class="section-title reveal-up">
       <span class="eyebrow-label">What We Do</span>
       <h2>Which <span class="text-accent">Ledco Plumbing</span> services do commercial buildings use most?</h2>
-      <p class="answer-block">Commercial buildings in Seminole and Wewoka most often call Ledco Plumbing LLC for drain cleaning, water heater repair and installation, and leak detection and repair. Each one has its own page with the signs to watch for and how the work is done.</p>
+      <p class="answer-block">Commercial buildings in Seminole and Wewoka most often call Ledco Plumbing for drain cleaning, water heater repair and installation, and leak detection and repair. Each one has its own page with the signs to watch for and how the work is done.</p>
     </div>
     <div class="services-grid">
 <?php foreach (p1_other_services($svcSlug) as $cpIdx => $cpOther) p1_render_service_card($cpOther, $cpIdx + 1, 'reveal-up'); ?>

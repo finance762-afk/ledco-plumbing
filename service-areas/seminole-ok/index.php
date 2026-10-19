@@ -28,8 +28,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  */
 $areaSlug = 'seminole-ok';
 
-$pageTitle       = 'Plumber in Seminole, OK | Ledco Plumbing LLC, E Oak Ave';
-$pageDescription = 'Ledco Plumbing LLC, 316 E Oak Ave, Seminole, OK: drain cleaning, water heaters, leak detection, sewer lines, commercial plumbing. Call (405) 257-3096.';
+$pageTitle       = 'Plumber in Seminole, OK | Ledco Plumbing, E Oak Ave';
+$pageDescription = 'Ledco Plumbing, 316 E Oak Ave, Seminole, OK: drain cleaning, water heaters, leak detection, sewer lines, commercial plumbing. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/service-areas/seminole-ok/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'areas/seminole-ok';
@@ -42,7 +42,7 @@ $saPhoneHref = phoneHref($phone);
 $faqs = [
     [
         'q' => 'Does Ledco Plumbing serve every address in Seminole?',
-        'a' => 'Ledco Plumbing LLC works from its office at 316 E Oak Ave in Seminole and lists Seminole and Wewoka as its service areas. Seminole uses two ZIP codes, 74818 and 74868, and parts of the city lie in the Varnum, Butner and New Lima school districts, so give the office your street address at ' . $saPhone . ' and it will confirm whether the address is covered.',
+        'a' => 'Ledco Plumbing works from its office at 316 E Oak Ave in Seminole and lists Seminole and Wewoka as its service areas. Seminole uses two ZIP codes, 74818 and 74868, and parts of the city lie in the Varnum, Butner and New Lima school districts, so give the office your street address at ' . $saPhone . ' and it will confirm whether the address is covered.',
     ],
     [
         'q' => 'Can freezing weather damage plumbing in Seminole?',
@@ -54,7 +54,6 @@ $pageSchema = generateAreaPageSchema(
     ['name' => 'Seminole', 'slug' => $areaSlug, 'lat' => 35.235, 'lng' => -96.6494, 'sameAs' => 'https://en.wikipedia.org/wiki/Seminole,_Oklahoma'],
     $pageTitle, $pageDescription
 );
-if ($faqs) $pageSchema[] = generateFAQSchema($faqs);   // FAQPage mirrors the visible FAQ exactly
 $schemaMarkup = $pageSchema;
 
 $heroFormTitle   = 'Free estimate in Seminole';
@@ -234,7 +233,7 @@ $heroFormTagline = 'Tell us what is going on at your Seminole address and Ledco 
       <div class="hero-text hero-copy">
         <span class="eyebrow">Seminole, OK &middot; Plumbing</span>
         <h1 class="hero-title" id="hero-title"><span class="text-accent">Drain cleaning &amp; plumbing</span> in Seminole, OK</h1>
-        <p class="hero-answer">Ledco Plumbing LLC is based at 316 E Oak Ave in Seminole and handles drains, water heaters, leaks, sewer lines and commercial plumbing, seven days a week.</p>
+        <p class="hero-answer">Ledco Plumbing is based at 316 E Oak Ave in Seminole and handles drains, water heaters, leaks, sewer lines and commercial plumbing, seven days a week.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-accent btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($saPhoneHref); ?>"><?php icon('phone', 18); ?> or call <?php echo esc($saPhone); ?></a>
@@ -258,7 +257,7 @@ $heroFormTagline = 'Tell us what is going on at your Seminole address and Ledco 
       <div class="sem-boom__body reveal-left">
         <span class="eyebrow-label">Built in a hurry</span>
         <h2 id="boom-title">What does a town built by an oil boom mean for plumbing in <span class="text-accent">Seminole</span>?</h2>
-        <p class="answer-block">Seminole's oldest buildings went up fast. After a 1926 oil strike the town grew from 854 people to an estimated 25,000 to 30,000, and the plumbing in boom-era buildings is now close to a century old. Ledco Plumbing LLC, based on E Oak Ave in Seminole, treats the age of the pipe as the first question on an older building.</p>
+        <p class="answer-block">Seminole's oldest buildings went up fast. After a 1926 oil strike the town grew from 854 people to an estimated 25,000 to 30,000, and the plumbing in boom-era buildings is now close to a century old. Ledco Plumbing, based on E Oak Ave in Seminole, treats the age of the pipe as the first question on an older building.</p>
         <p>Three of the town's National Register landmarks come straight out of those years: the Home Stake Oil and Gas Company Building at 315 E Broadway (1927 to 1928), the W.E. Grisso Mansion, begun in 1926, and Strother Memorial Chapel in Maple Grove Cemetery (1928). Ordinary houses and storefronts from the same years are not landmarks, but they share the clock. Pipe installed in the late 1920s was commonly galvanized steel on the supply side and cast iron on the drain side, and both wear from the inside out.</p>
         <p>What that looks like on a service call: low water pressure at a fixture that used to run strong, brown water after the supply has sat unused, a drain line that clogs in the same spot every few months, a slow leak behind a wall that shows up first as a high water bill. A plumber confirms what a particular building actually has before quoting a repair, and some Seminole buildings have had pipe replaced over the decades. Ledco Plumbing's <a href="/services/leak-detection-repair/">leak detection and repair</a> and <a href="/services/drain-cleaning/">drain cleaning</a> cover the two most common results of old pipe, and a full replacement is priced the same way as any other job: you see the number before work starts.</p>
       </div>
@@ -277,7 +276,7 @@ $heroFormTagline = 'Tell us what is going on at your Seminole address and Ledco 
     <div class="section-title reveal-up">
       <span class="eyebrow-label">Seminole conditions</span>
       <h2 id="conditions-title">What local conditions does Ledco Plumbing plan around in <span class="text-accent">Seminole</span>?</h2>
-      <p class="answer-block">Ledco Plumbing LLC plans around four Seminole facts: a winter cold enough to freeze exposed pipe, about 43 inches of rain a year, a downtown and a college that put commercial plumbing in town, and a city split across two ZIP codes and several school districts. The table pairs each fact with what it means on a plumbing call.</p>
+      <p class="answer-block">Ledco Plumbing plans around four Seminole facts: a winter cold enough to freeze exposed pipe, about 43 inches of rain a year, a downtown and a college that put commercial plumbing in town, and a city split across two ZIP codes and several school districts. The table pairs each fact with what it means on a plumbing call.</p>
     </div>
     <div class="sem-table-wrap reveal-up">
       <table class="sem-table">
@@ -324,7 +323,7 @@ $heroFormTagline = 'Tell us what is going on at your Seminole address and Ledco 
       <div class="sem-services__intro reveal-left">
         <span class="eyebrow-label">What We Do</span>
         <h2 id="services-title">Which plumbing services can you get from Ledco Plumbing in <span class="text-accent">Seminole</span>?</h2>
-        <p class="answer-block">Ledco Plumbing LLC offers five services to Seminole homes and businesses: drain cleaning, water heater repair and installation, leak detection and repair, sewer line repair, and commercial plumbing. Each links to a page with the full scope. Below is how each one shows up in Seminole.</p>
+        <p class="answer-block">Ledco Plumbing offers five services to Seminole homes and businesses: drain cleaning, water heater repair and installation, leak detection and repair, sewer line repair, and commercial plumbing. Each links to a page with the full scope. Below is how each one shows up in Seminole.</p>
       </div>
       <ol class="sem-svc-list reveal-right">
         <li>
@@ -359,7 +358,7 @@ $heroFormTagline = 'Tell us what is going on at your Seminole address and Ledco 
     <div class="section-title reveal-up">
       <span class="eyebrow-label">Why Ledco Plumbing</span>
       <h2 id="why-title">Why call a plumber based right in <span class="text-accent">Seminole</span>?</h2>
-      <p class="answer-block">Ledco Plumbing LLC is owned by Mickey Ledbetter and operates from 316 E Oak Ave in Seminole. The office takes calls seven days a week, and you see the price before any work starts.</p>
+      <p class="answer-block">Ledco Plumbing is owned by Mickey Ledbetter and operates from 316 E Oak Ave in Seminole. The office takes calls seven days a week, and you see the price before any work starts.</p>
     </div>
     <ul class="sem-why__list reveal-up">
       <li><?php icon('map-pin', 22); ?><b>Office on E Oak Ave</b><span>316 E Oak Ave, Seminole, OK 74868. Directions are on the homepage and the contact page.</span></li>
@@ -370,13 +369,27 @@ $heroFormTagline = 'Tell us what is going on at your Seminole address and Ledco 
   </div>
 </section>
 
+<!-- ============================================================ MAP -->
+<section class="section sem-map" id="map" aria-labelledby="map-title">
+  <div class="container">
+    <div class="section-title reveal-up">
+      <span class="eyebrow-label">Find us</span>
+      <h2 id="map-title">Where is the Ledco Plumbing office?</h2>
+      <p>The office is at 316 E Oak Ave in Seminole, open 7 AM to 5 PM, 7 days a week.</p>
+    </div>
+    <div class="map-embed">
+      <iframe src="<?php echo esc($gbp['embed_src']); ?>" title="Map of Ledco Plumbing at 316 E Oak Ave, Seminole, OK" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
 <!-- ============================================================ FAQ -->
 <section class="section sem-faq" id="faq" aria-labelledby="faq-title">
   <div class="container">
     <div class="section-title reveal-up">
       <span class="eyebrow-label">Questions</span>
       <h2 id="faq-title">What do Seminole customers ask about <span class="text-accent">plumbing service</span>?</h2>
-      <p class="answer-block">Seminole customers ask whether an address just outside town is covered, and whether freezing weather is a real plumbing risk. Ledco Plumbing LLC answers both below. For anything else, call the office at <?php echo esc($saPhone); ?>.</p>
+      <p class="answer-block">Seminole customers ask whether an address just outside town is covered, and whether freezing weather is a real plumbing risk. Ledco Plumbing answers both below. For anything else, call the office at <?php echo esc($saPhone); ?>.</p>
     </div>
     <div class="faq-grid reveal-up">
 <?php foreach ($faqs as $saFaqIdx => $saFaq): ?>
@@ -395,7 +408,7 @@ $heroFormTagline = 'Tell us what is going on at your Seminole address and Ledco 
 <section class="section sem-next" aria-label="Nearby service area">
   <div class="container">
     <div class="sem-next__inner reveal-up">
-      <p>Ledco Plumbing LLC also serves Wewoka, the Seminole County seat, about 10 miles southeast of the Seminole office. Read what Ledco plans around there on the <a href="/service-areas/wewoka-ok/">Wewoka plumbing page</a>, or see <a href="/service-areas/">all service areas</a>.</p>
+      <p>Ledco Plumbing also serves Wewoka, the Seminole County seat, about 10 miles southeast of the Seminole office. Read what Ledco plans around there on the <a href="/service-areas/wewoka-ok/">Wewoka plumbing page</a>, or see <a href="/service-areas/">all service areas</a>.</p>
       <a class="btn btn-primary" href="/service-areas/wewoka-ok/">Plumbing in Wewoka</a>
     </div>
   </div>

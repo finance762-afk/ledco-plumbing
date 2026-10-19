@@ -46,7 +46,7 @@ $bpToc = [
 $faqs = [
     [
         'q' => 'Does Ledco Plumbing publish a price list?',
-        'a' => 'No. Ledco Plumbing LLC does not print a price list on this site, because the price depends on what is wrong, where the pipe is and which parts it needs. The company prices a job after a plumber has seen the problem, and you see the price before any work starts. Call ' . $bpPhone . ' to start.',
+        'a' => 'No. Ledco Plumbing does not print a price list on this site, because the price depends on what is wrong, where the pipe is and which parts it needs. The company prices a job after a plumber has seen the problem, and you see the price before any work starts. Call ' . $bpPhone . ' to start.',
     ],
     [
         'q' => 'Why do two plumbers quote different prices for the same problem?',
@@ -70,7 +70,6 @@ $pageSchema = [
         'mainEntityOfPage' => $canonicalUrl,
     ],
     ['@id' => $canonicalUrl . '#breadcrumb'] + generateBreadcrumbSchema([['Home', '/'], ['Blog', '/blog/'], [$post['title'], '/blog/' . $postSlug . '/']]),
-    generateFAQSchema($faqs),
 ];
 $schemaMarkup = $pageSchema;
 ?>
@@ -109,7 +108,7 @@ $schemaMarkup = $pageSchema;
           <img src="<?php echo esc($post['image']); ?>" alt="<?php echo esc($post['alt']); ?>" width="960" height="504" loading="eager" decoding="async">
         </figure>
         <div class="blog-post__content">
-          <p class="answer-block">Four things set the price of a plumbing repair in Seminole: what is actually wrong, where the pipe is, which parts it needs, and whether the building is a home or a business. Ledco Plumbing LLC prices a job after a plumber has seen it, and you see the price before work starts.</p>
+          <p class="answer-block">Four things set the price of a plumbing repair in Seminole: what is actually wrong, where the pipe is, which parts it needs, and whether the building is a home or a business. Ledco Plumbing prices a job after a plumber has seen it, and you see the price before work starts.</p>
 
           <section id="factors" aria-labelledby="factors-title">
             <h2 id="factors-title">What four things decide the price of a plumbing repair?</h2>
@@ -163,7 +162,7 @@ $schemaMarkup = $pageSchema;
               <li>The total price for that work.</li>
               <li>What could change the price, such as a pipe that turns out to be worse than it looked.</li>
             </ul>
-            <p>Ask for it in writing or by email if you want a record. Ledco Plumbing LLC gives the price before work starts; call the Seminole office at <a href="<?php echo esc(phoneHref($phone)); ?>"><?php echo esc($bpPhone); ?></a> to describe the problem.</p>
+            <p>Ask for it in writing or by email if you want a record. Ledco Plumbing gives the price before work starts; call the Seminole office at <a href="<?php echo esc(phoneHref($phone)); ?>"><?php echo esc($bpPhone); ?></a> to describe the problem.</p>
           </section>
 
           <section id="early" aria-labelledby="early-title">

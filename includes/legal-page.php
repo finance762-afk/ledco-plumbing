@@ -73,7 +73,6 @@ if (!function_exists('p1_legal_contact')) {
     function p1_legal_contact(): string {
         global $companyName, $companyEmail, $companyPhone, $companyPhoneE164, $companyAddress;
         return '<address><strong>' . esc($companyName) . '</strong><br>'
-             . 'Email: <a href="mailto:' . esc($companyEmail) . '">' . esc($companyEmail) . '</a><br>'
              . 'Phone: <a href="tel:' . esc($companyPhoneE164) . '">' . esc($companyPhone) . '</a><br>'
              . 'Address: ' . esc($companyAddress) . '</address>';
     }

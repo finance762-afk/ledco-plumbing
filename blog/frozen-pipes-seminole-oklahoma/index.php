@@ -47,7 +47,7 @@ $faqs = [
     ],
     [
         'q' => 'What hours is Ledco Plumbing open if a pipe freezes?',
-        'a' => 'The listed hours for Ledco Plumbing LLC are Monday through Sunday, 7 AM to 5 PM, at ' . $bpPhone . '. Whatever the hour, close the main shutoff valve first: that stops the water and limits the damage while you reach a plumber.',
+        'a' => 'The listed hours for Ledco Plumbing are Monday through Sunday, 7 AM to 5 PM, at ' . $bpPhone . '. Whatever the hour, close the main shutoff valve first: that stops the water and limits the damage while you reach a plumber.',
     ],
 ];
 
@@ -67,7 +67,6 @@ $pageSchema = [
         'mainEntityOfPage' => $canonicalUrl,
     ],
     ['@id' => $canonicalUrl . '#breadcrumb'] + generateBreadcrumbSchema([['Home', '/'], ['Blog', '/blog/'], [$post['title'], '/blog/' . $postSlug . '/']]),
-    generateFAQSchema($faqs),
 ];
 $schemaMarkup = $pageSchema;
 ?>
@@ -166,7 +165,7 @@ $schemaMarkup = $pageSchema;
           <section id="hidden" aria-labelledby="hidden-title">
             <h2 id="hidden-title">How can you tell if a freeze damaged a pipe you cannot see?</h2>
             <p>Check three things after the thaw: the water meter with every fixture off, the walls and ceilings under the coldest pipes, and the water bill. A split pipe often does not leak until the ice melts, so the damage can show a day or more after the freeze ends.</p>
-            <p>If the meter dial moves with everything off, or a ceiling stain appears under a bathroom or an exterior wall, a pipe is leaking. Finding which pipe, without opening every wall, is what <a href="/services/leak-detection-repair/">leak detection and repair</a> is for. Ledco Plumbing LLC works from its office at 316 E Oak Ave in Seminole and takes calls Monday through Sunday, 7 AM to 5 PM.</p>
+            <p>If the meter dial moves with everything off, or a ceiling stain appears under a bathroom or an exterior wall, a pipe is leaking. Finding which pipe, without opening every wall, is what <a href="/services/leak-detection-repair/">leak detection and repair</a> is for. Ledco Plumbing works from its office at 316 E Oak Ave in Seminole and takes calls Monday through Sunday, 7 AM to 5 PM.</p>
           </section>
 
           <section id="faq" class="bp-faq" aria-labelledby="faq-title">

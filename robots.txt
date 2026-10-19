@@ -1,4 +1,4 @@
-# robots.txt — Ledco Plumbing LLC, Seminole, OK
+# robots.txt — Ledco Plumbing, Seminole, OK
 # All crawlers (including AI crawlers) are welcome. Legal pages are indexable.
 # /thank-you and the 404 page are kept out of the index with a noindex meta tag, not here,
 # so crawlers can still read the tag.
@@ -7,4 +7,4 @@ Allow: /
 Disallow: /includes/
 Disallow: /assets/js/
 
-Sitemap: https://ledco-plumbing.pageone.cloud/sitemap.xml
+Sitemap: https://preview-ledco-plumbing.pageone.cloud/sitemap.xml

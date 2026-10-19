@@ -24,8 +24,8 @@ $svcSlug = 'leak-detection-repair';
 $svc = null;
 foreach ($services as $svcItem) { if ($svcItem['slug'] === $svcSlug) { $svc = $svcItem; break; } }
 
-$pageTitle       = 'Leak Detection & Repair Seminole OK | Ledco Plumbing LLC';
-$pageDescription = 'Leak detection and repair in Seminole, OK. Ledco Plumbing LLC traces high water bills and hidden leaks in walls, slabs and yard lines. Call (405) 257-3096.';
+$pageTitle       = 'Leak Detection & Repair Seminole OK | Ledco Plumbing';
+$pageDescription = 'Leak detection and repair in Seminole, OK. Ledco Plumbing traces high water bills and hidden leaks in walls, slabs and yard lines. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/services/leak-detection-repair/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'services/leak-detection-repair';
@@ -38,13 +38,12 @@ $ldPhoneHref = phoneHref($phone);
 // FAQ — research_brief question (emergency service: burst pipes), answered from intake only
 $faqs = [
     [
-        'q' => 'Do you offer emergency plumbing service in Seminole?',
-        'a' => 'Ledco Plumbing LLC takes calls seven days a week from 7 AM to 5 PM. For a burst pipe, close the main shutoff valve first, usually where the water line enters the house or inside the meter box near the street, then call (405) 257-3096 rather than sending the form so the office hears about it right away.',
+        'q' => 'What are your hours?',
+        'a' => 'Ledco Plumbing is open 7 AM to 5 PM, 7 days a week. For a burst pipe, close the main shutoff valve first, usually where the water line enters the house or inside the meter box near the street, then call (405) 257-3096 rather than sending the form so the office hears about it right away.',
     ],
 ];
 
 $pageSchema   = generateServicePageSchema($svc, $pageTitle, $pageDescription);
-if ($faqs) $pageSchema[] = generateFAQSchema($faqs);   // FAQPage mirrors the visible FAQ exactly
 $schemaMarkup = $pageSchema;
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
@@ -232,7 +231,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">Seminole, OK &middot; Leak detection</span>
         <h1 class="hero-title" id="hero-title"><span class="text-accent">Leak detection</span> &amp; repair in Seminole, OK</h1>
-        <p class="hero-answer">Ledco Plumbing LLC finds hidden water leaks in walls, floors, slabs and yard lines, then repairs the pipe, for homes and businesses in Seminole and Wewoka. If the water bill jumped or you can hear water running with everything off, call <?php echo esc($ldPhone); ?> or send the form.</p>
+        <p class="hero-answer">Ledco Plumbing finds hidden water leaks in walls, floors, slabs and yard lines, then repairs the pipe, for homes and businesses in Seminole and Wewoka. If the water bill jumped or you can hear water running with everything off, call <?php echo esc($ldPhone); ?> or send the form.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-accent btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($ldPhoneHref); ?>"><?php icon('phone', 18); ?> or call <?php echo esc($ldPhone); ?></a>
@@ -404,7 +403,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
       <div class="section-title reveal-right">
         <span class="eyebrow-label">Find, then fix</span>
         <h2 id="process-title">How does Ledco Plumbing find and repair a leak?</h2>
-        <p class="answer-block">Ledco Plumbing LLC finds a leak by working from the outside in, then opens only what is needed to reach the pipe. The plumber confirms the leak at the meter, narrows it to inside or outside the house, and pins down the spot. You approve the repair price before a wall is opened or the ground is dug.</p>
+        <p class="answer-block">Ledco Plumbing finds a leak by working from the outside in, then opens only what is needed to reach the pipe. The plumber confirms the leak at the meter, narrows it to inside or outside the house, and pins down the spot. You approve the repair price before a wall is opened or the ground is dug.</p>
         <p>Not every leak is a pipe. When the trail ends at a toilet or the water heater, the fix is a part, not a hole in the wall. When it ends at a drain or the sewer, see <a href="/services/sewer-line-repair/">sewer line repair</a>. Everything else Ledco does is on the <a href="/services/">services page</a>.</p>
       </div>
       <ol class="timeline reveal-left">
@@ -423,7 +422,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
     <div class="section-title reveal-up">
       <span class="eyebrow-label">Why Ledco Plumbing</span>
       <h2 id="why-title">Why call Ledco Plumbing about a leak in <span class="text-accent">Seminole</span>?</h2>
-      <p class="answer-block">Ledco Plumbing LLC handles leaks, water heaters, drains and sewer lines, so the search does not stop at the edge of one trade. The company is based at 316 E Oak Ave in Seminole, you see the repair price before anything is opened, and calls are taken every day of the week.</p>
+      <p class="answer-block">Ledco Plumbing handles leaks, water heaters, drains and sewer lines, so the search does not stop at the edge of one trade. The company is based at 316 E Oak Ave in Seminole, you see the repair price before anything is opened, and calls are taken every day of the week.</p>
     </div>
     <ul class="ld-why__list reveal-up">
       <li><?php icon('search', 22); ?><b>The whole trail</b><span>Supply lines, fixtures, the water heater and the sewer are all Ledco work.</span></li>
@@ -467,7 +466,7 @@ if ($ldReviews !== ''): ?>
     <div class="section-title reveal-up">
       <span class="eyebrow-label">What We Do</span>
       <h2>What else can <span class="text-accent">Ledco Plumbing</span> fix while it is there?</h2>
-      <p class="answer-block">Besides finding and repairing leaks, Ledco Plumbing LLC repairs sewer lines, handles commercial plumbing, clears drains and repairs or installs water heaters in Seminole and Wewoka. The three below each have their own page with the warning signs and how the work is done.</p>
+      <p class="answer-block">Besides finding and repairing leaks, Ledco Plumbing repairs sewer lines, handles commercial plumbing, clears drains and repairs or installs water heaters in Seminole and Wewoka. The three below each have their own page with the warning signs and how the work is done.</p>
     </div>
     <div class="services-grid">
 <?php foreach (p1_other_services($svcSlug) as $ldIdx => $ldOther) p1_render_service_card($ldOther, $ldIdx + 1, 'reveal-up'); ?>

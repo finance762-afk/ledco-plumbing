@@ -10,8 +10,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  * comes before the work. No response-time promise (not in intake). The Google review link is from build-plan
  * integrations.review_request_url.
  */
-$pageTitle       = 'Thank You | Ledco Plumbing LLC, Seminole, OK';
-$pageDescription = 'Your request reached Ledco Plumbing LLC in Seminole, OK. The office will call the number you gave. For a leak or backup right now, call ' . $phone . '.';
+$pageTitle       = 'Thank You | Ledco Plumbing, Seminole, OK';
+$pageDescription = 'Your request reached Ledco Plumbing in Seminole, OK. The office will call the number you gave. For a leak or backup right now, call ' . $phone . '.';
 $canonicalUrl    = $siteUrl . '/thank-you';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'thank-you';

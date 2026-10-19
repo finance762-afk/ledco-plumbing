@@ -204,7 +204,6 @@ if (!function_exists('localBusinessSchema')) {
             'name'        => $siteName,
             'url'         => rtrim((string) $siteUrl, '/') . '/',
             'telephone'   => $phoneE164,
-            'email'       => $email,
             'description' => $businessDescription,
             'address'     => $addr,
         ];
@@ -301,7 +300,6 @@ if (!function_exists('generateServicePageSchema')) {
             ],
             ['@id' => $url . '#breadcrumb'] + generateBreadcrumbSchema([['Home', '/'], ['Services', '/services/'], [$service['name'], '/services/' . $service['slug'] . '/']]),
         ];
-        if ($faqs) $nodes[] = generateFAQSchema($faqs);
         return $nodes;
     }
 }
@@ -336,7 +334,6 @@ if (!function_exists('generateAreaPageSchema')) {
             ['@id' => $url . '#breadcrumb'] + generateBreadcrumbSchema([['Home', '/'], ['Service Areas', P1_AREAS_HUB], [$city['name'] . ', OK', '/service-areas/' . $city['slug'] . '/']]),
             ['@type' => 'Plumber', '@id' => schemaId('organization'), 'areaServed' => $place],
         ];
-        if ($faqs) $nodes[] = generateFAQSchema($faqs);
         return $nodes;
     }
 }

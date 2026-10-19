@@ -4,7 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 ?>
 <?php
 /**
- * index.php — Ledco Plumbing LLC homepage (Phase 3, v7 scaffold, archetype minimal-tech).
+ * index.php — Ledco Plumbing homepage (Phase 3, v7 scaffold, archetype minimal-tech).
  *
  * Section script (editorial — the intake has no client photos, so no gallery and a typography hero):
  *   hero--type → ticker → services → proof strip → symptom guide (signature, C7) → about/process
@@ -19,7 +19,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  *   https://www.okhistory.org/publications/enc/entry?entry=GR020  ("Greater Seminole Oil Field")
  */
 $pageTitle       = 'Drain Cleaning & Plumber in Seminole, OK | Ledco Plumbing';
-$pageDescription = 'Ledco Plumbing LLC in Seminole, OK: drain cleaning, water heaters, leak detection, sewer lines and commercial plumbing. Open 7 days. Call (405) 257-3096.';
+$pageDescription = 'Ledco Plumbing in Seminole, OK: drain cleaning, water heaters, leak detection, sewer lines and commercial plumbing. Open 7 days. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'home';
@@ -74,8 +74,8 @@ $homeSymptoms = [
 // ---- FAQ: drawn from the research brief's customer questions only; no unverified claims ------------
 $homeFaqs = [
     [
-        'q' => 'Do you offer emergency plumbing service in Seminole?',
-        'a' => 'Ledco Plumbing LLC takes calls for burst pipes, sewer backups and failed water heaters seven days a week, 7 AM to 5 PM. When water is actively leaking, call (405) 257-3096 rather than using the form, and close the main shutoff valve while you wait so the damage stops spreading.',
+        'q' => 'What are your hours?',
+        'a' => 'Ledco Plumbing is open 7 AM to 5 PM, 7 days a week, including for burst pipes, sewer backups and failed water heaters. When water is actively leaking, call (405) 257-3096 rather than using the form, and close the main shutoff valve while you wait so the damage stops spreading.',
     ],
     [
         'q' => 'How much does a plumbing repair or water heater replacement cost?',
@@ -87,7 +87,7 @@ $homeFaqs = [
     ],
     [
         'q' => 'Which areas around Seminole do you serve?',
-        'a' => 'Ledco Plumbing LLC serves Seminole and Wewoka from its office at 316 E Oak Ave in Seminole. If your home or business is elsewhere in Seminole County, call (405) 257-3096 or send the form with your address and the office will confirm whether a plumber can reach you.',
+        'a' => 'Ledco Plumbing serves Seminole and Wewoka from its office at 316 E Oak Ave in Seminole. If your home or business is elsewhere in Seminole County, call (405) 257-3096 or send the form with your address and the office will confirm whether a plumber can reach you.',
     ],
 ];
 
@@ -110,7 +110,6 @@ $pageSchema = [
         'isPartOf'    => ['@id' => schemaId('website')],
         'about'       => ['@id' => schemaId('organization')],
     ],
-    generateFAQSchema($homeFaqs),
 ];
 $schemaMarkup = $pageSchema;
 ?>
@@ -384,7 +383,7 @@ $schemaMarkup = $pageSchema;
       <div class="hero-text">
         <span class="eyebrow"><?php echo esc($homeCity . ', ' . $homeState); ?> &middot; <?php echo esc($companyCounty); ?> County</span>
         <h1 class="hero-title" id="hero-title"><span class="text-accent">Drain cleaning</span> &amp; plumbing repair in <?php echo esc($homeCity); ?>, <?php echo esc($homeState); ?></h1>
-        <p class="hero-answer">Ledco Plumbing LLC is a Seminole, Oklahoma plumber for clogged drains, water heaters, hidden leaks and broken sewer lines. The company handles repair and new installation work in homes, shops and offices across Seminole and Wewoka.</p>
+        <p class="hero-answer">Ledco Plumbing is a Seminole, Oklahoma plumber for clogged drains, water heaters, hidden leaks and broken sewer lines. The company handles repair and new installation work in homes, shops and offices across Seminole and Wewoka.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-accent btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($homePhoneHref); ?>"><?php icon('phone', 18); ?> or call <?php echo esc($homePhone); ?></a>
@@ -435,7 +434,7 @@ for ($homeLoop = 0; $homeLoop < 2; $homeLoop++):
     <div class="section-title reveal-up">
       <span class="eyebrow-label">What We Do</span>
       <h2>Which plumbing problems does <span class="text-accent">Ledco Plumbing</span> fix in <span class="text-accent">Seminole</span>?</h2>
-      <p class="hero-answer">Ledco Plumbing LLC handles five kinds of plumbing work in Seminole and Wewoka: drain cleaning, water heater repair and installation, leak detection and repair, sewer line repair, and commercial plumbing. If you are not sure which one fits, the symptom guide below matches common warning signs to the right service.</p>
+      <p class="hero-answer">Ledco Plumbing handles five kinds of plumbing work in Seminole and Wewoka: drain cleaning, water heater repair and installation, leak detection and repair, sewer line repair, and commercial plumbing. If you are not sure which one fits, the symptom guide below matches common warning signs to the right service.</p>
     </div>
 
     <div class="services-grid services-grid--featured">
@@ -555,7 +554,7 @@ foreach ($services as $homeIdx => $homeSvc):
       <div class="about-left reveal-left">
         <span class="eyebrow-label">About Ledco Plumbing</span>
         <h2 id="about-title">Who runs <span class="text-accent">Ledco Plumbing</span> in Seminole?</h2>
-        <p>Ledco Plumbing LLC is a Seminole plumbing company owned by Mickey Ledbetter, with an office at 316 E Oak Ave. The company works on homes and businesses in Seminole and Wewoka, and its five services run from a single stopped-up sink to a broken sewer line.</p>
+        <p>Ledco Plumbing is a Seminole plumbing company owned by Mickey Ledbetter, with an office at 316 E Oak Ave. The company works on homes and businesses in Seminole and Wewoka, and its five services run from a single stopped-up sink to a broken sewer line.</p>
         <p>Seminole grew quickly during the oil boom of the late 1920s, so older houses stand alongside newer homes and commercial buildings across town. Older plumbing, such as cast-iron drains and galvanized supply pipe, is a common source of slow drains and hidden leaks, which is why each job starts with a look at the actual pipe before any repair is priced.</p>
 
         <h3>How a Ledco Plumbing job works</h3>
@@ -570,7 +569,7 @@ foreach ($services as $homeIdx => $homeSvc):
       <div class="about-right reveal-right">
         <div class="about-map">
           <div class="about-map__fallback" aria-hidden="true"><?php icon('map-pin', 36); ?><span><?php echo esc($address['street'] . ', ' . $homeCity); ?></span></div>
-          <iframe src="<?php echo esc($gbp['embed_src']); ?>" title="Map of Ledco Plumbing LLC at <?php echo esc($address['street'] . ', ' . $homeCity . ', ' . $homeState); ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <iframe src="<?php echo esc($gbp['embed_src']); ?>" title="Map of Ledco Plumbing at <?php echo esc($address['street'] . ', ' . $homeCity . ', ' . $homeState); ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
         </div>
         <div class="about-stat-card">
           <b>Seminole office</b>
@@ -605,7 +604,7 @@ if ($homePost): ?>
       <div class="home-blog__intro reveal-left">
         <span class="eyebrow-label">From the Blog</span>
         <h2 id="blog-title">What should Seminole homeowners know <span class="text-accent">before they call a plumber</span>?</h2>
-        <p>Ledco Plumbing LLC publishes short guides for Seminole and Wewoka homeowners, built on local weather and the age of local buildings. The latest one is on the right.</p>
+        <p>Ledco Plumbing publishes short guides for Seminole and Wewoka homeowners, built on local weather and the age of local buildings. The latest one is on the right.</p>
         <a class="btn btn-primary" href="/blog/">View All Articles</a>
       </div>
       <div class="reveal-right">
@@ -646,7 +645,7 @@ if ($homeReviews !== ''): ?>
     <div class="section-title reveal-down">
       <span class="eyebrow-label">Questions</span>
       <h2 id="faq-title">What do <span class="text-accent">Seminole</span> customers ask a plumber first?</h2>
-      <p>Seminole customers usually ask a plumber about emergency calls, cost, hard water and service area before they book. Ledco Plumbing LLC answers those four questions here; call the office for anything else.</p>
+      <p>Seminole customers usually ask a plumber about hours, cost, hard water and service area before they book. Ledco Plumbing answers those four questions here; call the office for anything else.</p>
     </div>
     <div class="faq-grid reveal-up">
 <?php foreach ($homeFaqs as $homeFaqIdx => $homeFaq): ?>
@@ -700,7 +699,7 @@ if ($homeReviews !== ''): ?>
             <legend class="form-consent-legend sr-only">Communication consent</legend>
             <label class="consent" for="est-email-optin">
               <input id="est-email-optin" type="checkbox" name="email_opt_in" value="yes">
-              <span><strong>Email updates (optional):</strong> I agree to receive emails from <?php echo esc($siteName); ?> about my inquiry and services. I can unsubscribe at any time by using the link in any email or by emailing <?php echo esc($contactEmail); ?>.</span>
+              <span><strong>Email updates (optional):</strong> I agree to receive emails from <?php echo esc($siteName); ?> about my inquiry and services. I can unsubscribe at any time by using the link in any email or by calling <?php echo esc($phone); ?>.</span>
             </label>
             <label class="consent" for="est-sms-optin">
               <input id="est-sms-optin" type="checkbox" name="sms_opt_in" value="yes">
@@ -722,10 +721,9 @@ if ($homeReviews !== ''): ?>
         </ol>
         <div class="nap">
           <div><?php icon('phone', 18); ?><a href="<?php echo esc($homePhoneHref); ?>"><?php echo esc($homePhone); ?></a></div>
-          <div><?php icon('mail', 18); ?><a href="mailto:<?php echo esc($email); ?>"><?php echo esc($email); ?></a></div>
           <div><?php icon('map-pin', 18); ?><span><?php echo esc($address['street'] . ', ' . $homeCity . ', ' . $homeState . ' ' . $address['zip']); ?></span></div>
         </div>
-        <p class="estimate-area">Ledco Plumbing LLC serves homes and businesses in
+        <p class="estimate-area">Ledco Plumbing serves homes and businesses in
 <?php
 $homeAreaParts = [];
 foreach ($serviceAreaDetails as $homeArea) {

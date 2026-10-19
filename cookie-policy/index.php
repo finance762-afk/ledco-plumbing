@@ -13,8 +13,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  */
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/legal-page.php';
 
-$pageTitle       = 'Cookie Policy | Ledco Plumbing LLC in Seminole, OK';
-$pageDescription = 'The cookies and browser storage the Ledco Plumbing LLC website in Seminole, OK uses, what each one is for, and how you can block or clear them.';
+$pageTitle       = 'Cookie Policy | Ledco Plumbing in Seminole, OK';
+$pageDescription = 'The cookies and browser storage the Ledco Plumbing website in Seminole, OK uses, what each one is for, and how you can block or clear them.';
 $canonicalUrl    = $siteUrl . '/cookie-policy/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'legal';

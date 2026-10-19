@@ -10,8 +10,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  */
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/legal-page.php';
 
-$pageTitle       = 'Privacy Policy | Ledco Plumbing LLC in Seminole, OK';
-$pageDescription = 'How Ledco Plumbing LLC in Seminole, OK collects, uses and protects your information from the website, contact forms, phone calls and text messages.';
+$pageTitle       = 'Privacy Policy | Ledco Plumbing in Seminole, OK';
+$pageDescription = 'How Ledco Plumbing in Seminole, OK collects, uses and protects your information from the website, contact forms, phone calls and text messages.';
 $canonicalUrl    = $siteUrl . '/privacy-policy/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'legal';
@@ -78,7 +78,7 @@ $schemaMarkup = $pageSchema;
         <li><strong>Right to limit use</strong> of sensitive personal information. We do not collect sensitive personal information on this site.</li>
         <li><strong>Right to non-discrimination</strong> for using these rights.</li>
       </ul>
-      <p><strong>How to use these rights:</strong> email <a href="mailto:<?php echo esc($companyEmail); ?>"><?php echo esc($companyEmail); ?></a> or call <a href="tel:<?php echo esc($companyPhoneE164); ?>"><?php echo esc($companyPhone); ?></a>. We respond within 45 days of receiving your request.</p>
+      <p><strong>How to use these rights:</strong> call <a href="tel:<?php echo esc($companyPhoneE164); ?>"><?php echo esc($companyPhone); ?></a>. We respond within 45 days of receiving your request.</p>
 
       <h2>5. Do Not Sell or Share My Personal Information</h2>
       <p><?php echo esc($companyName); ?> does not sell or share personal information. If you want that on record for your contact details, send a request using the details in section 11.</p>

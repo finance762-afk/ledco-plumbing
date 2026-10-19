@@ -32,8 +32,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  */
 $areaSlug = 'wewoka-ok';
 
-$pageTitle       = 'Plumber in Wewoka, OK | Ledco Plumbing LLC, Seminole Office';
-$pageDescription = 'Ledco Plumbing LLC serves Wewoka, OK from its Seminole office: leak detection, water heaters, drains, sewer lines, commercial plumbing. Call (405) 257-3096.';
+$pageTitle       = 'Plumber in Wewoka, OK | Ledco Plumbing, Seminole Office';
+$pageDescription = 'Ledco Plumbing serves Wewoka, OK from its Seminole office: leak detection, water heaters, drains, sewer lines, commercial plumbing. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/service-areas/wewoka-ok/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'areas/wewoka-ok';
@@ -46,7 +46,7 @@ $saPhoneHref = phoneHref($phone);
 $faqs = [
     [
         'q' => 'Does Ledco Plumbing serve Wewoka, or only Seminole?',
-        'a' => 'Ledco Plumbing LLC lists both Seminole and Wewoka as service areas. The office is at 316 E Oak Ave in Seminole, about 10 miles northwest of Wewoka, and takes calls Monday through Sunday, 7 AM to 5 PM. Call ' . $saPhone . ' with your Wewoka street address to set up a visit.',
+        'a' => 'Ledco Plumbing lists both Seminole and Wewoka as service areas. The office is at 316 E Oak Ave in Seminole, about 10 miles northwest of Wewoka, and takes calls Monday through Sunday, 7 AM to 5 PM. Call ' . $saPhone . ' with your Wewoka street address to set up a visit.',
     ],
     [
         'q' => 'Can Ledco Plumbing work in an older Wewoka house or historic building?',
@@ -58,7 +58,6 @@ $pageSchema = generateAreaPageSchema(
     ['name' => 'Wewoka', 'slug' => $areaSlug, 'lat' => 35.1439, 'lng' => -96.4967, 'sameAs' => 'https://en.wikipedia.org/wiki/Wewoka,_Oklahoma'],
     $pageTitle, $pageDescription
 );
-if ($faqs) $pageSchema[] = generateFAQSchema($faqs);   // FAQPage mirrors the visible FAQ exactly
 $schemaMarkup = $pageSchema;
 
 $heroFormTitle   = 'Free estimate in Wewoka';
@@ -212,7 +211,7 @@ $wewLandmarks = [
       <div class="hero-text hero-copy">
         <span class="eyebrow">Wewoka, OK &middot; County seat</span>
         <h1 class="hero-title" id="hero-title"><span class="text-accent">Drain cleaning &amp; plumbing</span> in Wewoka, OK</h1>
-        <p class="hero-answer">Ledco Plumbing LLC serves Wewoka homes, offices and shops from its Seminole office, with leak detection, water heaters, drains, sewer lines and commercial plumbing.</p>
+        <p class="hero-answer">Ledco Plumbing serves Wewoka homes, offices and shops from its Seminole office, with leak detection, water heaters, drains, sewer lines and commercial plumbing.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-accent btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($saPhoneHref); ?>"><?php icon('phone', 18); ?> or call <?php echo esc($saPhone); ?></a>
@@ -242,7 +241,7 @@ $wewLandmarks = [
       <div class="wew-seat__body reveal-right">
         <span class="eyebrow-label">Wewoka, Oklahoma</span>
         <h2 id="seat-title">Does Ledco Plumbing serve <span class="text-accent">Wewoka</span>, the Seminole County seat?</h2>
-        <p class="answer-block">Yes. Ledco Plumbing LLC lists Wewoka as one of its two service areas and works from its Seminole office at 316 E Oak Ave, about 10 miles northwest. Wewoka calls are taken Monday through Sunday, 7 AM to 5 PM, for homes, offices and shops.</p>
+        <p class="answer-block">Yes. Ledco Plumbing lists Wewoka as one of its two service areas and works from its Seminole office at 316 E Oak Ave, about 10 miles northwest. Wewoka calls are taken Monday through Sunday, 7 AM to 5 PM, for homes, offices and shops.</p>
         <p>Wewoka is the capital of the Seminole Nation of Oklahoma and the seat of Seminole County, and its landmarks include a courthouse, a 1934 WPA stone community center that is now the Seminole Nation Museum, and National Register houses and offices. The town covers 4.84 square miles.</p>
         <p>For a plumber, that mix means two kinds of calls. Homeowners ask about <a href="/services/water-heater-repair-installation/">water heaters</a> and slow drains. Offices, rentals and public buildings need <a href="/services/commercial-plumbing/">commercial plumbing</a>. Both start the same way at Ledco Plumbing: you describe what is happening, a plumber looks at it, and you get the price before any work begins.</p>
         <p>Many Oklahoma homes also have hard water, which leaves mineral scale that wears out a water heater early. If a Wewoka heater is rumbling or running short of hot water, the age and the scale in the tank are the first things to check.</p>
@@ -257,7 +256,7 @@ $wewLandmarks = [
     <div class="section-title reveal-up">
       <span class="eyebrow-label">Wewoka landmarks</span>
       <h2 id="landmarks-title">What do Wewoka's landmark buildings say about the plumbing in <span class="text-accent">Wewoka</span>?</h2>
-      <p class="answer-block">Wewoka's landmarks date from the 1800s to the 1940s, and buildings from that span can carry old pipe. The five places below are real Wewoka buildings. Beside each one, Ledco Plumbing LLC notes the kind of plumbing problem a building of that age and use can have. None of them is a claim about Ledco's past customers.</p>
+      <p class="answer-block">Wewoka's landmarks date from the 1800s to the 1940s, and buildings from that span can carry old pipe. The five places below are real Wewoka buildings. Beside each one, Ledco Plumbing notes the kind of plumbing problem a building of that age and use can have. None of them is a claim about Ledco's past customers.</p>
     </div>
     <ul class="wew-roster__list reveal-up">
 <?php foreach ($wewLandmarks as $wewMark): ?>
@@ -287,7 +286,7 @@ $wewLandmarks = [
     <div class="section-title reveal-up">
       <span class="eyebrow-label">What We Do</span>
       <h2 id="services-title">Which plumbing services can you book from Ledco Plumbing in <span class="text-accent">Wewoka</span>?</h2>
-      <p class="answer-block">Ledco Plumbing LLC offers the same five services in Wewoka as in Seminole: drain cleaning, water heater repair and installation, leak detection and repair, sewer line repair, and commercial plumbing. Each page lists the warning signs, the scope and the steps of a visit.</p>
+      <p class="answer-block">Ledco Plumbing offers the same five services in Wewoka as in Seminole: drain cleaning, water heater repair and installation, leak detection and repair, sewer line repair, and commercial plumbing. Each page lists the warning signs, the scope and the steps of a visit.</p>
     </div>
     <div class="wew-svc-grid">
       <article class="wew-svc reveal-left">
@@ -338,13 +337,27 @@ $wewLandmarks = [
   </div>
 </section>
 
+<!-- ============================================================ MAP -->
+<section class="section wew-map" id="map" aria-labelledby="map-title">
+  <div class="container">
+    <div class="section-title reveal-up">
+      <span class="eyebrow-label">Find us</span>
+      <h2 id="map-title">Where is the Ledco Plumbing office?</h2>
+      <p>The office is at 316 E Oak Ave in Seminole, open 7 AM to 5 PM, 7 days a week.</p>
+    </div>
+    <div class="map-embed">
+      <iframe src="<?php echo esc($gbp['embed_src']); ?>" title="Map of Ledco Plumbing at 316 E Oak Ave, Seminole, OK" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
 <!-- ============================================================ FAQ -->
 <section class="section wew-faq" id="faq" aria-labelledby="faq-title">
   <div class="container">
     <div class="section-title reveal-up">
       <span class="eyebrow-label">Questions</span>
       <h2 id="faq-title">What do Wewoka customers ask about <span class="text-accent">plumbing service</span>?</h2>
-      <p class="answer-block">Wewoka customers ask whether Ledco Plumbing LLC comes to Wewoka at all, and whether an older building is a problem. Both answers are below. For anything else, call the office at <?php echo esc($saPhone); ?>.</p>
+      <p class="answer-block">Wewoka customers ask whether Ledco Plumbing comes to Wewoka at all, and whether an older building is a problem. Both answers are below. For anything else, call the office at <?php echo esc($saPhone); ?>.</p>
     </div>
     <div class="faq-grid reveal-up">
 <?php foreach ($faqs as $wewFaqIdx => $wewFaq): ?>
@@ -363,7 +376,7 @@ $wewLandmarks = [
 <section class="section wew-next" aria-label="Nearby service area">
   <div class="container">
     <div class="wew-next__inner reveal-up">
-      <p>Ledco Plumbing LLC is based in Seminole, where its office is open every day. Read the <a href="/service-areas/seminole-ok/">Seminole plumbing page</a> or see <a href="/service-areas/">all service areas</a>.</p>
+      <p>Ledco Plumbing is based in Seminole, where its office is open every day. Read the <a href="/service-areas/seminole-ok/">Seminole plumbing page</a> or see <a href="/service-areas/">all service areas</a>.</p>
       <a class="btn btn-primary" href="/service-areas/seminole-ok/">Plumbing in Seminole</a>
     </div>
   </div>

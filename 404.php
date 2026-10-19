@@ -11,7 +11,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  */
 http_response_code(404);
 
-$pageTitle       = 'Page Not Found | Ledco Plumbing LLC, Seminole, OK';
+$pageTitle       = 'Page Not Found | Ledco Plumbing, Seminole, OK';
 $pageDescription = 'That page was not found. Use these links to reach Ledco Plumbing services in Seminole, OK, or call ' . $phone . '.';
 $canonicalUrl    = $siteUrl . '/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
@@ -114,7 +114,7 @@ if (pageLive('/contact/'))  $nfPages[] = ['Contact and map', '/contact/', 'map-p
       <div class="section-title">
         <span class="eyebrow-label">What were you looking for?</span>
         <h2 id="find-title">Which plumbing problem brought you to <span class="text-accent">Ledco Plumbing</span>?</h2>
-        <p class="answer-block">Pick the problem that matches what you are seeing and the link goes to the Ledco Plumbing page for it. Ledco Plumbing LLC repairs drains, water heaters, leaks, sewer lines and commercial plumbing in Seminole and Wewoka.</p>
+        <p class="answer-block">Pick the problem that matches what you are seeing and the link goes to the Ledco Plumbing page for it. Ledco Plumbing repairs drains, water heaters, leaks, sewer lines and commercial plumbing in Seminole and Wewoka.</p>
         <p class="nf-find__tip">Typed the address by hand? Check it for typos, then try again.</p>
       </div>
       <ul class="nf-list">

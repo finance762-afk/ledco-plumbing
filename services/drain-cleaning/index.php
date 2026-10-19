@@ -19,8 +19,8 @@ $svcSlug = 'drain-cleaning';
 $svc = null;
 foreach ($services as $svcItem) { if ($svcItem['slug'] === $svcSlug) { $svc = $svcItem; break; } }
 
-$pageTitle       = 'Drain Cleaning in Seminole, OK | Ledco Plumbing LLC';
-$pageDescription = 'Drain cleaning in Seminole, OK from Ledco Plumbing LLC: kitchen, bath, laundry and main line clogs cleared for homes and businesses. Call (405) 257-3096.';
+$pageTitle       = 'Drain Cleaning in Seminole, OK | Ledco Plumbing';
+$pageDescription = 'Drain cleaning in Seminole, OK from Ledco Plumbing: kitchen, bath, laundry and main line clogs cleared for homes and businesses. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/services/drain-cleaning/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'services/drain-cleaning';
@@ -33,8 +33,8 @@ $dcPhoneHref = phoneHref($phone);
 // FAQ — research_brief questions only (emergency + cost), answered without unconfirmed claims
 $faqs = [
     [
-        'q' => 'Do you offer emergency plumbing service in Seminole?',
-        'a' => 'Ledco Plumbing LLC takes calls seven days a week from 7 AM to 5 PM, including drains backing up into the house. When sewage or dirty water is coming up, stop using water anywhere in the house and call (405) 257-3096 rather than sending the form, so the office hears about it right away.',
+        'q' => 'What are your hours?',
+        'a' => 'Ledco Plumbing is open 7 AM to 5 PM, 7 days a week, and takes calls about drains backing up into the house. When sewage or dirty water is coming up, stop using water anywhere in the house and call (405) 257-3096 rather than sending the form, so the office hears about it right away.',
     ],
     [
         'q' => 'How much does drain cleaning cost?',
@@ -43,7 +43,6 @@ $faqs = [
 ];
 
 $pageSchema   = generateServicePageSchema($svc, $pageTitle, $pageDescription);
-if ($faqs) $pageSchema[] = generateFAQSchema($faqs);   // FAQPage mirrors the visible FAQ exactly
 $schemaMarkup = $pageSchema;
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
@@ -239,7 +238,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">Seminole, OK &middot; Drain cleaning</span>
         <h1 class="hero-title" id="hero-title"><span class="text-accent">Drain cleaning</span> in Seminole, OK</h1>
-        <p class="hero-answer">Ledco Plumbing LLC clears clogged and slow drains in Seminole and Wewoka homes and businesses, from a single bathroom sink to a main line that pushes water back up into the tub. Call <?php echo esc($dcPhone); ?> any day of the week, or send the form for an estimate.</p>
+        <p class="hero-answer">Ledco Plumbing clears clogged and slow drains in Seminole and Wewoka homes and businesses, from a single bathroom sink to a main line that pushes water back up into the tub. Call <?php echo esc($dcPhone); ?> any day of the week, or send the form for an estimate.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-accent btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($dcPhoneHref); ?>"><?php icon('phone', 18); ?> or call <?php echo esc($dcPhone); ?></a>
@@ -317,7 +316,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
       <div class="dc-scope__body reveal-up">
         <span class="eyebrow-label">What's included</span>
         <h2 id="included-title">What does drain cleaning from <span class="text-accent">Ledco Plumbing</span> cover?</h2>
-        <p class="answer-block">Drain cleaning from Ledco Plumbing LLC covers every drain in the building, plus the main line they all empty into. That means kitchen and bathroom sinks, tubs, showers, toilets, laundry standpipes and floor drains. The plumber finds which drain or line is blocked, clears it, then runs water to show it flows.</p>
+        <p class="answer-block">Drain cleaning from Ledco Plumbing covers every drain in the building, plus the main line they all empty into. That means kitchen and bathroom sinks, tubs, showers, toilets, laundry standpipes and floor drains. The plumber finds which drain or line is blocked, clears it, then runs water to show it flows.</p>
         <p>Kitchen sinks in Seminole homes clog for one main reason: cooking grease. It goes down warm and liquid, cools a few feet into the pipe and hardens on the wall, and coffee grounds, rice and food scraps stick to it. Bathroom drains collect hair bound together with soap. Each of those builds slowly, which is why a drain that has been "a little slow" for months finally stops on a busy morning.</p>
         <p>In older Seminole houses, the drain pipe under the floor is often cast iron. As it ages its inside wall turns rough with rust and scale, and that rough surface catches grease and hair far faster than smooth plastic pipe does. Homes like that tend to see the same kitchen line clog again and again until the buildup along the whole run is cleared, not just the plug at the trap.</p>
         <p>Sometimes clearing a drain turns up something bigger: tree roots, a cracked pipe, or a sewer line that has sagged and holds water. Ledco Plumbing also does <a href="/services/sewer-line-repair/">sewer line repair</a> and <a href="/services/leak-detection-repair/">leak detection and repair</a>, so the company that found the problem can price the fix. All five are listed on the <a href="/services/">Ledco Plumbing services page</a>.</p>
@@ -411,7 +410,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
     <div class="section-title reveal-up">
       <span class="eyebrow-label">Why Ledco Plumbing</span>
       <h2 id="why-title">Why call Ledco Plumbing for a clogged drain in <span class="text-accent">Seminole</span>?</h2>
-      <p class="answer-block">Ledco Plumbing LLC is a Seminole company owned by Mickey Ledbetter, with its office on E Oak Ave and drain calls taken seven days a week. You see the price before work begins, and if a clog turns out to be a broken sewer pipe, the same company repairs that too.</p>
+      <p class="answer-block">Ledco Plumbing is a Seminole company owned by Mickey Ledbetter, with its office on E Oak Ave and drain calls taken seven days a week. You see the price before work begins, and if a clog turns out to be a broken sewer pipe, the same company repairs that too.</p>
     </div>
     <ul class="dc-why__list reveal-up">
       <li><?php icon('map-pin', 22); ?><b>Office in town</b><span>316 E Oak Ave, Seminole. Wewoka is a short drive east.</span></li>
@@ -435,7 +434,7 @@ if ($dcReviews !== ''): ?>
     <div class="section-title reveal-up">
       <span class="eyebrow-label">Questions</span>
       <h2 id="faq-title">What do Seminole customers ask about <span class="text-accent">drain cleaning</span>?</h2>
-      <p class="answer-block">Seminole customers usually ask two things about drain cleaning: whether a plumber will come when a drain backs up, and what clearing a clog costs. Ledco Plumbing LLC answers both below. For anything else, call the office at <?php echo esc($dcPhone); ?>.</p>
+      <p class="answer-block">Seminole customers usually ask two things about drain cleaning: whether a plumber will come when a drain backs up, and what clearing a clog costs. Ledco Plumbing answers both below. For anything else, call the office at <?php echo esc($dcPhone); ?>.</p>
     </div>
     <div class="faq-grid reveal-up">
 <?php foreach ($faqs as $dcFaqIdx => $dcFaq): ?>
@@ -455,7 +454,7 @@ if ($dcReviews !== ''): ?>
     <div class="section-title reveal-up">
       <span class="eyebrow-label">What We Do</span>
       <h2>Which other <span class="text-accent">plumbing problems</span> can Ledco Plumbing fix?</h2>
-      <p class="answer-block">Besides drain cleaning, Ledco Plumbing LLC repairs and installs water heaters, finds and fixes hidden leaks, repairs sewer lines and handles commercial plumbing in Seminole and Wewoka. These three are the services most often needed alongside a stubborn clog or a backup.</p>
+      <p class="answer-block">Besides drain cleaning, Ledco Plumbing repairs and installs water heaters, finds and fixes hidden leaks, repairs sewer lines and handles commercial plumbing in Seminole and Wewoka. These three are the services most often needed alongside a stubborn clog or a backup.</p>
     </div>
     <div class="services-grid">
 <?php foreach (p1_other_services($svcSlug) as $dcIdx => $dcOther) p1_render_service_card($dcOther, $dcIdx + 1, 'reveal-up'); ?>

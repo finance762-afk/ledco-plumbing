@@ -10,8 +10,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  */
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/legal-page.php';
 
-$pageTitle       = 'Accessibility Statement | Ledco Plumbing LLC, Seminole OK';
-$pageDescription = 'Ledco Plumbing LLC in Seminole, OK aims to meet WCAG 2.1 Level AA. See the accessibility features on this website and how to report a barrier.';
+$pageTitle       = 'Accessibility Statement | Ledco Plumbing, Seminole OK';
+$pageDescription = 'Ledco Plumbing in Seminole, OK aims to meet WCAG 2.1 Level AA. See the accessibility features on this website and how to report a barrier.';
 $canonicalUrl    = $siteUrl . '/accessibility/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'legal';
@@ -65,7 +65,7 @@ $schemaMarkup = $pageSchema;
       <p>If something on this site is hard to use, tell us what page you were on and what happened. We aim to reply within 5 business days and to fix the problem or give you the information another way.</p>
 
       <h2>6. Other Ways to Reach Us</h2>
-      <p>You can skip the website entirely. Call <a href="tel:<?php echo esc($companyPhoneE164); ?>"><?php echo esc($companyPhone); ?></a> during business hours (<?php echo esc($businessHours); ?>), email <a href="mailto:<?php echo esc($companyEmail); ?>"><?php echo esc($companyEmail); ?></a>, or visit the office. We will give you service information in another format on request.</p>
+      <p>You can skip the website entirely. Call <a href="tel:<?php echo esc($companyPhoneE164); ?>"><?php echo esc($companyPhone); ?></a> during business hours (<?php echo esc($businessHours); ?>), or visit the office. We will give you service information in another format on request.</p>
 
       <h2>7. Changes to This Statement</h2>
       <p>When we make accessibility changes to the site we update this statement and its "Last Updated" date.</p>

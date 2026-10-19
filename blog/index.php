@@ -10,7 +10,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/blog-data.php';
 
 $pageTitle       = 'Plumbing Guides for Seminole, OK | Ledco Plumbing Blog';
-$pageDescription = 'Plain-language plumbing guides for Seminole, OK homeowners from Ledco Plumbing LLC: freeze protection, repair costs and what to do before you call a plumber.';
+$pageDescription = 'Plain-language plumbing guides for Seminole, OK homeowners from Ledco Plumbing: freeze protection, repair costs and what to do before you call a plumber.';
 $canonicalUrl    = $siteUrl . '/blog/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'blog';
@@ -106,7 +106,7 @@ $blRest = array_slice((array) $blogPosts, 1);
     <div class="bl-hero__inner">
       <span class="eyebrow">Seminole, OK &middot; Plumbing guides</span>
       <h1 class="hero-title" id="hero-title"><span class="text-accent">Plumbing guides</span> for Seminole, OK homeowners</h1>
-      <p class="hero-answer">Ledco Plumbing LLC writes short, plain-language guides for Seminole and Wewoka homeowners: how to protect pipes before a freeze and what decides the price of a repair.</p>
+      <p class="hero-answer">Ledco Plumbing writes short, plain-language guides for Seminole and Wewoka homeowners: how to protect pipes before a freeze and what decides the price of a repair.</p>
       <div class="hero-actions">
         <a class="btn btn-accent btn-lg" href="<?php echo esc(phoneHref($phone)); ?>"><?php icon('phone', 18); ?> Call <?php echo esc($blPhone); ?></a>
         <?php echo estimateTrigger('btn btn-outline-white btn-lg', 'Request an estimate'), "\n"; ?>
@@ -141,7 +141,7 @@ $blRest = array_slice((array) $blogPosts, 1);
     <div class="reveal-left">
       <span class="eyebrow-label">Need a plumber now?</span>
       <h2 id="help-title">Which service matches the problem in your article?</h2>
-      <p class="answer-block">If an article describes what you are seeing, the matching service page lists the warning signs, the scope and the steps of a visit. Ledco Plumbing LLC offers five services in Seminole and Wewoka and takes calls Monday through Sunday, 7 AM to 5 PM.</p>
+      <p class="answer-block">If an article describes what you are seeing, the matching service page lists the warning signs, the scope and the steps of a visit. Ledco Plumbing offers five services in Seminole and Wewoka and takes calls Monday through Sunday, 7 AM to 5 PM.</p>
     </div>
     <ul class="bl-help__list reveal-right">
 <?php foreach ((array) $services as $blSvc): if (!serviceLive($blSvc['slug'])) continue; ?>

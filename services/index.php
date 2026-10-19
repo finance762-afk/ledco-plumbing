@@ -14,7 +14,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  * written-estimate terms are NOT in intake — the pricing section states only that the price comes before the work
  * (homepage process, research brief), and the rest is in /content-confirmations.json.
  */
-$pageTitle       = 'Plumbing Services in Seminole, OK | Ledco Plumbing LLC';
+$pageTitle       = 'Plumbing Services in Seminole, OK | Ledco Plumbing';
 $pageDescription = 'Drain cleaning, water heater repair and installation, leak detection, sewer line repair and commercial plumbing in Seminole and Wewoka, OK. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/services/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
@@ -181,7 +181,7 @@ $hubReady = [
     <div class="hub-hero__inner">
       <span class="eyebrow">Seminole, OK &middot; <?php echo count($services); ?> services</span>
       <h1 class="hero-title" id="hero-title"><span class="text-accent">Plumbing services</span> in Seminole, OK</h1>
-      <p class="hero-answer">Ledco Plumbing LLC is a Seminole plumber offering five services: drain cleaning, water heater repair and installation, leak detection and repair, sewer line repair, and commercial plumbing. The company works on homes and businesses in Seminole and Wewoka and takes calls seven days a week.</p>
+      <p class="hero-answer">Ledco Plumbing is a Seminole plumber offering five services: drain cleaning, water heater repair and installation, leak detection and repair, sewer line repair, and commercial plumbing. The company works on homes and businesses in Seminole and Wewoka and takes calls seven days a week.</p>
       <div class="hero-actions">
         <?php echo estimateTrigger('btn btn-accent btn-lg', 'Request an estimate'), "\n"; ?>
         <a class="link-call" href="<?php echo esc($hubPhoneHref); ?>"><?php icon('phone', 18); ?> or call <?php echo esc($hubPhone); ?></a>
@@ -201,7 +201,7 @@ $hubReady = [
     <div class="section-title reveal-up">
       <span class="eyebrow-label">What We Do</span>
       <h2>Which <span class="text-accent">plumbing services</span> does Ledco Plumbing offer in Seminole and Wewoka?</h2>
-      <p class="answer-block">Ledco Plumbing LLC offers drain cleaning, water heater repair and installation, leak detection and repair, sewer line repair, and commercial plumbing in Seminole and Wewoka. Each service below has its own page with the warning signs to look for, what the work involves, and how a visit runs from the first call to the final test.</p>
+      <p class="answer-block">Ledco Plumbing offers drain cleaning, water heater repair and installation, leak detection and repair, sewer line repair, and commercial plumbing in Seminole and Wewoka. Each service below has its own page with the warning signs to look for, what the work involves, and how a visit runs from the first call to the final test.</p>
     </div>
     <div class="services-grid services-grid--featured">
 <?php foreach ($services as $hubIdx => $hubSvc) {
@@ -254,7 +254,7 @@ $hubReady = [
     <div class="hub-price__body reveal-left">
       <span class="eyebrow-label">Pricing</span>
       <h2 id="price-title">How does Ledco Plumbing price a plumbing job?</h2>
-      <p class="answer-block">Ledco Plumbing LLC prices each job after a plumber has seen the problem, and you get that price before any work starts. Because the cause decides the fix, a slow drain, a failed water heater part and a broken sewer line are priced on what each one actually needs.</p>
+      <p class="answer-block">Ledco Plumbing prices each job after a plumber has seen the problem, and you get that price before any work starts. Because the cause decides the fix, a slow drain, a failed water heater part and a broken sewer line are priced on what each one actually needs.</p>
       <p>That is also why one service can lead to another. A drain that will not stay clear may need <a href="/services/sewer-line-repair/">sewer line repair</a>; a puddle near the water heater may be a supply line that calls for <a href="/services/leak-detection-repair/">leak detection</a>. The estimate covers the repair the problem needs, and you decide whether to go ahead.</p>
     </div>
     <ul class="hub-price__factors reveal-right" aria-label="What changes the price of a plumbing job">

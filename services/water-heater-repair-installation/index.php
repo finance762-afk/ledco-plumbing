@@ -21,7 +21,7 @@ $svc = null;
 foreach ($services as $svcItem) { if ($svcItem['slug'] === $svcSlug) { $svc = $svcItem; break; } }
 
 $pageTitle       = 'Water Heater Repair & Installation, Seminole OK | Ledco';
-$pageDescription = 'Water heater repair and installation in Seminole, OK. Ledco Plumbing LLC finds why a heater runs cold or leaks, then fixes or replaces it. Call (405) 257-3096.';
+$pageDescription = 'Water heater repair and installation in Seminole, OK. Ledco Plumbing finds why a heater runs cold or leaks, then fixes or replaces it. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/services/water-heater-repair-installation/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'services/water-heater-repair-installation';
@@ -44,7 +44,6 @@ $faqs = [
 ];
 
 $pageSchema   = generateServicePageSchema($svc, $pageTitle, $pageDescription);
-if ($faqs) $pageSchema[] = generateFAQSchema($faqs);   // FAQPage mirrors the visible FAQ exactly
 $schemaMarkup = $pageSchema;
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
@@ -215,7 +214,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">Seminole, OK &middot; Water heaters</span>
         <h1 class="hero-title" id="hero-title"><span class="text-accent">Water heater</span> repair &amp; installation in Seminole, OK</h1>
-        <p class="hero-answer">Ledco Plumbing LLC repairs water heaters that run cold, leak or rumble, and installs a new heater when the old tank is past saving, for homes and businesses in Seminole and Wewoka. Call <?php echo esc($whPhone); ?> seven days a week, or send the form and describe what your heater is doing.</p>
+        <p class="hero-answer">Ledco Plumbing repairs water heaters that run cold, leak or rumble, and installs a new heater when the old tank is past saving, for homes and businesses in Seminole and Wewoka. Call <?php echo esc($whPhone); ?> seven days a week, or send the form and describe what your heater is doing.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-accent btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($whPhoneHref); ?>"><?php icon('phone', 18); ?> or call <?php echo esc($whPhone); ?></a>
@@ -345,7 +344,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
       <div class="wh-scope__body reveal-right">
         <span class="eyebrow-label">What's covered</span>
         <h2 id="included-title">What does water heater service from <span class="text-accent">Ledco Plumbing</span> cover?</h2>
-        <p class="answer-block">Ledco Plumbing LLC repairs water heaters that have stopped working properly and installs new ones when repair no longer makes sense. Every job starts by finding out why the heater failed, so a worn part is not mistaken for a dead tank and you are not sold a heater you did not need.</p>
+        <p class="answer-block">Ledco Plumbing repairs water heaters that have stopped working properly and installs new ones when repair no longer makes sense. Every job starts by finding out why the heater failed, so a worn part is not mistaken for a dead tank and you are not sold a heater you did not need.</p>
         <p>Most "no hot water" calls come down to one part. Which part depends on the fuel: on a gas heater it is usually the thermocouple or flame sensor, the gas control valve or the burner; on an electric heater it is usually a heating element or the thermostat that controls it. Those are repairs, and the tank goes back to work.</p>
         <p>The tank is a different story. Once the steel has rusted through, water seeps from the seams or the bottom, and there is nothing left to fix. That is when Ledco Plumbing sizes and installs a replacement heater for your home or business in Seminole or Wewoka.</p>
         <p>Not every puddle near a water heater comes from the heater. A supply line, a nearby fixture or a pipe in the wall can leak onto the same floor, and that calls for <a href="/services/leak-detection-repair/">leak detection and repair</a> instead of a new tank. Ledco's other services are on the <a href="/services/">plumbing services page</a>.</p>
@@ -385,7 +384,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
       <div class="section-title reveal-left">
         <span class="eyebrow-label">Why Ledco Plumbing</span>
         <h2 id="why-title">Why choose Ledco Plumbing for a water heater in <span class="text-accent">Seminole</span>?</h2>
-        <p class="answer-block">Ledco Plumbing LLC checks why a water heater failed before recommending a fix, gives you the price up front, and takes calls on Saturdays and Sundays too. The company is owned by Mickey Ledbetter and works from an office at 316 E Oak Ave in Seminole.</p>
+        <p class="answer-block">Ledco Plumbing checks why a water heater failed before recommending a fix, gives you the price up front, and takes calls on Saturdays and Sundays too. The company is owned by Mickey Ledbetter and works from an office at 316 E Oak Ave in Seminole.</p>
       </div>
       <ul class="wh-why__list reveal-right">
         <li><?php icon('search', 22); ?><b>Cause before cure</b><span>The heater is checked to see whether a part or the tank has failed.</span></li>
@@ -410,7 +409,7 @@ if ($whReviews !== ''): ?>
     <div class="section-title reveal-up">
       <span class="eyebrow-label">Questions</span>
       <h2 id="faq-title">What do Seminole customers ask about <span class="text-accent">water heaters</span>?</h2>
-      <p class="answer-block">The two water heater questions Seminole customers ask most are what a replacement costs and why heaters seem to wear out quickly in Oklahoma. Ledco Plumbing LLC answers both below. For anything about your own heater, call the office at <?php echo esc($whPhone); ?>.</p>
+      <p class="answer-block">The two water heater questions Seminole customers ask most are what a replacement costs and why heaters seem to wear out quickly in Oklahoma. Ledco Plumbing answers both below. For anything about your own heater, call the office at <?php echo esc($whPhone); ?>.</p>
     </div>
     <div class="faq-grid reveal-up">
 <?php foreach ($faqs as $whFaqIdx => $whFaq): ?>
@@ -430,7 +429,7 @@ if ($whReviews !== ''): ?>
     <div class="section-title reveal-up">
       <span class="eyebrow-label">What We Do</span>
       <h2>Which other <span class="text-accent">plumbing services</span> does Ledco Plumbing offer?</h2>
-      <p class="answer-block">Along with water heater repair and installation, Ledco Plumbing LLC finds hidden leaks, repairs sewer lines, clears drains and handles commercial plumbing across Seminole and Wewoka. The three below are the services Seminole customers most often need next to a water heater job.</p>
+      <p class="answer-block">Along with water heater repair and installation, Ledco Plumbing finds hidden leaks, repairs sewer lines, clears drains and handles commercial plumbing across Seminole and Wewoka. The three below are the services Seminole customers most often need next to a water heater job.</p>
     </div>
     <div class="services-grid">
 <?php foreach (p1_other_services($svcSlug) as $whIdx => $whOther) p1_render_service_card($whOther, $whIdx + 1, 'reveal-up'); ?>

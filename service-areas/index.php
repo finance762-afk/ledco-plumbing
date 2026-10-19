@@ -14,7 +14,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  * target_radius is 25 miles but its service_areas list holds only Seminole and Wewoka, so only those two are named.
  */
 $pageTitle       = 'Service Areas: Seminole & Wewoka, OK | Ledco Plumbing';
-$pageDescription = 'Ledco Plumbing LLC serves Seminole and Wewoka, OK from 316 E Oak Ave: drains, water heaters, leaks, sewer lines and commercial plumbing. Call (405) 257-3096.';
+$pageDescription = 'Ledco Plumbing serves Seminole and Wewoka, OK from 316 E Oak Ave: drains, water heaters, leaks, sewer lines and commercial plumbing. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/service-areas/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'service-areas';
@@ -170,7 +170,7 @@ $schemaMarkup = $pageSchema;
     <div class="sah-hero__inner">
       <span class="eyebrow">Seminole County, OK &middot; <?php echo count((array) $serviceAreaDetails); ?> service areas</span>
       <h1 class="hero-title" id="hero-title"><span class="text-accent">Plumbing</span> in Seminole, OK &amp; Surrounding Communities</h1>
-      <p class="hero-answer">Ledco Plumbing LLC works out of 316 E Oak Ave in Seminole and serves Seminole and Wewoka, with drain cleaning, water heaters, leak detection, sewer line repair and commercial plumbing. Call <?php echo esc($hubPhone); ?>, seven days a week.</p>
+      <p class="hero-answer">Ledco Plumbing works out of 316 E Oak Ave in Seminole and serves Seminole and Wewoka, with drain cleaning, water heaters, leak detection, sewer line repair and commercial plumbing. Call <?php echo esc($hubPhone); ?>, seven days a week.</p>
       <div class="hero-actions">
         <?php echo estimateTrigger('btn btn-accent btn-lg', 'Request an estimate'), "\n"; ?>
         <a class="link-call" href="<?php echo esc($hubPhoneHref); ?>"><?php icon('phone', 18); ?> or call <?php echo esc($hubPhone); ?></a>
@@ -185,7 +185,7 @@ $schemaMarkup = $pageSchema;
     <div class="section-title reveal-up">
       <span class="eyebrow-label">Where We Work</span>
       <h2 id="areas-title">Which communities does <span class="text-accent">Ledco Plumbing</span> serve around Seminole?</h2>
-      <p class="answer-block">Ledco Plumbing LLC serves two communities: Seminole, where its office is at 316 E Oak Ave, and Wewoka, the Seminole County seat about 10 miles to the southeast. Both get all five services, and each has its own page covering the local conditions a plumber plans around.</p>
+      <p class="answer-block">Ledco Plumbing serves two communities: Seminole, where its office is at 316 E Oak Ave, and Wewoka, the Seminole County seat about 10 miles to the southeast. Both get all five services, and each has its own page covering the local conditions a plumber plans around.</p>
     </div>
     <div class="sah-grid">
 <?php foreach ((array) $serviceAreaDetails as $hubIdx => $hubArea):
@@ -221,7 +221,7 @@ $schemaMarkup = $pageSchema;
       <div class="sah-map__body reveal-right">
         <span class="eyebrow-label">Coverage map</span>
         <h2 id="map-title">Where is Ledco Plumbing based, and how far does it reach?</h2>
-        <p class="answer-block">Ledco Plumbing LLC is based at 316 E Oak Ave in Seminole, Oklahoma, and reaches Wewoka, about 10 miles southeast. The map shows the office. Wewoka Lake lies between the two towns.</p>
+        <p class="answer-block">Ledco Plumbing is based at 316 E Oak Ave in Seminole, Oklahoma, and reaches Wewoka, about 10 miles southeast. The map shows the office. Wewoka Lake lies between the two towns.</p>
         <ul class="sah-map__nap">
           <li><?php icon('map-pin', 18); ?><span><?php echo esc($address['street'] . ', ' . $address['city'] . ', ' . $address['state'] . ' ' . $address['zip']); ?></span></li>
           <li><?php icon('phone', 18); ?><a href="<?php echo esc($hubPhoneHref); ?>"><?php echo esc($hubPhone); ?></a></li>

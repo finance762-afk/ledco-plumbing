@@ -19,8 +19,8 @@ $svcSlug = 'sewer-line-repair';
 $svc = null;
 foreach ($services as $svcItem) { if ($svcItem['slug'] === $svcSlug) { $svc = $svcItem; break; } }
 
-$pageTitle       = 'Sewer Line Repair Seminole OK | Ledco Plumbing LLC';
-$pageDescription = 'Sewer line repair in Seminole, OK. Ledco Plumbing LLC fixes backed-up, cracked and root-filled sewer lines in Seminole and Wewoka. Call (405) 257-3096.';
+$pageTitle       = 'Sewer Line Repair Seminole OK | Ledco Plumbing';
+$pageDescription = 'Sewer line repair in Seminole, OK. Ledco Plumbing fixes backed-up, cracked and root-filled sewer lines in Seminole and Wewoka. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/services/sewer-line-repair/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'services/sewer-line-repair';
@@ -33,13 +33,12 @@ $slPhoneHref = phoneHref($phone);
 // FAQ — research_brief question (emergency service: sewer backups), answered from intake only
 $faqs = [
     [
-        'q' => 'Do you offer emergency plumbing service for a sewer backup in Seminole?',
-        'a' => 'Ledco Plumbing LLC takes calls seven days a week, 7 AM to 5 PM, and a sewer backup should be a phone call, not a form. Call (405) 257-3096, tell the office which drains are backing up and where your sewer cleanout is if you know, and keep everyone in the house from running water until the line is open.',
+        'q' => 'What are your hours?',
+        'a' => 'Ledco Plumbing is open 7 AM to 5 PM, 7 days a week, and a sewer backup should be a phone call, not a form. Call (405) 257-3096, tell the office which drains are backing up and where your sewer cleanout is if you know, and keep everyone in the house from running water until the line is open.',
     ],
 ];
 
 $pageSchema   = generateServicePageSchema($svc, $pageTitle, $pageDescription);
-if ($faqs) $pageSchema[] = generateFAQSchema($faqs);   // FAQPage mirrors the visible FAQ exactly
 $schemaMarkup = $pageSchema;
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
@@ -215,7 +214,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
       <div class="hero-text hero-copy">
         <span class="eyebrow">Seminole, OK &middot; Sewer lines</span>
         <h1 class="hero-title" id="hero-title"><span class="text-accent">Sewer line repair</span> in Seminole, OK</h1>
-        <p class="hero-answer">Ledco Plumbing LLC repairs sewer lines that back up, leak or fill with roots, for homes and businesses in Seminole and Wewoka. If several drains are backing up at once, or water is coming up through the lowest drain in the house, stop using water and call <?php echo esc($slPhone); ?>.</p>
+        <p class="hero-answer">Ledco Plumbing repairs sewer lines that back up, leak or fill with roots, for homes and businesses in Seminole and Wewoka. If several drains are backing up at once, or water is coming up through the lowest drain in the house, stop using water and call <?php echo esc($slPhone); ?>.</p>
         <div class="hero-actions">
           <button type="button" class="btn btn-accent btn-lg hero-form-open" data-open-estimate>Get a free estimate</button>
           <a class="link-call" href="<?php echo esc($slPhoneHref); ?>"><?php icon('phone', 18); ?> or call <?php echo esc($slPhone); ?></a>
@@ -412,7 +411,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
     <div class="section-title reveal-up">
       <span class="eyebrow-label">The repair</span>
       <h2 id="process-title">How does Ledco Plumbing handle a sewer line repair?</h2>
-      <p class="answer-block">A sewer line repair with Ledco Plumbing LLC starts with finding what is wrong and where along the line, then pricing the repair that fits. Once you approve the estimate, the damaged section is repaired or replaced and every drain in the house is run to prove the line flows.</p>
+      <p class="answer-block">A sewer line repair with Ledco Plumbing starts with finding what is wrong and where along the line, then pricing the repair that fits. Once you approve the estimate, the damaged section is repaired or replaced and every drain in the house is run to prove the line flows.</p>
     </div>
     <ol class="process-steps reveal-up">
       <li><b>Get the line flowing</b><span>If the house is backed up, the first job is to open the line so you can use your plumbing again.</span></li>
@@ -431,7 +430,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/service-cards.php';
       <div class="section-title reveal-left">
         <span class="eyebrow-label">Why Ledco Plumbing</span>
         <h2 id="why-title">Why call Ledco Plumbing for sewer line repair in <span class="text-accent">Seminole</span>?</h2>
-        <p class="answer-block">Ledco Plumbing LLC handles both drain cleaning and sewer line repair, so a backup that turns out to be a broken pipe is not handed to someone else. The Seminole company is owned by Mickey Ledbetter, you approve the price before any digging, and the office takes calls every day.</p>
+        <p class="answer-block">Ledco Plumbing handles both drain cleaning and sewer line repair, so a backup that turns out to be a broken pipe is not handed to someone else. The Seminole company is owned by Mickey Ledbetter, you approve the price before any digging, and the office takes calls every day.</p>
       </div>
       <ul class="sl-why__list reveal-right">
         <li><?php icon('waves', 22); ?><b>Clearing and repair</b><span>The company that opens the line can also fix the break.</span></li>
@@ -456,7 +455,7 @@ if ($slReviews !== ''): ?>
     <div class="section-title reveal-up">
       <span class="eyebrow-label">Questions</span>
       <h2 id="faq-title">Will Ledco Plumbing come out for a <span class="text-accent">sewer backup</span>?</h2>
-      <p class="answer-block">Ledco Plumbing LLC takes sewer backup calls by phone every day of the week, 7 AM to 5 PM. A backup should always be a phone call rather than a web form, so the office hears about it right away. The answer below covers what to tell the office when you call.</p>
+      <p class="answer-block">Ledco Plumbing takes sewer backup calls by phone every day of the week, 7 AM to 5 PM. A backup should always be a phone call rather than a web form, so the office hears about it right away. The answer below covers what to tell the office when you call.</p>
     </div>
     <div class="faq-grid reveal-up">
 <?php foreach ($faqs as $slFaq): ?>
@@ -476,7 +475,7 @@ if ($slReviews !== ''): ?>
     <div class="section-title reveal-up">
       <span class="eyebrow-label">What We Do</span>
       <h2>Which other <span class="text-accent">Ledco Plumbing</span> services pair with sewer work?</h2>
-      <p class="answer-block">Beyond sewer line repair, Ledco Plumbing LLC handles commercial plumbing, clears drains, repairs and installs water heaters, and finds hidden leaks for Seminole and Wewoka properties. The three below each have their own page with the warning signs and how the work is done.</p>
+      <p class="answer-block">Beyond sewer line repair, Ledco Plumbing handles commercial plumbing, clears drains, repairs and installs water heaters, and finds hidden leaks for Seminole and Wewoka properties. The three below each have their own page with the warning signs and how the work is done.</p>
     </div>
     <div class="services-grid">
 <?php foreach (p1_other_services($svcSlug) as $slIdx => $slOther) p1_render_service_card($slOther, $slIdx + 1, 'reveal-up'); ?>

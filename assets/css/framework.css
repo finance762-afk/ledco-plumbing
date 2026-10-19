@@ -518,7 +518,7 @@ dialog.estimate-dialog::backdrop { background: rgba(0,0,0,.55); backdrop-filter:
 .footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1.1fr; gap: 2.5rem; }
 .footer-brand img, .footer-logo img { width: auto; max-width: 220px; height: auto; margin-bottom: 1rem; }
 .footer-brand p, .footer-col p { font-size: .92rem; margin: 0 0 .8rem; }
-.site-footer h4, .footer-v7 h4, .footer-col h4 { font-family: var(--font-accent); font-weight: 700; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--color-accent-bright); margin: 0 0 .9rem; }
+.site-footer h4, .footer-v7 h4, .footer-col h4, .site-footer h3, .footer-col h3 { font-family: var(--font-accent); font-weight: 700; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--color-accent-bright); margin: 0 0 .9rem; }
 .site-footer ul, .footer-v7 ul, .footer-col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .45rem; }
 .site-footer ul a, .footer-v7 ul a { color: rgba(255,255,255,.82); text-decoration: none; font-size: .93rem; }
 .site-footer ul a:hover, .footer-v7 ul a:hover { color: #fff; text-decoration: underline; }
@@ -663,7 +663,7 @@ p { overflow-wrap: anywhere; }
 
 /* Footer: legal row (legal-compliance.md) + hours + entity block */
 .footer-top { padding-bottom: 1rem; }
-.footer-col h4 { margin-top: 0; }
+.footer-col h4, .footer-col h3 { margin-top: 0; }
 .footer-hours { display: grid; gap: .25rem; font-size: .9rem; margin: 0 0 .8rem; }
 .footer-hours div { display: flex; justify-content: space-between; gap: 1rem; max-width: 18rem; }
 .footer-cta { margin-top: .9rem; }
@@ -709,3 +709,18 @@ p { overflow-wrap: anywhere; }
 .hero--type .hero-chips li, .hero--type .hero-trust-item { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.2); color: #fff; }
 .hero--type .hero-chips svg, .hero--type .hero-trust-item svg { color: var(--color-accent-bright); }
 .hero--type .text-accent { color: var(--color-accent-bright); }
+
+/* ── Mobile optimization pass (2026-10-19): ≥16px body text, ≥44px tap targets. Mirrored in includes/critical.css so it applies at first paint (no layout shift). ── */
+@media (max-width: 767px) {
+  main p:not([class]), main li:not([class]), main dd, main td, .answer-block, .service-card__desc, .blog-card__excerpt,
+  .symptoms-note, .estimate-area, .blog-post__meta, .bp-byline, [class*="__note"], [class*="__source"],
+  [class*="__tip"], .form-footnote, .form-disclaimer, .consent, .consent-label { font-size: 1rem !important; line-height: 1.6; }
+  .breadcrumb a { min-width: 44px; justify-content: center; }
+  main a:not(p a, .btn, h1 a, h2 a, h3 a), a.link-call, .service-card__cta, .symptom-link, .footer-viewall, footer a,
+  .mobile-menu a, summary, a[href^="tel:"] { min-height: 44px; display: inline-flex; align-items: center; }
+  summary { display: flex; padding-block: .6rem; }
+  [class*="cookie"] button { min-width: 64px; min-height: 44px; }
+  input[type="checkbox"], input[type="radio"] { width: 24px !important; height: 24px !important; min-width: 24px; margin: 10px 10px 10px 0; flex: none; }
+  label.consent, label:has(> .consent-checkbox) { display: flex; align-items: flex-start; gap: .25rem; min-height: 44px; cursor: pointer; }
+  input, select, textarea { font-size: 16px !important; }
+}

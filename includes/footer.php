@@ -64,7 +64,7 @@ $footAddrLine     = (!empty($addressPublic) && !empty($address['street']) ? $add
         </div>
 
         <div class="footer-col">
-          <h4>Services</h4>
+          <h3>Services</h3>
           <ul>
 <?php foreach ($footServices as $footSvcLink): ?>
             <li><?php if ($footSvcLink['href']): ?><a href="<?php echo esc($footSvcLink['href']); ?>"><?php echo esc($footSvcLink['name']); ?></a><?php else: echo esc($footSvcLink['name']); endif; ?></li>
@@ -76,7 +76,7 @@ $footAddrLine     = (!empty($addressPublic) && !empty($address['street']) ? $add
         </div>
 
         <div class="footer-col">
-          <h4>Service Areas</h4>
+          <h3>Service Areas</h3>
           <ul>
 <?php foreach ($footAreas as $footAreaLink): ?>
             <li><?php if ($footAreaLink['href']): ?><a href="<?php echo esc($footAreaLink['href']); ?>"><?php echo esc($footAreaLink['name']); ?></a><?php else: echo esc($footAreaLink['name']); endif; ?></li>
@@ -86,7 +86,7 @@ $footAddrLine     = (!empty($addressPublic) && !empty($address['street']) ? $add
           <a class="footer-viewall" href="<?php echo esc(P1_AREAS_HUB); ?>">View All Areas &rarr;</a>
 <?php endif; ?>
 <?php if ($footHasCompany): ?>
-          <h4 style="margin-top:1.6rem">Company</h4>
+          <h3 style="margin-top:1.6rem">Company</h3>
           <ul>
 <?php if (pageLive('/about/')): ?>
             <li><a href="/about/">About Us</a></li>
@@ -105,12 +105,12 @@ $footAddrLine     = (!empty($addressPublic) && !empty($address['street']) ? $add
         </div>
 
         <div class="footer-col">
-          <h4>Contact</h4>
+          <h3>Contact</h3>
           <div class="footer-nap">
             <div><?php icon('phone', 18); ?><a href="<?php echo esc($footPhoneHref); ?>"><?php echo esc($footPhone); ?></a></div>
             <div><?php icon('map-pin', 18); ?><span><?php echo esc($footAddrLine); ?></span></div>
           </div>
-          <h4 style="margin-top:1.4rem">Hours</h4>
+          <h3 style="margin-top:1.4rem">Hours</h3>
           <div class="footer-hours">
 <?php foreach ($footHours as $footHourRow): ?>
             <div><span><?php echo esc($footHourRow['days']); ?></span><span><?php echo esc($footHourRow['label']); ?></span></div>

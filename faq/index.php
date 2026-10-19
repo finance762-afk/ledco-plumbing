@@ -15,8 +15,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  * Section script: interior type hero + category jump chips → General → ONE mid-page estimate band → Services →
  * Pricing → Process → closing CTA.
  */
-$pageTitle       = 'Plumbing FAQ | Ledco Plumbing LLC, Seminole, OK';
-$pageDescription = 'Answers to 18 plumbing questions from Seminole, OK customers: hours, costs, drain cleaning, water heaters, leaks, sewer lines and how a Ledco job runs.';
+$pageTitle       = 'Plumbing FAQ for Seminole, OK | Ledco Plumbing LLC';
+$pageDescription = 'Answers to 18 plumbing questions from Seminole, OK customers on hours, costs, drain cleaning, water heaters, leaks and sewer lines. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/faq/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'faq';
@@ -124,7 +124,7 @@ $pageSchema = [
 ];
 $schemaMarkup = $pageSchema;
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band-form.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php';
 
 /** One category block: sticky heading column + the questions as <details>. */
 function fq_render_category(string $id, array $cat, bool $reverse, bool $firstOpen = true): void {

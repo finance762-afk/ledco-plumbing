@@ -18,7 +18,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  * Local history source (late-1920s Seminole oil boom): https://www.okhistory.org/publications/enc/entry?entry=SE012
  */
 $pageTitle       = 'About Ledco Plumbing LLC | Plumber in Seminole, OK';
-$pageDescription = 'Meet Ledco Plumbing LLC, a Seminole, OK plumbing company owned by Mickey Ledbetter. Office on E Oak Ave, open 7 days a week, serving Seminole and Wewoka.';
+$pageDescription = 'Meet Ledco Plumbing LLC, a Seminole, OK plumbing company owned by Mickey Ledbetter. Serving Seminole and Wewoka seven days a week. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/about/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'about';
@@ -53,7 +53,7 @@ $pageSchema = [
 ];
 $schemaMarkup = $pageSchema;
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band-form.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/cta-band.php';
 ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/head.php'; ?>
 <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php'; ?>

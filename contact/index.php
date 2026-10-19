@@ -13,8 +13,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  * Map: the real GBP embed from build-plan integrations.gbp_map_embed (config $gbp['embed_src']).
  * No response-time promise is printed — intake does not supply one (see /content-confirmations.json).
  */
-$pageTitle       = 'Contact Ledco Plumbing | Plumber in Seminole, OK';
-$pageDescription = 'Call (405) 257-3096 or send a request to Ledco Plumbing LLC at 316 E Oak Ave, Seminole, OK. Open 7 days, 7 AM to 5 PM, serving Seminole and Wewoka.';
+$pageTitle       = 'Contact Ledco Plumbing LLC | Plumber in Seminole, OK';
+$pageDescription = 'Call (405) 257-3096 or send a request online to Ledco Plumbing LLC at 316 E Oak Ave, Seminole, OK. Open 7 days, 7 AM to 5 PM, serving Seminole and Wewoka.';
 $canonicalUrl    = $siteUrl . '/contact/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'contact';

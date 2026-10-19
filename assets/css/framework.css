@@ -88,6 +88,7 @@
   --measure: 62ch; --content-width: 62ch;
   --nav-height: 84px; --navbar-height: 84px;
   --max-width: 1180px; --container: 1180px; --max-width-wide: 1400px; --container-wide: 1400px;
+  --container-max: var(--max-width); --bg-alt: var(--color-paper-2); --text-light: var(--color-muted); --ba-pos: 50%;   /* aliases the v8 components (before-after, recent-work, booking, estimate, zip-check) reference */
   --section-pad: clamp(3.5rem, 7vw, 6rem); --section-pad-mobile: 3rem;
   --space-1: .25rem; --space-2: .5rem; --space-3: .75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
   --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem;

@@ -1,6 +1,6 @@
 <?php
 /**
- * includes/cta-band-form.php — the ONE mid-page estimate band for About and FAQ (never a hero form there).
+ * includes/cta-band.php — the ONE mid-page estimate band for About and FAQ (never a hero form there).
  * CLAUDE.md "Lead Form Placement": <section class="cta-band" id="estimate">, copy ≈1/3, form card ≈2/3 with the
  * fields three-up (name | phone | email / service | button / consent | footnote), ≈300px tall on desktop.
  *

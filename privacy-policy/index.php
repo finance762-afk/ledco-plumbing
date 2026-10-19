@@ -10,7 +10,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  */
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/legal-page.php';
 
-$pageTitle       = 'Privacy Policy | Ledco Plumbing LLC';
+$pageTitle       = 'Privacy Policy | Ledco Plumbing LLC in Seminole, OK';
 $pageDescription = 'How Ledco Plumbing LLC in Seminole, OK collects, uses and protects your information from the website, contact forms, phone calls and text messages.';
 $canonicalUrl    = $siteUrl . '/privacy-policy/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
@@ -26,7 +26,9 @@ $schemaMarkup = $pageSchema;
 <?php echo p1_legal_style(); ?>
 
 <div class="legal-page">
-<?php echo p1_legal_hero('Privacy Policy', 'Legal', $lastUpdated); ?>
+<?php echo p1_legal_hero_open('Privacy Policy', 'Legal'); ?>
+    <h1 id="legal-title">Privacy Policy</h1>
+<?php echo p1_legal_hero_close($lastUpdated); ?>
 
 <div class="legal-body">
   <div class="container">

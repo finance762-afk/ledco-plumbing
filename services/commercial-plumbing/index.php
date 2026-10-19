@@ -20,7 +20,7 @@ $svc = null;
 foreach ($services as $svcItem) { if ($svcItem['slug'] === $svcSlug) { $svc = $svcItem; break; } }
 
 $pageTitle       = 'Commercial Plumbing Seminole OK | Ledco Plumbing LLC';
-$pageDescription = 'Commercial plumbing in Seminole, OK. Ledco Plumbing LLC repairs restrooms, drains, water heaters, leaks and sewer lines for local businesses, Mon–Sun 7–5.';
+$pageDescription = 'Commercial plumbing in Seminole, OK. Ledco Plumbing LLC repairs restrooms, drains, water heaters, leaks and sewer lines for businesses. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/services/commercial-plumbing/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'services/commercial-plumbing';

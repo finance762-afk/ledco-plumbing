@@ -25,7 +25,7 @@ $svc = null;
 foreach ($services as $svcItem) { if ($svcItem['slug'] === $svcSlug) { $svc = $svcItem; break; } }
 
 $pageTitle       = 'Leak Detection & Repair Seminole OK | Ledco Plumbing LLC';
-$pageDescription = 'Leak detection and repair in Seminole, OK. Ledco Plumbing LLC traces high water bills and hidden leaks in walls, slabs and yard lines, then fixes the pipe.';
+$pageDescription = 'Leak detection and repair in Seminole, OK. Ledco Plumbing LLC traces high water bills and hidden leaks in walls, slabs and yard lines. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/services/leak-detection-repair/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'services/leak-detection-repair';

@@ -20,7 +20,7 @@ $svc = null;
 foreach ($services as $svcItem) { if ($svcItem['slug'] === $svcSlug) { $svc = $svcItem; break; } }
 
 $pageTitle       = 'Sewer Line Repair Seminole OK | Ledco Plumbing LLC';
-$pageDescription = 'Sewer line repair in Seminole, OK. Ledco Plumbing LLC fixes backed-up, cracked and root-filled sewer lines for homes and businesses in Seminole and Wewoka.';
+$pageDescription = 'Sewer line repair in Seminole, OK. Ledco Plumbing LLC fixes backed-up, cracked and root-filled sewer lines in Seminole and Wewoka. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/services/sewer-line-repair/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'services/sewer-line-repair';

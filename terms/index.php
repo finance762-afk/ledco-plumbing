@@ -11,7 +11,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  */
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/legal-page.php';
 
-$pageTitle       = 'Terms of Service | Ledco Plumbing LLC';
+$pageTitle       = 'Terms of Service | Ledco Plumbing LLC in Seminole, OK';
 $pageDescription = 'Terms of Service for the Ledco Plumbing LLC website and plumbing services in Seminole, OK: estimates, work, payment, liability and governing law.';
 $canonicalUrl    = $siteUrl . '/terms/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
@@ -27,7 +27,9 @@ $schemaMarkup = $pageSchema;
 <?php echo p1_legal_style(); ?>
 
 <div class="legal-page">
-<?php echo p1_legal_hero('Terms of Service', 'Legal', $lastUpdated); ?>
+<?php echo p1_legal_hero_open('Terms of Service', 'Legal'); ?>
+    <h1 id="legal-title">Terms of Service</h1>
+<?php echo p1_legal_hero_close($lastUpdated); ?>
 
 <div class="legal-body">
   <div class="container">

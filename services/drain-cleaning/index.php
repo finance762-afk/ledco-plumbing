@@ -19,8 +19,8 @@ $svcSlug = 'drain-cleaning';
 $svc = null;
 foreach ($services as $svcItem) { if ($svcItem['slug'] === $svcSlug) { $svc = $svcItem; break; } }
 
-$pageTitle       = 'Drain Cleaning Seminole OK | Ledco Plumbing LLC';
-$pageDescription = 'Drain cleaning in Seminole, OK from Ledco Plumbing LLC: kitchen, bath, laundry and main line clogs cleared for homes and businesses. Open 7 days, 7 AM–5 PM.';
+$pageTitle       = 'Drain Cleaning in Seminole, OK | Ledco Plumbing LLC';
+$pageDescription = 'Drain cleaning in Seminole, OK from Ledco Plumbing LLC: kitchen, bath, laundry and main line clogs cleared for homes and businesses. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/services/drain-cleaning/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'services/drain-cleaning';

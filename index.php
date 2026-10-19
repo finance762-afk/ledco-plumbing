@@ -19,7 +19,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  *   https://www.okhistory.org/publications/enc/entry?entry=GR020  ("Greater Seminole Oil Field")
  */
 $pageTitle       = 'Drain Cleaning & Plumber in Seminole, OK | Ledco Plumbing';
-$pageDescription = 'Ledco Plumbing LLC in Seminole, OK: drain cleaning, water heater repair & installation, leak detection, sewer line repair and commercial plumbing.';
+$pageDescription = 'Ledco Plumbing LLC in Seminole, OK: drain cleaning, water heaters, leak detection, sewer lines and commercial plumbing. Open 7 days. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'home';
@@ -403,6 +403,7 @@ $schemaMarkup = $pageSchema;
           <?php echo p1_lead_hidden_fields('hero'); ?>
           <div class="form-row"><label class="sr-only" for="hero-name">Name</label><input id="hero-name" type="text" name="name" placeholder="Name" autocomplete="name" required></div>
           <div class="form-row"><label class="sr-only" for="hero-phone">Phone</label><input id="hero-phone" type="tel" name="phone" placeholder="Phone" autocomplete="tel" inputmode="tel" required></div>
+          <div class="form-row"><label class="sr-only" for="hero-email">Email</label><input id="hero-email" type="email" name="email" placeholder="Email" autocomplete="email" required></div>
           <div class="form-row"><label class="sr-only" for="hero-service">Service</label><select id="hero-service" name="service"><?php echo p1_service_options(); ?></select></div>
           <label class="consent" for="hero-terms"><input id="hero-terms" type="checkbox" name="terms_accepted" value="yes" required><span>I agree to the <a href="/terms/" target="_blank" rel="noopener">Terms</a> and <a href="/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> and consent to be contacted. *</span></label>
           <button type="submit" class="btn btn-primary btn-block">Get my free estimate</button>

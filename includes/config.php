@@ -141,7 +141,7 @@ $textUsNumber   = '';   // integrations.text_us_number is null (accepts_sms fals
 $financing      = [];   // integrations.financing is null
 $serviceZips    = [];   // integrations.service_zips not provided
 
-$cssVersion = '2';   // the SINGLE framework.css cache-bust; bump here on every framework.css / critical.css change
+$cssVersion = '3';   // the SINGLE framework.css cache-bust; bump here on every framework.css / critical.css change
 
 // ---- Legal pages ------------------------------------------------------------------------------
 // Entity type comes from the registered name "Ledco Plumbing LLC". State of formation was not collected;

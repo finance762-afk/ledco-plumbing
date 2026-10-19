@@ -21,16 +21,16 @@ $lastmod = function (string $path) use ($root): string {
 };
 
 $pages = [['path' => '/', 'priority' => '1.0', 'changefreq' => 'weekly']];
-if (pageLive('/services/')) $pages[] = ['path' => '/services/', 'priority' => '0.9', 'changefreq' => 'monthly'];
+if (pageLive('/services/')) $pages[] = ['path' => '/services/', 'priority' => '0.8', 'changefreq' => 'monthly'];
 foreach ((array) $services as $svc) {
-    if (serviceLive($svc['slug'])) $pages[] = ['path' => '/services/' . $svc['slug'] . '/', 'priority' => '0.9', 'changefreq' => 'monthly'];
+    if (serviceLive($svc['slug'])) $pages[] = ['path' => '/services/' . $svc['slug'] . '/', 'priority' => '0.8', 'changefreq' => 'monthly'];
 }
-if (pageLive(P1_AREAS_HUB)) $pages[] = ['path' => P1_AREAS_HUB, 'priority' => '0.8', 'changefreq' => 'monthly'];
+if (pageLive(P1_AREAS_HUB)) $pages[] = ['path' => P1_AREAS_HUB, 'priority' => '0.6', 'changefreq' => 'monthly'];
 foreach ((array) $serviceAreaDetails as $area) {
-    if (areaLive($area['slug'])) $pages[] = ['path' => '/service-areas/' . $area['slug'] . '/', 'priority' => '0.8', 'changefreq' => 'monthly'];
+    if (areaLive($area['slug'])) $pages[] = ['path' => '/service-areas/' . $area['slug'] . '/', 'priority' => '0.6', 'changefreq' => 'monthly'];
 }
-foreach (['/about/' => '0.7', '/contact/' => '0.7', '/faq/' => '0.6'] as $path => $priority) {
-    if (pageLive($path)) $pages[] = ['path' => $path, 'priority' => $priority, 'changefreq' => 'monthly'];
+foreach (['/about/', '/contact/', '/faq/'] as $path) {
+    if (pageLive($path)) $pages[] = ['path' => $path, 'priority' => '0.6', 'changefreq' => 'monthly'];
 }
 if (pageLive('/blog/')) $pages[] = ['path' => '/blog/', 'priority' => '0.6', 'changefreq' => 'weekly'];
 foreach (['/privacy-policy/', '/terms/', '/cookie-policy/', '/accessibility/'] as $path) {

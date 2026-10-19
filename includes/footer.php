@@ -18,11 +18,7 @@ $footAreas = [];
 foreach ((array) $serviceAreaDetails as $footArea) {
     $footAreas[] = ['name' => $footArea['city'] . ', ' . $footArea['state'], 'href' => areaHref($footArea['slug'])];
 }
-$footCompany = [];
-if (pageLive('/about/'))   $footCompany[] = ['About Us', '/about/'];
-if (pageLive('/faq/'))     $footCompany[] = ['FAQ', '/faq/'];
-if (pageLive('/blog/'))    $footCompany[] = ['Blog', '/blog/'];
-if (pageLive('/contact/')) $footCompany[] = ['Contact', '/contact/'];
+$footHasCompany = pageLive('/about/') || pageLive('/faq/') || pageLive('/blog/') || pageLive('/contact/');
 
 // Trust badges: only facts config.php actually holds
 $footBadges = [];
@@ -89,12 +85,21 @@ $footAddrLine     = (!empty($addressPublic) && !empty($address['street']) ? $add
 <?php if (pageLive(P1_AREAS_HUB)): ?>
           <a class="footer-viewall" href="<?php echo esc(P1_AREAS_HUB); ?>">View All Areas &rarr;</a>
 <?php endif; ?>
-<?php if ($footCompany): ?>
+<?php if ($footHasCompany): ?>
           <h4 style="margin-top:1.6rem">Company</h4>
           <ul>
-<?php foreach ($footCompany as $footLink): ?>
-            <li><a href="<?php echo esc($footLink[1]); ?>"><?php echo esc($footLink[0]); ?></a></li>
-<?php endforeach; ?>
+<?php if (pageLive('/about/')): ?>
+            <li><a href="/about/">About Us</a></li>
+<?php endif; ?>
+<?php if (pageLive('/faq/')): ?>
+            <li><a href="/faq/">FAQ</a></li>
+<?php endif; ?>
+<?php if (pageLive('/blog/')): ?>
+            <li><a href="/blog/">Blog</a></li>
+<?php endif; ?>
+<?php if (pageLive('/contact/')): ?>
+            <li><a href="/contact/">Contact</a></li>
+<?php endif; ?>
           </ul>
 <?php endif; ?>
         </div>
@@ -129,6 +134,39 @@ $footAddrLine     = (!empty($addressPublic) && !empty($address['street']) ? $add
         <meta itemprop="name" content="<?php echo esc($siteName); ?>">
         <meta itemprop="url" content="<?php echo esc(rtrim($siteUrl, '/') . '/'); ?>">
         <meta itemprop="telephone" content="<?php echo esc($phoneE164); ?>">
+        <meta itemprop="email" content="<?php echo esc($email); ?>">
+        <meta itemprop="description" content="<?php echo esc($businessDescription); ?>">
+        <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+<?php if (!empty($addressPublic) && !empty($address['street'])): ?>
+          <meta itemprop="streetAddress" content="<?php echo esc($address['street']); ?>">
+<?php endif; ?>
+          <meta itemprop="addressLocality" content="<?php echo esc($address['city']); ?>">
+          <meta itemprop="addressRegion" content="<?php echo esc($address['state']); ?>">
+<?php if (!empty($address['zip'])): ?>
+          <meta itemprop="postalCode" content="<?php echo esc($address['zip']); ?>">
+<?php endif; ?>
+          <meta itemprop="addressCountry" content="US">
+        </span>
+<?php if (!empty($geo['lat']) && !empty($geo['lng'])): ?>
+        <span itemprop="geo" itemscope itemtype="https://schema.org/GeoCoordinates">
+          <meta itemprop="latitude" content="<?php echo esc($geo['lat']); ?>">
+          <meta itemprop="longitude" content="<?php echo esc($geo['lng']); ?>">
+        </span>
+<?php endif; ?>
+<?php foreach ((array) $serviceAreaDetails as $footAreaMeta): ?>
+        <meta itemprop="areaServed" content="<?php echo esc($footAreaMeta['city'] . ', ' . $footAreaMeta['state']); ?>">
+<?php endforeach; ?>
+<?php
+// openingHours microdata ("Mo-Su 07:00-17:00") from the same $hours rows the visible hours and JSON-LD use
+$footDayCodes = ['Mon' => 'Mo', 'Tue' => 'Tu', 'Wed' => 'We', 'Thu' => 'Th', 'Fri' => 'Fr', 'Sat' => 'Sa', 'Sun' => 'Su'];
+foreach ($footHours as $footHourGroup):
+    $footHourRow0 = null;
+    foreach ((array) $hours as $footHourRaw) { if ($footHourRaw['short'] === $footHourGroup['first']) { $footHourRow0 = $footHourRaw; break; } }
+    if (!$footHourRow0) continue;
+    $footDaysCode = $footDayCodes[$footHourGroup['first']] . ($footHourGroup['first'] === $footHourGroup['last'] ? '' : '-' . $footDayCodes[$footHourGroup['last']]);
+?>
+        <meta itemprop="openingHours" content="<?php echo esc($footDaysCode . ' ' . $footHourRow0['opens'] . '-' . $footHourRow0['closes']); ?>">
+<?php endforeach; ?>
         <p><?php echo esc($siteName); ?> is a plumber based in <?php echo esc($address['city']); ?>, Oklahoma, serving <?php echo esc(implode(' and ', $footAreaNames)); ?> with <?php echo esc(implode(', ', array_slice($footServiceNames, 0, -1)) . ', and ' . end($footServiceNames)); ?>. Call <a href="<?php echo esc($footPhoneHref); ?>"><?php echo esc($footPhone); ?></a> or visit <?php echo esc($footAddrLine); ?>. Open <?php echo esc($footHoursSentence); ?>.</p>
       </div>
     </div>

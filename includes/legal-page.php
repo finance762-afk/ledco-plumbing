@@ -3,7 +3,7 @@
  * includes/legal-page.php — shared pieces for the four legal pages (privacy-policy, terms, cookie-policy, accessibility).
  *
  *   p1_legal_style()                         the <style> block: 40vh solid hero + single-column .legal-prose, tokens only
- *   p1_legal_hero($title, $eyebrowNote, $updated)   <section class="hero hero--legal"> + breadcrumb
+ *   p1_legal_hero_open($title, $eyebrow) / p1_legal_hero_close($updated)   <section class="hero hero--legal"> + breadcrumb around the page's own <h1>
  *   p1_legal_contact()                       the standard contact block that closes every policy
  *   p1_legal_schema($title, $desc, $path)    WebPage + BreadcrumbList nodes for $pageSchema
  *
@@ -49,17 +49,21 @@ CSS;
     }
 }
 
-if (!function_exists('p1_legal_hero')) {
-    function p1_legal_hero(string $title, string $eyebrow, string $updated): string {
+if (!function_exists('p1_legal_hero_open')) {
+    /** Hero up to the eyebrow. The page writes its own <h1 id="legal-title"> between open and close (one H1, visible in the page file). */
+    function p1_legal_hero_open(string $title, string $eyebrow): string {
         $t = esc($title);
         return '<section class="hero hero--legal" aria-labelledby="legal-title">' . "\n"
              . '  <div class="container">' . "\n"
              . '    <nav class="breadcrumb" aria-label="Breadcrumb"><ol>'
              . '<li><a href="/">Home</a></li><li class="breadcrumb-sep" aria-hidden="true">/</li><li><span aria-current="page">' . $t . '</span></li>'
              . '</ol></nav>' . "\n"
-             . '    <span class="eyebrow">' . esc($eyebrow) . '</span>' . "\n"
-             . '    <h1 id="legal-title">' . $t . '</h1>' . "\n"
-             . '    <p class="legal-updated">Last Updated: ' . esc($updated) . '</p>' . "\n"
+             . '    <span class="eyebrow">' . esc($eyebrow) . '</span>' . "\n";
+    }
+}
+if (!function_exists('p1_legal_hero_close')) {
+    function p1_legal_hero_close(string $updated): string {
+        return '    <p class="legal-updated">Last Updated: ' . esc($updated) . '</p>' . "\n"
              . '  </div>' . "\n"
              . '</section>' . "\n";
     }

@@ -14,7 +14,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  * target_radius is 25 miles but its service_areas list holds only Seminole and Wewoka, so only those two are named.
  */
 $pageTitle       = 'Service Areas: Seminole & Wewoka, OK | Ledco Plumbing';
-$pageDescription = 'Ledco Plumbing LLC serves Seminole and Wewoka, OK from its office at 316 E Oak Ave: drain cleaning, water heaters, leaks, sewer lines and commercial plumbing.';
+$pageDescription = 'Ledco Plumbing LLC serves Seminole and Wewoka, OK from 316 E Oak Ave: drains, water heaters, leaks, sewer lines and commercial plumbing. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/service-areas/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'service-areas';

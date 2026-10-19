@@ -32,8 +32,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  */
 $areaSlug = 'wewoka-ok';
 
-$pageTitle       = 'Plumber in Wewoka, OK | Ledco Plumbing LLC';
-$pageDescription = 'Ledco Plumbing LLC serves Wewoka, OK from its Seminole office: leak detection, water heaters, drains, sewer lines and commercial plumbing. Open 7 days.';
+$pageTitle       = 'Plumber in Wewoka, OK | Ledco Plumbing LLC, Seminole Office';
+$pageDescription = 'Ledco Plumbing LLC serves Wewoka, OK from its Seminole office: leak detection, water heaters, drains, sewer lines, commercial plumbing. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/service-areas/wewoka-ok/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'areas/wewoka-ok';

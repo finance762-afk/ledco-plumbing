@@ -28,8 +28,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  */
 $areaSlug = 'seminole-ok';
 
-$pageTitle       = 'Plumber in Seminole, OK | Ledco Plumbing LLC';
-$pageDescription = 'Ledco Plumbing LLC, 316 E Oak Ave, Seminole, OK: drain cleaning, water heaters, leak detection, sewer lines and commercial plumbing. Open 7 days.';
+$pageTitle       = 'Plumber in Seminole, OK | Ledco Plumbing LLC, E Oak Ave';
+$pageDescription = 'Ledco Plumbing LLC, 316 E Oak Ave, Seminole, OK: drain cleaning, water heaters, leak detection, sewer lines, commercial plumbing. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/service-areas/seminole-ok/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'areas/seminole-ok';

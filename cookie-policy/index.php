@@ -13,7 +13,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  */
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/legal-page.php';
 
-$pageTitle       = 'Cookie Policy | Ledco Plumbing LLC';
+$pageTitle       = 'Cookie Policy | Ledco Plumbing LLC in Seminole, OK';
 $pageDescription = 'The cookies and browser storage the Ledco Plumbing LLC website in Seminole, OK uses, what each one is for, and how you can block or clear them.';
 $canonicalUrl    = $siteUrl . '/cookie-policy/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
@@ -31,7 +31,9 @@ $schemaMarkup = $pageSchema;
 <?php echo p1_legal_style(); ?>
 
 <div class="legal-page">
-<?php echo p1_legal_hero('Cookie Policy', 'Legal', $lastUpdated); ?>
+<?php echo p1_legal_hero_open('Cookie Policy', 'Legal'); ?>
+    <h1 id="legal-title">Cookie Policy</h1>
+<?php echo p1_legal_hero_close($lastUpdated); ?>
 
 <div class="legal-body">
   <div class="container">

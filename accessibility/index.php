@@ -10,7 +10,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  */
 require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/legal-page.php';
 
-$pageTitle       = 'Accessibility Statement | Ledco Plumbing LLC';
+$pageTitle       = 'Accessibility Statement | Ledco Plumbing LLC, Seminole OK';
 $pageDescription = 'Ledco Plumbing LLC in Seminole, OK aims to meet WCAG 2.1 Level AA. See the accessibility features on this website and how to report a barrier.';
 $canonicalUrl    = $siteUrl . '/accessibility/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
@@ -26,7 +26,9 @@ $schemaMarkup = $pageSchema;
 <?php echo p1_legal_style(); ?>
 
 <div class="legal-page">
-<?php echo p1_legal_hero('Accessibility Statement', 'Legal', $lastUpdated); ?>
+<?php echo p1_legal_hero_open('Accessibility Statement', 'Legal'); ?>
+    <h1 id="legal-title">Accessibility Statement</h1>
+<?php echo p1_legal_hero_close($lastUpdated); ?>
 
 <div class="legal-body">
   <div class="container">

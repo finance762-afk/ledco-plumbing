@@ -20,8 +20,8 @@ $svcSlug = 'water-heater-repair-installation';
 $svc = null;
 foreach ($services as $svcItem) { if ($svcItem['slug'] === $svcSlug) { $svc = $svcItem; break; } }
 
-$pageTitle       = 'Water Heater Repair & Installation Seminole OK | Ledco Plumbing LLC';
-$pageDescription = 'Water heater repair and installation in Seminole, OK. Ledco Plumbing LLC finds why your heater runs cold or leaks, then repairs it or installs a new one.';
+$pageTitle       = 'Water Heater Repair & Installation, Seminole OK | Ledco';
+$pageDescription = 'Water heater repair and installation in Seminole, OK. Ledco Plumbing LLC finds why a heater runs cold or leaks, then fixes or replaces it. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/services/water-heater-repair-installation/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'services/water-heater-repair-installation';

@@ -15,7 +15,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
  * (homepage process, research brief), and the rest is in /content-confirmations.json.
  */
 $pageTitle       = 'Plumbing Services in Seminole, OK | Ledco Plumbing LLC';
-$pageDescription = 'Ledco Plumbing LLC services in Seminole, OK: drain cleaning, water heater repair and installation, leak detection, sewer line repair and commercial plumbing.';
+$pageDescription = 'Drain cleaning, water heater repair and installation, leak detection, sewer line repair and commercial plumbing in Seminole and Wewoka, OK. Call (405) 257-3096.';
 $canonicalUrl    = $siteUrl . '/services/';
 $ogImage         = '/assets/images/og-default-v1.jpg';
 $currentPage     = 'services';

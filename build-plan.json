@@ -1,0 +1,272 @@
+{
+  "seo": {
+    "serp_context": null,
+    "target_radius": 25,
+    "primary_keyword": "Drain Cleaning",
+    "secondary_keywords": [
+      "water heater repair",
+      "water heater installation",
+      "leak detection",
+      "sewer line repair",
+      "commercial plumber",
+      "plumber seminole ok"
+    ]
+  },
+  "tier": "premium",
+  "email": "mickey.ledbetter@yahoo.com",
+  "pages": [
+    {
+      "slug": "drain-cleaning",
+      "type": "service",
+      "title": "Drain Cleaning in Seminole, OK",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Drain Cleaning"
+      ],
+      "primary_keyword": "drain cleaning Seminole OK"
+    },
+    {
+      "slug": "water-heater-repair-installation",
+      "type": "service",
+      "title": "Water Heater Repair & Installation in Seminole, OK",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Water Heater Repair & Installation"
+      ],
+      "primary_keyword": "water heater repair & installation Seminole OK"
+    },
+    {
+      "slug": "leak-detection-repair",
+      "type": "service",
+      "title": "Leak Detection & Repair in Seminole, OK",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Leak Detection & Repair"
+      ],
+      "primary_keyword": "leak detection & repair Seminole OK"
+    },
+    {
+      "slug": "sewer-line-repair",
+      "type": "service",
+      "title": "Sewer Line Repair in Seminole, OK",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Sewer Line Repair"
+      ],
+      "primary_keyword": "sewer line repair Seminole OK"
+    },
+    {
+      "slug": "commercial-plumbing",
+      "type": "service",
+      "title": "Commercial Plumbing in Seminole, OK",
+      "sections": "hero, service_details, process, testimonials, cta",
+      "services": [
+        "Commercial Plumbing"
+      ],
+      "primary_keyword": "commercial plumbing Seminole OK"
+    }
+  ],
+  "phone": "(405) 257-3096",
+  "assets": {
+    "logo": null,
+    "images": [],
+    "page_allocations": null,
+    "recommended_hero_image": null
+  },
+  "design": {
+    "fonts": {},
+    "notes": "",
+    "style": "modern",
+    "colors": {
+      "extracted_from_logo": true
+    },
+    "logo_analysis": {}
+  },
+  "domain": "ledco-plumbing",
+  "phases": [
+    {
+      "name": "scaffold",
+      "phase": 1,
+      "status": "pending"
+    },
+    {
+      "name": "nav_footer_head",
+      "phase": 2,
+      "status": "pending"
+    },
+    {
+      "name": "homepage",
+      "phase": 3,
+      "status": "pending"
+    },
+    {
+      "name": "inner_pages",
+      "phase": 4,
+      "status": "pending"
+    },
+    {
+      "name": "seo_aeo_deploy",
+      "phase": 5,
+      "status": "pending"
+    }
+  ],
+  "address": {
+    "zip": "74868",
+    "city": "Seminole",
+    "state": "OK",
+    "street": "316 E Oak Ave"
+  },
+  "content": {
+    "usps": [],
+    "years": null,
+    "insurance": "",
+    "description": "Ledco Plumbing is a local plumber in Seminole, OK offering drain cleaning, water heater repair and installation, leak detection, sewer line repair, and commercial plumbing.",
+    "certifications": []
+  },
+  "reviews": [],
+  "tagline": "",
+  "industry": "Plumber",
+  "services": [
+    "Drain Cleaning",
+    "Water Heater Repair & Installation",
+    "Leak Detection & Repair",
+    "Sewer Line Repair",
+    "Commercial Plumbing"
+  ],
+  "owner_name": "Mickey Ledbetter",
+  "client_slug": "ledco-plumbing",
+  "form_action": "https://db.pageone.cloud/functions/v1/leads/ledco-plumbing",
+  "github_repo": "",
+  "web_sources": [
+    "https://maps.google.com/maps?cid=10062941840203095213"
+  ],
+  "company_name": "Ledco Plumbing LLC",
+  "integrations": {
+    "geo": {
+      "lat": 35.225596,
+      "lng": -96.667593
+    },
+    "bbb_url": null,
+    "booking": {
+      "days": [],
+      "windows": [],
+      "authorized": false
+    },
+    "spanish": false,
+    "financing": null,
+    "photo_day": null,
+    "accepts_sms": false,
+    "gbp_place_id": "ChIJy6bf-8yIs4cRrZy4tEnApos",
+    "estimate_tool": {
+      "pricing": [],
+      "authorized": false
+    },
+    "gbp_map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d-96.667593!3d35.225596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b388ccfbdfa6cb%3A0x8ba6c049b4b89cad!2sLedco%20Plumbing!5e0!3m2!1sen!2sus!4v1\" loading=\"lazy\" allowfullscreen referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "directions_url": "https://www.google.com/maps/dir/?api=1&destination=place_id:ChIJy6bf-8yIs4cRrZy4tEnApos",
+    "elfsight_embed": null,
+    "financing_note": null,
+    "scheduling_url": null,
+    "text_us_number": null,
+    "review_request_url": "https://search.google.com/local/writereview?placeid=ChIJy6bf-8yIs4cRrZy4tEnApos",
+    "certification_links": []
+  },
+  "service_areas": [
+    "Wewoka, OK",
+    "Seminole, OK"
+  ],
+  "address_public": true,
+  "business_hours": "Mon–Sun 7:00 AM–5:00 PM",
+  "image_curation": null,
+  "research_brief": {
+    "gbp": null,
+    "brief": {
+      "faqs": [
+        {
+          "a": "Yes, for urgent problems such as burst pipes, sewer backups, and water heater failures. Call the office directly for the fastest response. (Confirm hours and after-hours availability before publishing.)",
+          "q": "Do you offer emergency plumbing service in Seminole?"
+        },
+        {
+          "a": "Costs depend on the job, the parts, and access to the work area. Every job starts with a free, written estimate so you know the price before any work begins. Water heater costs also vary by tank size and fuel type.",
+          "q": "How much does a plumbing repair or water heater replacement cost?"
+        },
+        {
+          "a": "Oklahoma requires licensed plumbing contractors. Our license number and proof of liability insurance are available on request. (Insert the verified license number and insurance details.)",
+          "q": "Are your plumbers licensed and insured?"
+        },
+        {
+          "a": "Many Oklahoma homes have hard water, which leaves mineral scale that reduces water heater efficiency and shortens its life. Regular flushing and a water softener or filter can help. A plumber can test your water and recommend options.",
+          "q": "Why does my water look cloudy or my water heater wear out faster in Oklahoma?"
+        },
+        {
+          "a": "We serve Seminole and surrounding communities in Seminole County. Call or use the contact form to confirm whether your address is in our service area.",
+          "q": "Which areas around Seminole do you serve?"
+        }
+      ],
+      "about_angle": "Position the company as a local, owner-led team that answers the phone and shows up on time. Tell the story of why the business serves Seminole, name the people who do the work, and state licensing, insurance, and years of experience once they are confirmed. Keep it grounded: a neighbor who knows the town's older homes and its water, not a faceless national brand.",
+      "hero_headline": "Seminole's Plumbers for Repairs You Can Count On",
+      "differentiators": [
+        "No competitor, Google Business Profile, or existing site data was provided, so these are industry-level suggestions for Seminole, OK. Confirm each one with the owner before it goes on the site.",
+        "Local, owner-operated identity: highlight who runs the company and that Seminole homes and businesses are served by people who live in the area (verify before publishing).",
+        "Licensing and insurance: confirm the Oklahoma plumbing license number and state it on the site, along with bonding and liability insurance.",
+        "Transparent pricing: written, upfront estimates before work starts, with no surprise charges. Shoppers compare quotes, so this builds trust fast.",
+        "Same-day or emergency response: if the company can actually dispatch quickly, make response time a headline promise, since burst pipes and sewer backups are urgent.",
+        "Regional expertise: cover problems common to Oklahoma homes, such as hard-water scale on water heaters and fixtures, freeze damage on exposed lines, and aging galvanized or cast-iron pipe in older houses.",
+        "Service-area clarity: list the towns and communities served around Seminole so local searchers see themselves on the page.",
+        "Reviews and proof: real customer reviews, before-and-after photos, and project examples are stronger than generic claims."
+      ],
+      "hero_subheadline": "Licensed, upfront-priced plumbing for Seminole homes and businesses, from leaky faucets and water heaters to drain and sewer problems.",
+      "tone_recommendation": "Friendly but authoritative: plain-language and neighborly, with clear technical credibility. Use short sentences, avoid jargon, and state facts such as licensing and pricing plainly. Reassure people during emergencies with calm, direct wording rather than urgency or hype."
+    },
+    "competitors": [],
+    "generated_at": "2026-10-19T17:25:20.460Z",
+    "existing_site": null
+  },
+  "competitor_urls": [],
+  "phone_secondary": "",
+  "service_grouping": {
+    "cap": 16,
+    "tier": "premium",
+    "groups": [
+      {
+        "page": "Drain Cleaning",
+        "solo": true,
+        "services": [
+          "Drain Cleaning"
+        ]
+      },
+      {
+        "page": "Water Heater Repair & Installation",
+        "solo": true,
+        "services": [
+          "Water Heater Repair & Installation"
+        ]
+      },
+      {
+        "page": "Leak Detection & Repair",
+        "solo": true,
+        "services": [
+          "Leak Detection & Repair"
+        ]
+      },
+      {
+        "page": "Sewer Line Repair",
+        "solo": true,
+        "services": [
+          "Sewer Line Repair"
+        ]
+      },
+      {
+        "page": "Commercial Plumbing",
+        "solo": true,
+        "services": [
+          "Commercial Plumbing"
+        ]
+      }
+    ],
+    "grouped_count": 5,
+    "original_count": 5
+  },
+  "lead_notification_email": "mickey.ledbetter@yahoo.com",
+  "lead_notification_phone": "(405) 257-3096",
+  "google_business_profile_url": "https://maps.google.com/maps?cid=10062941840203095213"
+}
